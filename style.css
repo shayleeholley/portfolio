@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700");
 body {
-  background: url(http://res.cloudinary.com/shayleeholley/image/upload/v1502051682/pencils_bw_sq_1_ptayrz.jpg) center -250px fixed no-repeat;
+  background: url(http://res.cloudinary.com/shayleeholley/image/upload/v1502051682/pencils_bw_sq_1_ptayrz.jpg) center fixed no-repeat;
   background-size: cover;
   position: relative;
 }
