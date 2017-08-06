@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,500,700");
 body {
+  background: url(http://res.cloudinary.com/shayleeholley/image/upload/v1501270782/Colors_4_sdgfgm.jpg) center -250px fixed no-repeat;
+  background-size: cover;
   position: relative;
 }
 
@@ -8,16 +10,14 @@ body {
   height: 1000px;
   color: #fff;
   background-color: #ff9800;
-  background: linear-gradient(rgba(243, 238, 228, 0.15), rgba(243, 238, 228, 0.15)), url(http://res.cloudinary.com/shayleeholley/image/upload/v1501270782/Colors_4_sdgfgm.jpg) center -250px fixed no-repeat;
-  background-size: cover;
+  background: linear-gradient(rgba(243, 238, 228, 0.15), rgba(243, 238, 228, 0.15));
 }
 
 #about {
   padding-top: 50px;
   height: 500px;
   color: #fff;
-  background: linear-gradient(rgba(192, 59, 69, 0.25), rgba(192, 59, 69, 0.25)), url(http://res.cloudinary.com/shayleeholley/image/upload/v1501270782/Colors_4_sdgfgm.jpg) center -250px fixed no-repeat;
-  background-size: cover;
+  background: linear-gradient(rgba(192, 59, 69, 0.25), rgba(192, 59, 69, 0.25));
 }
 
 /* P O R T F O L I O */
@@ -26,8 +26,7 @@ body {
   height: 1000px;
   color: #fff;
   background-color: #673ab7;
-  background: linear-gradient(rgba(247, 218, 174, 0.35), rgba(247, 218, 174, 0.35)), url(http://res.cloudinary.com/shayleeholley/image/upload/v1501270782/Colors_4_sdgfgm.jpg) center -250px fixed no-repeat;
-  background-size: cover;
+  background: linear-gradient(rgba(247, 218, 174, 0.35), rgba(247, 218, 174, 0.35));
 }
 
 .thumbnail {
@@ -63,8 +62,7 @@ body {
   height: 1000px;
   color: #fff;
   background-color: #ff9800;
-  background: linear-gradient(rgba(188, 182, 199, 0.55), rgba(188, 182, 199, 0.55)), url(http://res.cloudinary.com/shayleeholley/image/upload/v1501270782/Colors_4_sdgfgm.jpg) center -250px fixed no-repeat;
-  background-size: cover;
+  background: linear-gradient(rgba(188, 182, 199, 0.55), rgba(188, 182, 199, 0.55));
 }
 
 #contact-links a {
