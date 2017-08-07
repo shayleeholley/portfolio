@@ -182,7 +182,7 @@ a:hover {
   justify-content: center;
   margin: auto;
   margin-bottom: 15px;
-  padding: 3px 0 0 0;
+  padding: 3px 0 6px 0;
   max-width: 600px;
 }
 
@@ -193,9 +193,9 @@ a:hover {
 
 .checkbox-text {
   color: white;
-  font: 300 1rem "Open Sans", sans-serif;
+  font: 300 1.09rem "Open Sans", sans-serif;
   margin: 0 0 0 0;
-  padding: 1px 0 0 0;
+  padding: 4px 0 0 0;
   text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
   text-transform: uppercase;
 }
@@ -256,7 +256,7 @@ a:hover {
 }
 
 ::placeholder {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 /* M E D I A   Q U E R I E S */
