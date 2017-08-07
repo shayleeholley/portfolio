@@ -25,6 +25,10 @@ $(document).ready(function(){
   });
 });
 
+
+
+// F O R M 
+
 var formSend = function() {
   var name = $("#name").val();
   var email = $("#email").val();
@@ -46,10 +50,25 @@ var formSend = function() {
   else {
     textMessage = "do not";
   }
-  emailjs.send("gmail", "portfolio", {name: name, email: email, phone: phone, call: phoneCall, text: textMessage, message: message})
-    .then(function(response){
-      alert("Your message was sent successfully! Expect a reply from me shortly.");
-    },function(error){
-      alert("Unfortunately, this message did not send successfully. Feel free to reach out to me at shayleeholley@gmail.com instead.");
-    });
+
+  if (name === "") {
+    alert("Please enter your name before submitting this form - thanks!");
+  } else if (email === "") {
+    alert("Please enter your email field before submitting this form - thanks!");
+  } else if (message === "") {
+    alert("Please enter your message field before submitting this form - thanks!"); 
+  } else {
+    emailjs.send("gmail", "portfolio", {name: name, email: email, phone: phone, call: phoneCall, text: textMessage, message: message})
+      .then(function(response){
+        $("#name").val("");
+        $("#email").val("");
+        $("#phone").val("");
+        $("#message").val("");
+        $("#call").prop("checked", false);
+        $("#text").prop("checked", false);
+        alert("Your message was sent successfully! Expect a reply from me shortly.");
+      },function(error){
+        alert("Unfortunately, this message did not send successfully. Feel free to reach out to me at shayleeholley@gmail.com instead.");
+      });
+  }
 }
