@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,700|Open+Sans:300,400');
 
 body {
     background: url(http://res.cloudinary.com/shayleeholley/image/upload/v1502051682/pencils_bw_sq_1_ptayrz.jpg) center fixed no-repeat; 
     background-size: cover;
     position: relative; 
 }
+
+/* I N T R O */
 
 #intro {
     padding-top: 50px;
@@ -15,8 +17,15 @@ body {
     linear-gradient(
       rgba(243, 238, 228, 0.15), 
       rgba(243, 238, 228, 0.15)
-    ),
-    
+    );
+
+    img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 1px 1px 5px gray;
+    max-width: 200px;
+    }   
 }
 
 #about {
@@ -25,10 +34,22 @@ body {
     color: #fff;
     background: 
     linear-gradient(
-      rgba(192, 59, 69, 0.25), 
-      rgba(192, 59, 69, 0.25)
+      rgba(152, 59, 69, 0.20), 
+      rgba(152, 59, 69, 0.20)
     );
+
+    img {
+        display: flex;
+        max-width: 400px;
+        position: absolute;
+        right: 30px;
+    }
+
+    .img-rounded {
+        border-radius: 50px;
+    }
 }
+
 
 
 
@@ -47,7 +68,7 @@ body {
 }
 
 .thumbnail {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .thumbnail img {
@@ -60,7 +81,7 @@ body {
 
 .caption {
     color: rgb(34, 32, 33);
-    font: 500 1.5rem "Poppins", sans-serif;
+    font: 300 1.2rem "Poppins", sans-serif;
 }
 
 .caption a {
@@ -120,7 +141,7 @@ body {
 
 .checkbox-text {
     color: white;
-    font: 300 1.8rem "Poppins", sans-serif;
+    font: 300 1.8rem "Open Sans", sans-serif;
     margin: 0 0 0 0;
     padding: 0 0 5px 5px;
     text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
@@ -166,7 +187,7 @@ body {
 
 .form-control {
     color: rgb(34, 32, 33);
-    font: 300 1.8rem "Poppins", sans-serif;
+    font: 300 1.8rem "Open Sans", sans-serif;
 }
 
 .form-control:focus {
@@ -175,7 +196,7 @@ body {
 }
 
 ::placeholder {
-    letter-spacing: 5px;
+    letter-spacing: 4px;
 }
 
 
