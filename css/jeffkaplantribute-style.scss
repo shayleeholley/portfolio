@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Poppins:300,500,700|Open+Sans:300,400');
+
+body {
+    background: url(http://res.cloudinary.com/shayleeholley/image/upload/v1502051682/pencils_bw_sq_1_ptayrz.jpg) center fixed no-repeat; 
+    background-size: cover;
+    position: relative; 
+}
 
 * {
     box-sizing: border-box;
@@ -17,6 +23,85 @@
 
 html {
     font-family: "Lucida Sans", sans-serif;
+}
+
+
+
+// N A V B A R
+
+nav i {
+    color: white;
+}
+
+.navbar-links {
+    float: left;
+    margin: 15px 35px 0 0;
+}
+
+.navbar-links a:hover {
+    background-color: none;
+}
+
+nav span {
+    color: white;
+    display: none;
+    font: 300 1.4rem 'Poppins', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+    a:hover {
+    text-decoration: none;
+}
+
+.navbar-links:hover i {
+    display: none;
+}
+.navbar-links:hover span {
+    display: inline;
+}
+
+::selection {
+    color: #222021;
+    background: #f3eee4;
+}
+
+.navbar-custom {
+    background: #86929f;
+	border: none;
+}
+
+.navbar-custom .navbar-nav > li > a{
+	color: white;
+    font: 300 1.4rem 'Poppins', sans-serif;
+    letter-spacing: 7px;
+	text-transform: lowercase;
+}
+
+ .navbar-custom .navbar-nav > li > a:hover{
+    color: white;
+    background-color: rgba(243, 238, 228, 0.3);
+} 
+
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: rgba(243, 238, 228, 0.3);
+}
+
+
+
+// H E A D E R
+
+.section-header {
+    font: 700 5rem "Poppins", sans-serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.header {
+    margin-top: 50px;
 }
 
 .header p {
@@ -43,7 +128,7 @@ html {
 }
 
 #main-contain {
-  background: rgb(220, 225, 230);
+  background: white;
   margin-top: 25px;
   padding-bottom: 20px;
   padding-left: 20px;

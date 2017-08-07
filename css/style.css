@@ -5,6 +5,12 @@ body {
   position: relative;
 }
 
+.section-header {
+  font: 700 5rem "Poppins", sans-serif;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
 nav i {
   color: white;
 }
@@ -102,19 +108,19 @@ a:hover {
 
 #about {
   padding-top: 50px;
-  height: 865px;
+  height: 1100px;
   color: #fff;
-  background: linear-gradient(rgba(152, 59, 69, 0.2), rgba(152, 59, 69, 0.2));
+  background: linear-gradient(rgba(152, 59, 69, 0.4), rgba(152, 59, 69, 0.4));
 }
 
 .bio {
-  font: 300 1.8rem 'Poppins', sans-serif;
-  padding: 0 10px 0 10px;
+  font: 300 2rem 'Open Sans', sans-serif;
+  padding: 30px 10px 0 10px;
 }
 
 #portfolio {
   padding-top: 50px;
-  height: 720px;
+  height: 770px;
   color: #fff;
   background-color: #673ab7;
   background: linear-gradient(rgba(247, 218, 174, 0.35), rgba(247, 218, 174, 0.35));
@@ -128,16 +134,17 @@ a:hover {
 }
 
 .thumbnail img {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .thumbnail img:hover {
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .caption {
   color: #222021;
-  font: 300 1.2rem "Open Sans", sans-serif;
+  font: 500 2.5rem "Poppins", sans-serif;
+  text-transform: uppercase;
 }
 
 .caption a {
