@@ -23,7 +23,7 @@ body {
 }
 
 .section-header {
-  font: normal 3.5rem "King Basil", cursive;
+  font: normal 6.5rem "King Basil", cursive;
 }
 
 nav i {
@@ -89,9 +89,9 @@ a:hover {
 }
 
 #intro {
-  padding-top: 50px;
-  height: 460px;
-  color: #fff;
+  padding-top: 100px;
+  height: 570px;
+  color: #983b45;
   background-color: #ff9800;
   background: linear-gradient(rgba(243, 238, 228, 0.15), rgba(243, 238, 228, 0.15));
 }
@@ -118,14 +118,14 @@ a:hover {
 }
 
 #intro-summary {
-  font: 300 1.8rem 'Open Sans', sans-serif;
+  font: 400 1.8rem 'Open Sans', sans-serif;
 }
 
 #about {
   background: linear-gradient(rgba(152, 59, 69, 0.4), rgba(152, 59, 69, 0.4));
   color: #fff;
-  height: 1850px;
-  padding: 50px 0 0 0;
+  height: 1900px;
+  padding: 100px 0 0 0;
 }
 
 #about img {
@@ -143,11 +143,11 @@ a:hover {
 }
 
 #portfolio {
-  padding-top: 50px;
-  height: 810px;
+  padding-top: 100px;
+  height: 990px;
   color: #fff;
   background-color: #673ab7;
-  background: linear-gradient(rgba(247, 218, 174, 0.35), rgba(247, 218, 174, 0.35));
+  background: linear-gradient(rgba(247, 218, 174, 0.55), rgba(247, 218, 174, 0.55));
 }
 
 .thumbnail {
@@ -182,8 +182,8 @@ a:hover {
 }
 
 #contact {
-  padding-top: 50px;
-  height: 650px;
+  padding-top: 100px;
+  height: 800px;
   color: #fff;
   background-color: #ff9800;
   background: linear-gradient(rgba(188, 182, 199, 0.55), rgba(188, 182, 199, 0.55));

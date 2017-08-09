@@ -24,7 +24,7 @@ body {
 }
  
 .section-header {
-    font: normal 3.5rem "King Basil", cursive;
+    font: normal 6.5rem "King Basil", cursive;
 }
 
 
@@ -92,12 +92,14 @@ nav span {
     background-color: rgba(243, 238, 228, 0.3);
 }
 
+
+
 // I N T R O
 
 #intro {
-    padding-top: 50px;
-    height: 460px;
-    color: #fff;
+    padding-top: 100px;
+    height: 570px;
+    color: #983b45;
     background-color: #ff9800;
     background: 
     linear-gradient(
@@ -128,7 +130,7 @@ nav span {
 }
 
 #intro-summary {
-    font: 300 1.8rem 'Open Sans', sans-serif;
+    font: 400 1.8rem 'Open Sans', sans-serif;
 }
 
 
@@ -142,8 +144,8 @@ nav span {
       rgba(152, 59, 69, 0.40)
     );
     color: #fff;
-    height: 1850px;
-    padding: 50px 0 0 0;
+    height: 1900px;
+    padding: 100px 0 0 0;
 
     img {
         border-radius: 25px;
@@ -165,14 +167,14 @@ nav span {
 // P O R T F O L I O
 
 #portfolio {
-    padding-top: 50px;
-    height: 810px;
+    padding-top: 100px;
+    height: 990px;
     color: #fff;
     background-color: #673ab7;
     background: 
     linear-gradient(
-    rgba(247, 218, 174, 0.35), 
-    rgba(247, 218, 174, 0.35)
+    rgba(247, 218, 174, 0.55), 
+    rgba(247, 218, 174, 0.55)
     );
 }
 
@@ -213,8 +215,8 @@ nav span {
 // C O N T A C T
 
 #contact {
-    padding-top: 50px;
-    height: 650px;
+    padding-top: 100px;
+    height: 800px;
     color: #fff;
     background-color: #ff9800;
     background: 
