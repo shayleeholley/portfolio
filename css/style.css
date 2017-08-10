@@ -15,10 +15,10 @@
 
 body {
   background: url(http://res.cloudinary.com/shayleeholley/image/upload/v1502051682/pencils_bw_sq_1_ptayrz.jpg) center fixed no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-size: 1000;
+  -webkit-background-size: 1000;
+  -moz-background-size: 1000;
+  -o-background-size: 1000;
   position: relative;
 }
 
@@ -144,7 +144,7 @@ a:hover {
 
 #portfolio {
   padding-top: 100px;
-  height: 990px;
+  height: 1250px;
   color: #fff;
   background-color: #673ab7;
   background: linear-gradient(rgba(247, 218, 174, 0.55), rgba(247, 218, 174, 0.55));

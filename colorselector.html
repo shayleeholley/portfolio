@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Color Selector (in progress)</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Color Selector</title>
+    </head>
+    <body>
+        <center>
+        <div class="container-fluid">    
+            <p id="title">Color Selector</p>
+        <div class="rgb">
+            <h2 id="value">#000000</h2>
+        </div>
+        <div class="colors" id="divRed" style="color:red" onclick="input(x,r)">Red</div>
+            <input type="range" id="red" min="0" max="255" step="1" value="0" onchange="getColor()"></input>
+        <div class="colors" id="divGreen" style="color:Green" onclick="input(y,g)">Green</div>
+            <input type="range" id="green" min="0" max="255" step="1" value="0" onchange="getColor()"></input>
+        <div class="colors" id="divBlue" style="color:Blue" onclick="input(z,b)">Blue</div>
+            <input type="range" id="blue" min="0" max="255" step="1" value="0" onchange="getColor()"></input>
+        <div class="rgb">
+            <h2 id="value1">#000000</h2>
+            <h2 id="value2">#000000</h2>
+            <h2 id="value3">#000000</h2>
+        </div>
+        </div>
+        </center>
+        <script src="function.js"></script>
+    </body>
+</html>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>

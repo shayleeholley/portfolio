@@ -1,338 +1,318 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Poppins:300,500,700|Open+Sans:300,400');
 
 @font-face {
-    font-family: 'King Basil';
-    src: url('https://www.dl.dropboxusercontent.com/s/9tq73402qgctp3y/King%20Basil%20Lite.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'King Basil';
+  src: url('https://www.dl.dropboxusercontent.com/s/9tq73402qgctp3y/King%20Basil%20Lite.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Alcubierre';
-    src: url('https://www.dl.dropboxusercontent.com/s/jlgizszqiap6ccn/alcubierre-webfont.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-} 
+  font-family: 'Alcubierre';
+  src: url('https://www.dl.dropboxusercontent.com/s/jlgizszqiap6ccn/alcubierre-webfont.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
-    background: url(http://res.cloudinary.com/shayleeholley/image/upload/v1502051682/pencils_bw_sq_1_ptayrz.jpg) center fixed no-repeat; 
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    position: relative; 
+  background: url(http://res.cloudinary.com/shayleeholley/image/upload/v1502051682/pencils_bw_sq_1_ptayrz.jpg)
+    center fixed no-repeat;
+  background-size: 1000;
+  -webkit-background-size: 1000;
+  -moz-background-size: 1000;
+  -o-background-size: 1000;
+  position: relative;
 }
- 
+
 .section-header {
-    font: normal 6.5rem "King Basil", cursive;
+  font: normal 6.5rem "King Basil", cursive;
 }
-
-
 
 // N A V B A R
 
 nav i {
-    color: white;
+  color: white;
 }
 
 .navbar-links {
-    float: left;
-    margin: 15px 35px 0 0;
+  float: left;
+  margin: 15px 35px 0 0;
 }
 
 .navbar-links a:hover {
-    background-color: none;
+  background-color: none;
 }
 
 nav span {
-    color: white;
-    display: none;
-    font: 300 1.4rem 'Poppins', sans-serif;
-    letter-spacing: 5px;
-    text-transform: uppercase;
+  color: white;
+  display: none;
+  font: 300 1.4rem 'Poppins', sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
-    a:hover {
-    text-decoration: none;
+a:hover {
+  text-decoration: none;
 }
 
 .navbar-links:hover i {
-    display: none;
+  display: none;
 }
 .navbar-links:hover span {
-    display: inline;
+  display: inline;
 }
 
 ::selection {
-    color: #222021;
-    background: #f3eee4;
+  color: #222021;
+  background: #f3eee4;
 }
 
 .navbar-custom {
-    background: #86929f;
-	border: none;
+  background: #86929f;
+  border: none;
 }
 
-.navbar-custom .navbar-nav > li > a{
-	color: white;
-    font: 300 1.4rem 'Poppins', sans-serif;
-    letter-spacing: 7px;
-	text-transform: lowercase;
+.navbar-custom .navbar-nav > li > a {
+  color: white;
+  font: 300 1.4rem 'Poppins', sans-serif;
+  letter-spacing: 7px;
+  text-transform: lowercase;
 }
 
- .navbar-custom .navbar-nav > li > a:hover{
-    color: white;
-    background-color: rgba(243, 238, 228, 0.3);
-} 
+.navbar-custom .navbar-nav > li > a:hover {
+  color: white;
+  background-color: rgba(243, 238, 228, 0.3);
+}
 
 .navbar-custom .navbar-nav > .active > a,
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-    color: white;
-    background-color: rgba(243, 238, 228, 0.3);
+  color: white;
+  background-color: rgba(243, 238, 228, 0.3);
 }
-
-
 
 // I N T R O
 
 #intro {
-    padding-top: 100px;
-    height: 570px;
-    color: #983b45;
-    background-color: #ff9800;
-    background: 
-    linear-gradient(
-      rgba(243, 238, 228, 0.15), 
-      rgba(243, 238, 228, 0.15)
-    );
+  padding-top: 100px;
+  height: 570px;
+  color: #983b45;
+  background-color: #ff9800;
+  background: linear-gradient(
+    rgba(243, 238, 228, 0.15),
+    rgba(243, 238, 228, 0.15)
+  );
 
-    img {
+  img {
     display: block;
     margin: auto;
     margin-top: 50px;
     box-shadow: 1px 1px 5px gray;
     width: 120px;
-    }   
+  }
 }
 
 #disclaimer {
-    color: rgb(152, 59, 69);
-    font: 700 1rem 'Poppins', sans-serif;
-    margin-top: 20px;
-    text-transform: uppercase;
+  color: rgb(152, 59, 69);
+  font: 700 1rem 'Poppins', sans-serif;
+  margin-top: 20px;
+  text-transform: uppercase;
 }
 
-#intro-name { 
-    font: normal 4rem 'King Basil', cursive;
-    margin-top: 20px;
-    text-transform: lowercase;
+#intro-name {
+  font: normal 4rem 'King Basil', cursive;
+  margin-top: 20px;
+  text-transform: lowercase;
 }
 
 #intro-summary {
-    font: 400 1.8rem 'Open Sans', sans-serif;
+  font: 400 1.8rem 'Open Sans', sans-serif;
 }
-
-
 
 // A B O U T
 
 #about {
-    background: 
-    linear-gradient(
-      rgba(152, 59, 69, 0.40), 
-      rgba(152, 59, 69, 0.40)
-    );
-    color: #fff;
-    height: 1740px;
-    padding: 100px 0 0 0;
+  background: linear-gradient(rgba(152, 59, 69, 0.40), rgba(152, 59, 69, 0.40));
+  color: #fff;
+  height: 1740px;
+  padding: 100px 0 0 0;
 
-    img {
-        border-radius: 25px;
-        display: block;
-        margin: auto;
-        margin-bottom: 30px;
-        margin-top: 30px;
-        width: 300px;
-    }
+  img {
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 300px;
+  }
 }
 
 .bio {
-    font: 300 2rem 'Open Sans', sans-serif;
-    padding: 0 10px 0 10px;
+  font: 300 2rem 'Open Sans', sans-serif;
+  padding: 0 10px 0 10px;
 }
-
-
 
 // P O R T F O L I O
 
 #portfolio {
-    padding-top: 100px;
-    height: 990px;
-    color: #fff;
-    background-color: #673ab7;
-    background: 
-    linear-gradient(
-    rgba(247, 218, 174, 0.55), 
+  padding-top: 100px;
+  height: 1250px;
+  color: #fff;
+  background-color: #673ab7;
+  background: linear-gradient(
+    rgba(247, 218, 174, 0.55),
     rgba(247, 218, 174, 0.55)
-    );
+  );
 }
 
 .thumbnail {
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 290px;
-    
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 290px;
 }
 
 .thumbnail img {
-    opacity: 1;
+  opacity: 1;
 }
 
 .thumbnail img:hover {
-    /* opacity: 1; */
+  /* opacity: 1; */
 }
 
 .caption {
-    color: rgb(34, 32, 33);
-    font: normal 2.5rem "Alcubierre", sans-serif;
-    text-transform: uppercase;
+  color: rgb(34, 32, 33);
+  font: normal 2.5rem "Alcubierre", sans-serif;
+  text-transform: uppercase;
 }
 
 .caption a {
-    color: rgb(134, 146, 159);
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  color: rgb(134, 146, 159);
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .caption a:hover {
-    color: rgb(152, 59, 69);
+  color: rgb(152, 59, 69);
 }
-
-
 
 // C O N T A C T
 
 #contact {
-    padding-top: 100px;
-    height: 800px;
-    color: #fff;
-    background-color: #ff9800;
-    background: 
-    linear-gradient(
-      rgba(188, 182, 199, 0.55), 
-      rgba(188, 182, 199, 0.55)
-    );
+  padding-top: 100px;
+  height: 800px;
+  color: #fff;
+  background-color: #ff9800;
+  background: linear-gradient(
+    rgba(188, 182, 199, 0.55),
+    rgba(188, 182, 199, 0.55)
+  );
 }
 
 #contact-links i {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #contact-links a {
-    color: white;
-    font-size: 3.5rem;
-    /* margin: 0 20px 0 20px; */
-    text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
+  color: white;
+  font-size: 3.5rem;
+  /* margin: 0 20px 0 20px; */
+  text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
 }
 
 #contact-links a:hover {
-    color: rgba(152, 59, 69, 0.7);
+  color: rgba(152, 59, 69, 0.7);
 }
 
 .checkbox {
-    background: none;
-    border: 2px solid white;
-    border-radius: 30px;
-    box-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 15px;
-    padding: 3px 0 6px 0;
-    max-width: 600px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 30px;
+  box-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 3px 0 6px 0;
+  max-width: 600px;
 }
 
 .checkbox:hover {
-    background: rgba(152, 59, 69, 0.5);
-    border: 2px solid rgba(152, 59, 69, 0.1);
+  background: rgba(152, 59, 69, 0.5);
+  border: 2px solid rgba(152, 59, 69, 0.1);
 }
 
 .checkbox-text {
-    color: white;
-    font: 300 1.09rem "Open Sans", sans-serif;
-    margin: 0 0 0 0;
-    padding: 4px 0 0 0;
-    text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
-    text-transform: uppercase;
+  color: white;
+  font: 300 1.09rem "Open Sans", sans-serif;
+  margin: 0 0 0 0;
+  padding: 4px 0 0 0;
+  text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
+  text-transform: uppercase;
 }
 
 .button {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .btn-block {
-    background: none;
-    border: 2px solid white;
-    border-radius: 0;
-    box-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
-    color: white;
-    font: 300 1.5rem "Poppins", sans-serif;
-    display: block;
-    letter-spacing: 9px;
-    margin: auto;
-    max-width: 47%;
-    text-transform: uppercase;
+  background: none;
+  border: 2px solid white;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
+  color: white;
+  font: 300 1.5rem "Poppins", sans-serif;
+  display: block;
+  letter-spacing: 9px;
+  margin: auto;
+  max-width: 47%;
+  text-transform: uppercase;
 }
 
 .btn-block:hover {
-    background: rgba(152, 59, 69, 0.5);
-    border: 2px solid rgba(152, 59, 69, 0.1);
-    color: white;
-    font-weight: 500;
+  background: rgba(152, 59, 69, 0.5);
+  border: 2px solid rgba(152, 59, 69, 0.1);
+  color: white;
+  font-weight: 500;
 }
 
 .btn-block .fa-paper-plane-o {
-    display: none;
+  display: none;
 }
 
 .btn-block:hover .fa-paper-plane {
-    display: none;
+  display: none;
 }
 
 .btn-block:hover .fa-paper-plane-o {
-    display: inline;
+  display: inline;
 }
 
 .btn-block:focus {
-    outline: none;
+  outline: none;
 }
 
 .btn-block:hover:focus {
-    outline: none;
+  outline: none;
 }
 
 .form-control {
-    color: rgb(34, 32, 33); 
-    font: 300 1.8rem "Open Sans", sans-serif;
+  color: rgb(34, 32, 33);
+  font: 300 1.8rem "Open Sans", sans-serif;
 }
 
 .form-control:focus {
-    border-color: gray;
-    box-shadow: 0 0 5px rgba(34, 32, 33, 0.4);
+  border-color: gray;
+  box-shadow: 0 0 5px rgba(34, 32, 33, 0.4);
 }
 
 ::placeholder {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
-
-
 
 /* M E D I A   Q U E R I E S */
 
 @media only screen and (min-width: 0px) {
-
 }
-
-
