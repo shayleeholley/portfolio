@@ -2,25 +2,40 @@
 <html>
 
 <head>
-    <title>shaylee holley | h o m e</title>
     <meta charset="utf-8">
-    <meta name="p:domain_verify" content="f4ec6c769e904c3ba510c52dfffed767" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shaylee holley | p o r t f o l i o</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jeffkaplantribute-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript">
-        (function () {
-            emailjs.init("user_wiPAugoFnZGez30RyyyAP");
-        })();
+        $(document).ready(function () {
+            $("#myModal").modal('show');
+        });
     </script>
 </head>
 
 <body>
+    <!-- M O D A L -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <p class="modal-title text-center">Custom Resume Templates</p>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center"></p>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
+    <!-- N A V B A R -->
     <nav class="navbar navbar-custom navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -30,9 +45,9 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
-                    <li><a href="#portfolio"><i class="fa fa-folder-open" aria-hidden="true"></i> Portfolio</a></li>
-                    <li><a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
+                    <li><a href="index.html#about"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
+                    <li><a href="index.html#portfolio"><i class="fa fa-folder-open" aria-hidden="true"></i> Portfolio</a></li>
+                    <li><a href="index.html#contact"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></li>
                 </ul>
                 <ul class="hidden-xs collapse navbar-collapse nav navbar-nav navbar-left">
                     <li>
@@ -56,9 +71,41 @@
         </div>
     </nav>
 
+    <div id="resumes" class="container-fluid all">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="thumbnail">
+                        <a href="docs/ResumeTemplate01.pdf"><img src="http://res.cloudinary.com/shayleeholley/image/upload/v1502377181/ResumeTemplate01-001_1_1_ygt0wx.jpg"/></a>
+                        <div class="caption">
+                            <p class="text-center">Jeff Kaplan Tribute</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="thumbnail">
+                            <a href="colorselector.html"><img src="http://res.cloudinary.com/shayleeholley/image/upload/v1502145362/P1060421_jwlowj.jpg"></a>
+                            <div class="caption">
+                                <p class="text-center">Color Selector</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="thumbnail">
+                            <a href="resumes.html"><img src="http://res.cloudinary.com/shayleeholley/image/upload/v1502377181/ResumeTemplate01-001_1_1_ygt0wx.jpg"></a>
+                            <div class="caption">
+                                <p class="text-center">Custom Resume Templates</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="javascript/function.js"></script>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -1,11 +1,143 @@
+// B O R D E R S
+
+$about-radius: 20px;
+$contact-button-border: 2px solid rgba(152, 59, 69, 0.1);
+$checkbox-border: 2px solid white;
+$checkbox-button-border: 2px solid white;
+$checkbox-hover-border: 2px solid rgba(152, 59, 69, 0.1);
+$checkbox-radius: 30px;
+$tribute-img-radius: 50px;
+
 // C O L O R S
+
+$about-bg: linear-gradient(rgba(152, 59, 69, 0.35), rgba(152, 59, 69, 0.35));
+$bio-link: #1c1136;
+$caption-hover: rgb(135, 59, 69);
+$caption-link: rgb(34, 32, 33);
+$checkbox-hover-bg: rgba(152, 59, 69, 0.5);
+$contact-bg: linear-gradient(rgba(34, 32, 33, 0.10), rgba(34, 32, 33, 0.25));
+$contact-button-hover-bg: rgba(152, 59, 69, 0.5);
+$contact-link-color: rgb(135, 59, 69);
+$form-text: rgb(34, 32, 33);
+$form-focus: rgba(255, 255, 255, 0.55);
+$intro-text: rgb(135, 59, 69);
+$intro-bg: linear-gradient(
+  rgba(255, 255, 255, 0.45),
+  rgba(255, 255, 255, 0.45)
+);
+$nav-bg: #86929f;
+$nav-bg-haf: rgba(243, 238, 228, 0.3);
+$plain: white;
+$portfolio-bg: linear-gradient(
+  rgba(247, 218, 174, 0.45),
+  rgba(247, 218, 174, 0.45)
+);
+$selection: #222021;
 
 // F O N T S
 
-$header: "King Basil", cursive;
-$sub-header: "Alcubierre", sans-serif;
+$about-bio: 300 2rem 'Open Sans', sans-serif;
+$caption: normal 2.5rem "King Basil", sans-serif;
+$checkbox: 300 1.09rem "Open Sans", sans-serif;
+$checkbox-hover: 400;
+$contact-button: 300 1.5rem "Poppins", sans-serif;
+$contact-button-hover: 500;
+$form: 300 1.8rem "Open Sans", sans-serif;
+$intro-name: normal 4rem 'King Basil', cursive;
+$intro-summary: 400 1.8rem 'Open Sans', sans-serif;
+$nav: 300 1.4rem 'Poppins', sans-serif;
+$section-header: normal 6.5rem 'King Basil', cursive;
+$tribute-carousel: 700 1.5rem "Open Sans Condensed", sans-serif;
+$tribute-header-big: 700 2.5rem "Open Sans Condensed", sans-serif;
+$tribute-header-small: 700 2rem "Open Sans Condensed", sans-serif;
+$tribute-main-text: 3rem "Open Sans Condensed", sans-serif;
+$tribute-title: 700 4rem "Open Sans Condensed", sans-serif;
 
-// $main
+// M A R G I N S
 
+$about-margin: 30px;
+$checkbox-margin: 0 0 0 0;
+$checkbox-margin-bottom: 15px;
+$contact-button-margin: 40px;
+$contact-link-margin: 30px;
+$intro-margin: 20px;
+$nav-margin: 15px 35px 0 0;
+$profile-margin: 50px;
+$thumbnail-margin-bottom: 20px;
+$thumbnail-margin-top: 30px;
+$tribute-header-margin-top: 50px;
+$tribute-main-margin-top: 20px;
+$tribute-main-margin-top: 25px;
+
+// M E D I A   Q U E R I E S
+
+// - - - t r i b u t e - - -
+
+$tiny-font-size-header-1: 3.5rem;
+$small-font-size-header-1: 3.8rem;
+$medium-font-size-header-1: 4rem;
+$normal-font-size-header-1: 4.3rem;
+$large-font-size-header-1: 4.5rem;
+
+// M O D A L
+
+$modal-body-radius: 30px;
+$modal-body: 300 1.7rem 'Open Sans', sans-serif;
+$modal-button: normal 2rem 'Alcubierre', sans-serif;
+$modal-button-default: #86929f;
+$modal-button-hover: #983b45;
+$modal-button-radius: 20px;
+$modal-button-width: 125px;
+$modal-link: #e9b68e;
+$modal-link-hover: #983b45;
+$modal-margin-bottom: 30px;
+$modal-margin-top: 30px;
+$modal-padding-left: 5px;
+$modal-padding-top: 15px;
+$modal-title: normal 3rem 'King Basil', cursive;
+
+// P A D D I N G
+
+$about-bio-padding: 10px 10px 0 10px;
+$about-padding: 100px;
+$checkbox-padding: 3px 0 6px 0;
+$checkbox-text-padding: 4px;
+$col-padding: 15px;
+$contact-padding: 100px;
+$intro-padding: 100px 0 0 0;
+$portfolio-padding: 100px;
+$tribute-footer-padding: 15px;
+$tribute-main-padding: 0 20px 20px 20px;
+
+// S H A D O W S
+
+$checkbox-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
+$checkbox-text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
+$contact-button-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
+$contact-link-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
+$form-shadow: 0 0 5px rgba(34, 32, 33, 0.4);
+$profile-shadow: 1px 1px 5px gray;
+$tribute-img-shadow: 3px 3px 7px gray;
 
 // S I Z E S
+
+$about-img-width: 300px;
+$about-height: 700px;
+$contact-button-width: 47%;
+$contact-height: 800px;
+$intro-height: 570px;
+$checkbox-width: 600px;
+$contact-link-size: 3.5rem;
+$mobile-01: 1000px;
+$nav-height: 50px;
+$placeholder-font-size: 1.4rem;
+$portfolio-height: 1420px;
+$portfolio-width: 290px;
+$profile-width: 200px;
+$tribute-carousel-height: 900px;
+$tribute-carousel-width: 100%;
+$tribute-footer-font: 14px;
+$tribute-img-height: 200px;
+$tribute-col-width: 100%;
+
+// U R L S

@@ -1,0 +1,37 @@
+@mixin tiny-screen() {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin small-screen() {
+  @media only screen and (max-width: 768px) {
+    #header1 {
+      font-size: $small-font-size-header-1;
+    }
+  }
+}
+
+@mixin medium-screen() {
+  @media only screen and (max-width: 1024px) {
+    #header1 {
+      font-size: $medium-font-size-header-1;
+    }
+  }
+}
+
+@mixin normal-screen() {
+  @media only screen and (max-width: 1280px) {
+    #header1 {
+      font-size: $normal-font-size-header-1;
+    }
+  }
+}
+
+@mixin large-screen() {
+  @media only screen and (max-width: 1920px) {
+    #header1 {
+      font-size: $large-font-size-header-1;
+    }
+  }
+}

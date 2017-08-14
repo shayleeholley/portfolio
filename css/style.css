@@ -14,7 +14,7 @@
 }
 
 body {
-  background: url(http://res.cloudinary.com/shayleeholley/image/upload/v1502051682/pencils_bw_sq_1_ptayrz.jpg) center fixed no-repeat;
+  background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
   background-size: 1000;
   -webkit-background-size: 1000;
   -moz-background-size: 1000;
@@ -22,12 +22,76 @@ body {
   position: relative;
 }
 
-.section-header {
+::selection {
+  background: white;
+  color: #222021;
+}
+
+.section-head {
+  color: white;
   font: normal 6.5rem "King Basil", cursive;
+}
+
+.btn {
+  background: #86929f;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0;
+  color: white;
+  display: block;
+  font: normal 2rem "Alcubierre", sans-serif;
+  letter-spacing: 5px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 0;
+  padding-left: 5px;
+  padding-top: 15px;
+  text-transform: uppercase;
+  width: 125px;
+}
+
+.btn:hover {
+  background: #983b45;
+  color: white;
+}
+
+.modal-body p {
+  font: 300 1.7rem "Open Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+.modal-body p a {
+  color: #e9b68e;
+  text-decoration: none;
+}
+
+.modal-body p a :hover {
+  color: #983b45;
+}
+
+.modal-content {
+  border-radius: 30px;
+}
+
+.modal-title {
+  font: normal 3rem "King Basil", cursive;
+}
+
+nav a:hover {
+  text-decoration: none;
 }
 
 nav i {
   color: white;
+}
+
+nav span {
+  color: white;
+  display: none;
+  font: 300 1.4rem "Poppins", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 .navbar-links {
@@ -39,97 +103,74 @@ nav i {
   background-color: none;
 }
 
-nav span {
-  color: white;
-  display: none;
-  font: 300 1.4rem 'Poppins', sans-serif;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-.navbar-links:hover i {
+.navbar-links :hover i {
   display: none;
 }
 
-.navbar-links:hover span {
+.navbar-links :hover span {
   display: inline;
 }
 
-::selection {
-  color: #222021;
-  background: #f3eee4;
-}
-
-.navbar-custom {
+.navbar {
   background: #86929f;
-  border: none;
+  height: 50px;
 }
 
-.navbar-custom .navbar-nav > li > a {
+.navbar .navbar-nav > li > a {
   color: white;
-  font: 300 1.4rem 'Poppins', sans-serif;
+  font: 300 1.4rem "Poppins", sans-serif;
   letter-spacing: 7px;
   text-transform: lowercase;
 }
 
-.navbar-custom .navbar-nav > li > a:hover {
+.navbar .navbar-nav > li > a:hover {
+  background: rgba(243, 238, 228, 0.3);
   color: white;
-  background-color: rgba(243, 238, 228, 0.3);
 }
 
-.navbar-custom .navbar-nav > .active > a,
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
+.navbar .navbar-nav > .active > a :hover {
+  background: rgba(243, 238, 228, 0.3);
   color: white;
-  background-color: rgba(243, 238, 228, 0.3);
+}
+
+.navbar .navbar-nav > .active > a :focus {
+  background: rgba(243, 238, 228, 0.3);
+  color: white;
 }
 
 #intro {
-  padding-top: 100px;
+  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45));
+  color: #873b45;
   height: 570px;
-  color: #983b45;
-  background-color: #ff9800;
-  background: linear-gradient(rgba(243, 238, 228, 0.15), rgba(243, 238, 228, 0.15));
-}
-
-#intro img {
-  display: block;
-  margin: auto;
-  margin-top: 50px;
-  box-shadow: 1px 1px 5px gray;
-  width: 120px;
-}
-
-#disclaimer {
-  color: #983b45;
-  font: 700 1rem 'Poppins', sans-serif;
-  margin-top: 20px;
-  text-transform: uppercase;
-}
-
-#intro-name {
-  font: normal 4rem 'King Basil', cursive;
-  margin-top: 20px;
-  text-transform: lowercase;
-}
-
-#intro-summary {
-  font: 400 1.8rem 'Open Sans', sans-serif;
-}
-
-#about {
-  background: linear-gradient(rgba(152, 59, 69, 0.4), rgba(152, 59, 69, 0.4));
-  color: #fff;
-  height: 1740px;
   padding: 100px 0 0 0;
 }
 
+#intro img {
+  box-shadow: 1px 1px 5px gray;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  width: 200px;
+}
+
+#intro #name {
+  font: normal 4rem "King Basil", cursive;
+  margin-top: 20px;
+}
+
+#intro #summary {
+  font: 400 1.8rem "Open Sans", sans-serif;
+}
+
+#about {
+  background: linear-gradient(rgba(152, 59, 69, 0.35), rgba(152, 59, 69, 0.35));
+  color: white;
+  height: 700px;
+  padding-top: 100px;
+}
+
 #about img {
-  border-radius: 25px;
+  border-radius: 20px;
   display: block;
   margin: auto;
   margin-bottom: 30px;
@@ -137,74 +178,155 @@ a:hover {
   width: 300px;
 }
 
-.bio {
-  font: 300 2rem 'Open Sans', sans-serif;
-  padding: 0 10px 0 10px;
+#about .bio {
+  font: 300 2rem "Open Sans", sans-serif;
+  padding: 10px 10px 0 10px;
+}
+
+#about .bio a {
+  color: white;
+  text-decoration: none;
+}
+
+#about .bio a:hover {
+  color: #1c1136;
 }
 
 #portfolio {
+  background: linear-gradient(rgba(247, 218, 174, 0.45), rgba(247, 218, 174, 0.45));
+  color: white;
+  height: 1420px;
   padding-top: 100px;
-  height: 1250px;
-  color: #fff;
-  background-color: #673ab7;
-  background: linear-gradient(rgba(247, 218, 174, 0.55), rgba(247, 218, 174, 0.55));
 }
 
-.thumbnail {
+#portfolio .thumbnail {
   display: block;
   margin: auto;
   margin-bottom: 20px;
+  margin-top: 30px;
   width: 290px;
 }
 
-.thumbnail img {
+#portfolio .thumbnail img {
   opacity: 1;
 }
 
-.thumbnail img:hover {
+#portfolio .thumbnail img:hover {
   /* opacity: 1; */
 }
 
-.caption {
+#portfolio .caption {
+  font: normal 2.5rem "King Basil", sans-serif;
+}
+
+#portfolio .caption a {
   color: #222021;
-  font: normal 2.5rem "Alcubierre", sans-serif;
+  text-decoration: none;
+}
+
+#portfolio .caption a :hover {
+  color: #873b45;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.header {
+  margin-top: 50px;
+}
+
+.header p {
+  display: inline;
+}
+
+.header #header1 {
+  font: 700 2.5rem "Open Sans Condensed", sans-serif;
+  text-transform: lowercase;
+}
+
+.header #header2 {
+  font: 700 2rem "Open Sans Condensed", sans-serif;
+}
+
+#my-carousel img {
+  max-height: 900px;
+  width: 100%;
+}
+
+#my-carousel .carousel-text {
+  font: 700 1.5rem "Open Sans Condensed", sans-serif;
+}
+
+#main-contain {
+  background: white;
+  margin-top: 25px;
+  padding: 0 20px 20px 20px;
+}
+
+#main-contain .main-title {
+  font: 700 4rem "Open Sans Condensed", sans-serif;
   text-transform: uppercase;
 }
 
-.caption a {
-  color: #86929f;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+#main-contain .main-text {
+  font: 3rem "Open Sans Condensed", sans-serif;
+  margin-top: 25px;
 }
 
-.caption a:hover {
-  color: #983b45;
+#main-contain .main-text a {
+  text-decoration: none;
+}
+
+#main-contain img {
+  border-radius: 50px;
+  box-shadow: 3px 3px 7px gray;
+  min-height: 200px;
+}
+
+.footer {
+  font-size: 14px;
+  padding: 15px;
+  text-align: center;
+}
+
+[class*="col-"] {
+  width: 100%;
 }
 
 #contact {
-  padding-top: 100px;
+  background: linear-gradient(rgba(34, 32, 33, 0.1), rgba(34, 32, 33, 0.25));
+  color: white;
   height: 800px;
-  color: #fff;
-  background-color: #ff9800;
-  background: linear-gradient(rgba(188, 182, 199, 0.55), rgba(188, 182, 199, 0.55));
+  padding-top: 100px;
 }
 
-#contact-links i {
+#contact #links i {
   margin-bottom: 30px;
 }
 
-#contact-links a {
+#contact #links a {
   color: white;
   font-size: 3.5rem;
-  /* margin: 0 20px 0 20px; */
   text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
 }
 
-#contact-links a:hover {
-  color: rgba(152, 59, 69, 0.7);
+#contact #links a :hover {
+  color: #873b45;
 }
 
-.checkbox {
+#contact .checkbox {
   background: none;
   border: 2px solid white;
   border-radius: 30px;
@@ -217,25 +339,25 @@ a:hover {
   max-width: 600px;
 }
 
-.checkbox:hover {
+#contact .checkbox:hover {
   background: rgba(152, 59, 69, 0.5);
   border: 2px solid rgba(152, 59, 69, 0.1);
 }
 
-.checkbox-text {
+#contact .checkbox .checkbox-text {
   color: white;
   font: 300 1.09rem "Open Sans", sans-serif;
   margin: 0 0 0 0;
-  padding: 4px 0 0 0;
+  padding-top: 4px;
   text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
   text-transform: uppercase;
 }
 
-.button {
+#contact .button {
   margin-top: 40px;
 }
 
-.btn-block {
+#contact .btn-block {
   background: none;
   border: 2px solid white;
   border-radius: 0;
@@ -243,51 +365,47 @@ a:hover {
   color: white;
   font: 300 1.5rem "Poppins", sans-serif;
   display: block;
-  letter-spacing: 9px;
+  letter-spacing: 5px;
   margin: auto;
   max-width: 47%;
   text-transform: uppercase;
 }
 
-.btn-block:hover {
+#contact .btn-block:hover {
   background: rgba(152, 59, 69, 0.5);
   border: 2px solid rgba(152, 59, 69, 0.1);
   color: white;
   font-weight: 500;
 }
 
-.btn-block .fa-paper-plane-o {
+#contact .btn-block:hover .fa-paper-plane {
   display: none;
 }
 
-.btn-block:hover .fa-paper-plane {
-  display: none;
-}
-
-.btn-block:hover .fa-paper-plane-o {
+#contact .btn-block:hover .fa-paper-plane-o {
   display: inline;
 }
 
-.btn-block:focus {
+#contact .btn-block:hover:focus {
   outline: none;
 }
 
-.btn-block:hover:focus {
+#contact .btn-block .fa-paper-plane-o {
+  display: none;
+}
+
+#contact:focus {
   outline: none;
 }
 
-.form-control {
+#contact .form-control {
   color: #222021;
   font: 300 1.8rem "Open Sans", sans-serif;
 }
 
-.form-control:focus {
-  border-color: gray;
+#contact .form-control:focus {
+  background: rgba(255, 255, 255, 0.55);
+  border-color: white;
   box-shadow: 0 0 5px rgba(34, 32, 33, 0.4);
+  color: #222021;
 }
-
-::placeholder {
-  font-size: 1.4rem;
-}
-
-/* M E D I A   Q U E R I E S */
