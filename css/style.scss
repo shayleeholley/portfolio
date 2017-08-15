@@ -21,6 +21,11 @@
   font-style: normal;
 }
 
+body {
+  height: 100%;
+  overflow: scroll;
+}
+
 // G L O B A L
 
 .bg {
@@ -32,6 +37,8 @@
     center fixed no-repeat;
   -o-background: url('http://res.cloudinary.com/shayleeholley/image/upload/v1502054944/pencils_bw_rec_q0k8yg.jpg')
     center fixed no-repeat;
+  height: 100%;
+  overflow: hidden;
   z-index: -1;
 }
 
