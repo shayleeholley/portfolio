@@ -13,7 +13,7 @@
   font-style: normal;
 }
 
-body {
+.bg {
   background: url("http://bit.ly/pencilsbgSH") center fixed no-repeat;
   -webkit-background: url("http://bit.ly/pencilsbgSH") center fixed no-repeat;
   -moz-background: url("http://bit.ly/pencilsbgSH") center fixed no-repeat;
@@ -22,7 +22,9 @@ body {
   -webkit-background-size: 1000;
   -moz-background-size: 1000;
   -o-background-size: 1000;
-  position: static;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 ::selection {
