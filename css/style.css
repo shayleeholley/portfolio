@@ -14,14 +14,10 @@
 }
 
 .bg {
-  background: url("http://bit.ly/pencilsbgSH") center fixed no-repeat;
-  -webkit-background: url("http://bit.ly/pencilsbgSH") center fixed no-repeat;
-  -moz-background: url("http://bit.ly/pencilsbgSH") center fixed no-repeat;
-  -o-background: url("http://bit.ly/pencilsbgSH") center fixed no-repeat;
-  background-size: 1000;
-  -webkit-background-size: 1000;
-  -moz-background-size: 1000;
-  -o-background-size: 1000;
+  background: url("http://res.cloudinary.com/shayleeholley/image/upload/v1502054944/pencils_bw_rec_q0k8yg.jpg") center fixed no-repeat;
+  -webkit-background: url("http://res.cloudinary.com/shayleeholley/image/upload/v1502054944/pencils_bw_rec_q0k8yg.jpg") center fixed no-repeat;
+  -moz-background: url("http://res.cloudinary.com/shayleeholley/image/upload/v1502054944/pencils_bw_rec_q0k8yg.jpg") center fixed no-repeat;
+  -o-background: url("http://res.cloudinary.com/shayleeholley/image/upload/v1502054944/pencils_bw_rec_q0k8yg.jpg") center fixed no-repeat;
   z-index: -1;
 }
 
