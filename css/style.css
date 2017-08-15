@@ -14,15 +14,15 @@
 }
 
 body {
-  background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
-  -webkit-background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
-  -moz-background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
-  -o-background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
+  background: url("http://bit.ly/pencilsbgSH") center fixed no-repeat;
+  -webkit-background: url("http://bit.ly/pencilsbgSH") center fixed no-repeat;
+  -moz-background: url("http://bit.ly/pencilsbgSH") center fixed no-repeat;
+  -o-background: url("http://bit.ly/pencilsbgSH") center fixed no-repeat;
   background-size: 1000;
   -webkit-background-size: 1000;
   -moz-background-size: 1000;
   -o-background-size: 1000;
-  position: relative;
+  position: static;
 }
 
 ::selection {
