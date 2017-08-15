@@ -23,6 +23,9 @@
 
 body {
   background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
+  -webkit-background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
+  -moz-background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
+  -o-background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
   background-size: 1000;
   -webkit-background-size: 1000;
   -moz-background-size: 1000;
@@ -123,7 +126,6 @@ nav {
 
 .navbar {
   background: $nav-bg;
-  height: $nav-height;
   .navbar-nav > li > a {
     color: $plain;
     font: $nav;
@@ -132,6 +134,9 @@ nav {
   }
   .navbar-nav > li > a:hover {
     background: $nav-bg-haf;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
     color: $plain;
   }
   .navbar-nav > .active > a {
@@ -143,6 +148,9 @@ nav {
       background: $nav-bg-haf;
       color: $plain;
     }
+  }
+  .navbar-collapse {
+    background: $nav-bg;
   }
 }
 

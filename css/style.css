@@ -15,6 +15,9 @@
 
 body {
   background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
+  -webkit-background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
+  -moz-background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
+  -o-background: url(http://bit.ly/pencilsbgSH) center fixed no-repeat;
   background-size: 1000;
   -webkit-background-size: 1000;
   -moz-background-size: 1000;
@@ -29,7 +32,7 @@ body {
 
 .section-head {
   color: white;
-  font: normal 6.5rem "King Basil", cursive;
+  font: normal 5.5rem "King Basil", cursive;
 }
 
 .btn {
@@ -113,7 +116,6 @@ nav span {
 
 .navbar {
   background: #86929f;
-  height: 50px;
 }
 
 .navbar .navbar-nav > li > a {
@@ -125,6 +127,9 @@ nav span {
 
 .navbar .navbar-nav > li > a:hover {
   background: rgba(243, 238, 228, 0.3);
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   color: white;
 }
 
@@ -136,6 +141,10 @@ nav span {
 .navbar .navbar-nav > .active > a :focus {
   background: rgba(243, 238, 228, 0.3);
   color: white;
+}
+
+.navbar .navbar-collapse {
+  background: #86929f;
 }
 
 #intro {
@@ -165,7 +174,7 @@ nav span {
 #about {
   background: linear-gradient(rgba(152, 59, 69, 0.35), rgba(152, 59, 69, 0.35));
   color: white;
-  height: 700px;
+  height: 975px;
   padding-top: 100px;
 }
 
@@ -173,13 +182,13 @@ nav span {
   border-radius: 20px;
   display: block;
   margin: auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  width: 300px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 350px;
 }
 
 #about .bio {
-  font: 300 2rem "Open Sans", sans-serif;
+  font: 300 1.7rem "Open Sans", sans-serif;
   padding: 10px 10px 0 10px;
 }
 
@@ -195,7 +204,7 @@ nav span {
 #portfolio {
   background: linear-gradient(rgba(247, 218, 174, 0.45), rgba(247, 218, 174, 0.45));
   color: white;
-  height: 1420px;
+  height: 575px;
   padding-top: 100px;
 }
 
@@ -203,8 +212,8 @@ nav span {
   display: block;
   margin: auto;
   margin-bottom: 20px;
-  margin-top: 30px;
-  width: 290px;
+  margin-top: 20px;
+  width: 230px;
 }
 
 #portfolio .thumbnail img {
@@ -216,7 +225,7 @@ nav span {
 }
 
 #portfolio .caption {
-  font: normal 2.5rem "King Basil", sans-serif;
+  font: normal 2rem "King Basil", sans-serif;
 }
 
 #portfolio .caption a {
@@ -308,7 +317,7 @@ nav span {
 #contact {
   background: linear-gradient(rgba(34, 32, 33, 0.1), rgba(34, 32, 33, 0.25));
   color: white;
-  height: 800px;
+  height: 755px;
   padding-top: 100px;
 }
 
@@ -400,7 +409,7 @@ nav span {
 
 #contact .form-control {
   color: #222021;
-  font: 300 1.8rem "Open Sans", sans-serif;
+  font: 300 1.3rem "Open Sans", sans-serif;
 }
 
 #contact .form-control:focus {
