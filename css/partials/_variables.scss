@@ -18,6 +18,8 @@ $checkbox-hover-bg: rgba(152, 59, 69, 0.5);
 $contact-bg: linear-gradient(rgba(34, 32, 33, 0.10), rgba(34, 32, 33, 0.25));
 $contact-button-hover-bg: rgba(152, 59, 69, 0.5);
 $contact-link-color: rgb(135, 59, 69);
+$footer-background: #f3eee4;
+$footer-text: #222021;
 $form-text: rgb(34, 32, 33);
 $form-focus: rgba(255, 255, 255, 0.55);
 $intro-text: rgb(135, 59, 69);
@@ -36,17 +38,18 @@ $selection: #222021;
 
 // F O N T S
 
-$about-bio: 300 1.7rem 'Open Sans', sans-serif;
+$about-bio: 300 1.7rem "Open Sans", sans-serif;
 $caption: normal 2rem "King Basil", sans-serif;
 $checkbox: 300 1.09rem "Open Sans", sans-serif;
 $checkbox-hover: 400;
-$contact-button: 300 1.5rem "Poppins", sans-serif;
-$contact-button-hover: 500;
+$contact-button: 300 1.5rem "Open Sans", sans-serif;
+$contact-button-hover: 400;
+$footer: 300 1.5rem "Open Sans", sans-serif;
 $form: 300 1.3rem "Open Sans", sans-serif;
-$intro-name: normal 4rem 'King Basil', cursive;
-$intro-summary: 400 1.8rem 'Open Sans', sans-serif;
+$intro-name: normal 4rem "King Basil", cursive;
+$intro-summary: 400 1.8rem "Open Sans", sans-serif;
 $nav: 300 1.4rem 'Poppins', sans-serif;
-$section-header: normal 5.5rem 'King Basil', cursive;
+$section-header: normal 5.5rem "King Basil", cursive;
 $tribute-carousel: 700 1.5rem "Open Sans Condensed", sans-serif;
 $tribute-header-big: 700 2.5rem "Open Sans Condensed", sans-serif;
 $tribute-header-small: 700 2rem "Open Sans Condensed", sans-serif;
@@ -104,7 +107,8 @@ $checkbox-padding: 3px 0 6px 0;
 $checkbox-text-padding: 4px;
 $col-padding: 15px;
 $contact-padding: 100px;
-$intro-padding: 100px 0 0 0;
+$footer-padding: 30px;
+$intro-padding: 100px;
 $portfolio-padding: 100px;
 $tribute-footer-padding: 15px;
 $tribute-main-padding: 0 20px 20px 20px;
@@ -122,7 +126,7 @@ $tribute-img-shadow: 3px 3px 7px gray;
 // S I Z E S
 
 $about-img-width: 350px;
-$about-height: 975px;
+$about-height: 980px;
 $contact-button-width: 47%;
 $contact-height: 755px;
 $intro-height: 570px;

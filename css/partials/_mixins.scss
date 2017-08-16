@@ -1,3 +1,25 @@
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $class == sm {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $class == md {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+  }
+}
+
 @mixin tiny-screen() {
   @media only screen and (max-width: 480px) {
     @content;
@@ -6,32 +28,24 @@
 
 @mixin small-screen() {
   @media only screen and (max-width: 768px) {
-    #header1 {
-      font-size: $small-font-size-header-1;
-    }
+    @content;
   }
 }
 
 @mixin medium-screen() {
   @media only screen and (max-width: 1024px) {
-    #header1 {
-      font-size: $medium-font-size-header-1;
-    }
+    @content;
   }
 }
 
 @mixin normal-screen() {
   @media only screen and (max-width: 1280px) {
-    #header1 {
-      font-size: $normal-font-size-header-1;
-    }
+    @content;
   }
 }
 
 @mixin large-screen() {
   @media only screen and (max-width: 1920px) {
-    #header1 {
-      font-size: $large-font-size-header-1;
-    }
+    @content;
   }
 }

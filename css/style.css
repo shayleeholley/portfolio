@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Poppins:300,500,700|Open+Sans:300,400");
 @font-face {
-  font-family: 'King Basil';
+  font-family: "King Basil";
   src: url("https://www.dl.dropboxusercontent.com/s/9tq73402qgctp3y/King%20Basil%20Lite.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Alcubierre';
+  font-family: "Alcubierre";
   src: url("https://www.dl.dropboxusercontent.com/s/jlgizszqiap6ccn/alcubierre-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -40,52 +40,6 @@ body {
 .section-head {
   color: white;
   font: normal 5.5rem "King Basil", cursive;
-}
-
-.btn {
-  background: #86929f;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 0;
-  color: white;
-  display: block;
-  font: normal 2rem "Alcubierre", sans-serif;
-  letter-spacing: 5px;
-  margin: auto;
-  margin-top: 30px;
-  padding: 0;
-  padding-left: 5px;
-  padding-top: 15px;
-  text-transform: uppercase;
-  width: 125px;
-}
-
-.btn:hover {
-  background: #983b45;
-  color: white;
-}
-
-.modal-body p {
-  font: 300 1.7rem "Open Sans", sans-serif;
-  margin-bottom: 30px;
-}
-
-.modal-body p a {
-  color: #e9b68e;
-  text-decoration: none;
-}
-
-.modal-body p a :hover {
-  color: #983b45;
-}
-
-.modal-content {
-  border-radius: 30px;
-}
-
-.modal-title {
-  font: normal 3rem "King Basil", cursive;
 }
 
 nav a:hover {
@@ -157,8 +111,9 @@ nav span {
 #intro {
   background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45));
   color: #873b45;
-  height: 570px;
-  padding: 100px 0 0 0;
+  max-height: 570px;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 #intro img {
@@ -181,7 +136,8 @@ nav span {
 #about {
   background: linear-gradient(rgba(152, 59, 69, 0.35), rgba(152, 59, 69, 0.35));
   color: white;
-  height: 975px;
+  max-height: 980px;
+  padding-bottom: 100px;
   padding-top: 100px;
 }
 
@@ -208,10 +164,57 @@ nav span {
   color: #1c1136;
 }
 
+.btn {
+  background: #86929f;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0;
+  color: white;
+  display: block;
+  font: normal 2rem "Alcubierre", sans-serif;
+  letter-spacing: 5px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 0;
+  padding-left: 5px;
+  padding-top: 15px;
+  text-transform: uppercase;
+  width: 125px;
+}
+
+.btn:hover {
+  background: #983b45;
+  color: white;
+}
+
+.modal-body p {
+  font: 300 1.7rem "Open Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+.modal-body p a {
+  color: #e9b68e;
+  text-decoration: none;
+}
+
+.modal-body p a :hover {
+  color: #983b45;
+}
+
+.modal-content {
+  border-radius: 30px;
+}
+
+.modal-title {
+  font: normal 3rem "King Basil", cursive;
+}
+
 #portfolio {
   background: linear-gradient(rgba(247, 218, 174, 0.45), rgba(247, 218, 174, 0.45));
   color: white;
-  height: 575px;
+  max-height: 575px;
+  padding-bottom: 100px;
   padding-top: 100px;
 }
 
@@ -324,7 +327,8 @@ nav span {
 #contact {
   background: linear-gradient(rgba(34, 32, 33, 0.1), rgba(34, 32, 33, 0.25));
   color: white;
-  height: 755px;
+  max-height: 755px;
+  padding-bottom: 100px;
   padding-top: 100px;
 }
 
@@ -379,7 +383,7 @@ nav span {
   border-radius: 0;
   box-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
   color: white;
-  font: 300 1.5rem "Poppins", sans-serif;
+  font: 300 1.5rem "Open Sans", sans-serif;
   display: block;
   letter-spacing: 5px;
   margin: auto;
@@ -391,7 +395,7 @@ nav span {
   background: rgba(152, 59, 69, 0.5);
   border: 2px solid rgba(152, 59, 69, 0.1);
   color: white;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #contact .btn-block:hover .fa-paper-plane {
@@ -424,4 +428,12 @@ nav span {
   border-color: white;
   box-shadow: 0 0 5px rgba(34, 32, 33, 0.4);
   color: #222021;
+}
+
+.footer {
+  background: #f3eee4;
+  color: #222021;
+  font: 300 1.5rem "Open Sans", sans-serif;
+  padding-top: 30px;
+  text-transform: uppercase;
 }

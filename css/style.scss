@@ -2,11 +2,8 @@
 @import "partials/_mixins.scss";
 @import "partials/_variables.scss";
 
-@include tiny-screen {
-}
-
 @font-face {
-  font-family: 'King Basil';
+  font-family: "King Basil";
   src: url('https://www.dl.dropboxusercontent.com/s/9tq73402qgctp3y/King%20Basil%20Lite.woff2')
     format('woff2');
   font-weight: normal;
@@ -14,7 +11,7 @@
 }
 
 @font-face {
-  font-family: 'Alcubierre';
+  font-family: "Alcubierre";
   src: url('https://www.dl.dropboxusercontent.com/s/jlgizszqiap6ccn/alcubierre-webfont.woff2')
     format('woff2');
   font-weight: normal;
@@ -54,51 +51,6 @@ body {
 .section-head {
   color: $plain;
   font: $section-header;
-}
-
-// --- m o d a l
-
-.btn {
-  background: $modal-button-default;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: $modal-button-radius;
-  border-top-left-radius: $modal-button-radius;
-  border-top-right-radius: 0;
-  color: $plain;
-  display: block;
-  font: $modal-button;
-  letter-spacing: 5px;
-  margin: auto;
-  margin-top: $modal-margin-top;
-  padding: 0;
-  padding-left: $modal-padding-left;
-  padding-top: $modal-padding-top;
-  text-transform: uppercase;
-  width: $modal-button-width;
-  &:hover {
-    background: $modal-button-hover;
-    color: $plain;
-  }
-}
-
-.modal-body p {
-  font: $modal-body;
-  margin-bottom: $modal-margin-bottom;
-  a {
-    color: $modal-link;
-    text-decoration: none;
-    :hover {
-      color: $modal-link-hover;
-    }
-  }
-}
-
-.modal-content {
-  border-radius: $modal-body-radius;
-}
-
-.modal-title {
-  font: $modal-title;
 }
 
 // N A V B A R
@@ -170,8 +122,9 @@ nav {
 #intro {
   background: $intro-bg;
   color: $intro-text;
-  height: $intro-height;
-  padding: $intro-padding;
+  max-height: $intro-height;
+  padding-bottom: $intro-padding;
+  padding-top: $intro-padding;
   img {
     box-shadow: $profile-shadow;
     display: block;
@@ -193,7 +146,8 @@ nav {
 #about {
   background: $about-bg;
   color: $plain;
-  height: $about-height;
+  max-height: $about-height;
+  padding-bottom: $about-padding;
   padding-top: $about-padding;
   img {
     border-radius: $about-radius;
@@ -218,10 +172,56 @@ nav {
 
 // P O R T F O L I O
 
+// --- m o d a l
+
+.btn {
+  background: $modal-button-default;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: $modal-button-radius;
+  border-top-left-radius: $modal-button-radius;
+  border-top-right-radius: 0;
+  color: $plain;
+  display: block;
+  font: $modal-button;
+  letter-spacing: 5px;
+  margin: auto;
+  margin-top: $modal-margin-top;
+  padding: 0;
+  padding-left: $modal-padding-left;
+  padding-top: $modal-padding-top;
+  text-transform: uppercase;
+  width: $modal-button-width;
+  &:hover {
+    background: $modal-button-hover;
+    color: $plain;
+  }
+}
+
+.modal-body p {
+  font: $modal-body;
+  margin-bottom: $modal-margin-bottom;
+  a {
+    color: $modal-link;
+    text-decoration: none;
+    :hover {
+      color: $modal-link-hover;
+    }
+  }
+}
+
+.modal-content {
+  border-radius: $modal-body-radius;
+}
+
+.modal-title {
+  font: $modal-title;
+}
+
 #portfolio {
   background: $portfolio-bg;
   color: $plain;
-  height: $portfolio-height;
+  max-height: $portfolio-height;
+  padding-bottom: $portfolio-padding;
   padding-top: $portfolio-padding;
   .thumbnail {
     display: block;
@@ -336,7 +336,8 @@ nav {
 #contact {
   background: $contact-bg;
   color: $plain;
-  height: $contact-height;
+  max-height: $contact-height;
+  padding-bottom: $contact-padding;
   padding-top: $contact-padding;
   #links {
     i {
@@ -422,4 +423,14 @@ nav {
       color: $form-text;
     }
   }
+}
+
+// F O O T E R
+
+.footer {
+  background: $footer-background;
+  color: $footer-text;
+  font: $footer;
+  padding-top: $footer-padding;
+  text-transform: uppercase;
 }
