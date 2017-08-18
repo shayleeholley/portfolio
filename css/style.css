@@ -431,9 +431,22 @@ nav span {
 }
 
 .footer {
-  background: #f3eee4;
-  color: #222021;
-  font: 300 1.5rem "Open Sans", sans-serif;
-  padding-top: 30px;
+  background: #86929f;
+}
+
+.footer p {
+  color: white;
+  display: inline;
+  float: left;
+  font: 300 1.4rem "Open Sans", sans-serif;
   text-transform: uppercase;
+}
+
+.footer p a {
+  color: white;
+  float: right;
+}
+
+.footer p a:hover {
+  color: #222021;
 }

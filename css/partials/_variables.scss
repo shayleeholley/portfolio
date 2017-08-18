@@ -12,14 +12,15 @@ $tribute-img-radius: 50px;
 
 $about-bg: linear-gradient(rgba(152, 59, 69, 0.35), rgba(152, 59, 69, 0.35));
 $bio-link: #1c1136;
+$black: #222021;
 $caption-hover: rgb(135, 59, 69);
 $caption-link: rgb(34, 32, 33);
 $checkbox-hover-bg: rgba(152, 59, 69, 0.5);
 $contact-bg: linear-gradient(rgba(34, 32, 33, 0.10), rgba(34, 32, 33, 0.25));
 $contact-button-hover-bg: rgba(152, 59, 69, 0.5);
 $contact-link-color: rgb(135, 59, 69);
-$footer-background: #f3eee4;
-$footer-text: #222021;
+$footer-background: #86929f;
+$footer-contact: rgb(135, 59, 69);
 $form-text: rgb(34, 32, 33);
 $form-focus: rgba(255, 255, 255, 0.55);
 $intro-text: rgb(135, 59, 69);
@@ -29,12 +30,11 @@ $intro-bg: linear-gradient(
 );
 $nav-bg: #86929f;
 $nav-bg-haf: rgba(243, 238, 228, 0.3);
-$plain: white;
+$white: white;
 $portfolio-bg: linear-gradient(
   rgba(247, 218, 174, 0.45),
   rgba(247, 218, 174, 0.45)
 );
-$selection: #222021;
 
 // F O N T S
 
@@ -44,7 +44,7 @@ $checkbox: 300 1.09rem "Open Sans", sans-serif;
 $checkbox-hover: 400;
 $contact-button: 300 1.5rem "Open Sans", sans-serif;
 $contact-button-hover: 400;
-$footer: 300 1.5rem "Open Sans", sans-serif;
+$footer: 300 1.4rem "Open Sans", sans-serif;
 $form: 300 1.3rem "Open Sans", sans-serif;
 $intro-name: normal 4rem "King Basil", cursive;
 $intro-summary: 400 1.8rem "Open Sans", sans-serif;

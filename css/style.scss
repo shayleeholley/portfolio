@@ -44,12 +44,12 @@ body {
 }
 
 ::selection {
-  background: $plain;
-  color: $selection;
+  background: $white;
+  color: $black;
 }
 
 .section-head {
-  color: $plain;
+  color: $white;
   font: $section-header;
 }
 
@@ -60,10 +60,10 @@ nav {
     text-decoration: none;
   }
   i {
-    color: $plain;
+    color: $white;
   }
   span {
-    color: $plain;
+    color: $white;
     display: none;
     font: $nav;
     letter-spacing: 5px;
@@ -90,7 +90,7 @@ nav {
 .navbar {
   background: $nav-bg;
   .navbar-nav > li > a {
-    color: $plain;
+    color: $white;
     font: $nav;
     letter-spacing: 7px;
     text-transform: lowercase;
@@ -100,16 +100,16 @@ nav {
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: $plain;
+    color: $white;
   }
   .navbar-nav > .active > a {
     :hover {
       background: $nav-bg-haf;
-      color: $plain;
+      color: $white;
     }
     :focus {
       background: $nav-bg-haf;
-      color: $plain;
+      color: $white;
     }
   }
   .navbar-collapse {
@@ -145,7 +145,7 @@ nav {
 
 #about {
   background: $about-bg;
-  color: $plain;
+  color: $white;
   max-height: $about-height;
   padding-bottom: $about-padding;
   padding-top: $about-padding;
@@ -161,7 +161,7 @@ nav {
     font: $about-bio;
     padding: $about-bio-padding;
     a {
-      color: $plain;
+      color: $white;
       text-decoration: none;
       &:hover {
         color: $bio-link;
@@ -180,7 +180,7 @@ nav {
   border-bottom-right-radius: $modal-button-radius;
   border-top-left-radius: $modal-button-radius;
   border-top-right-radius: 0;
-  color: $plain;
+  color: $white;
   display: block;
   font: $modal-button;
   letter-spacing: 5px;
@@ -193,7 +193,7 @@ nav {
   width: $modal-button-width;
   &:hover {
     background: $modal-button-hover;
-    color: $plain;
+    color: $white;
   }
 }
 
@@ -219,7 +219,7 @@ nav {
 
 #portfolio {
   background: $portfolio-bg;
-  color: $plain;
+  color: $white;
   max-height: $portfolio-height;
   padding-bottom: $portfolio-padding;
   padding-top: $portfolio-padding;
@@ -296,7 +296,7 @@ nav {
 // --- m a i n
 
 #main-contain {
-  background: $plain;
+  background: $white;
   margin-top: $tribute-main-margin-top;
   padding: $tribute-main-padding;
   .main-title {
@@ -335,7 +335,7 @@ nav {
 
 #contact {
   background: $contact-bg;
-  color: $plain;
+  color: $white;
   max-height: $contact-height;
   padding-bottom: $contact-padding;
   padding-top: $contact-padding;
@@ -344,7 +344,7 @@ nav {
       margin-bottom: $contact-link-margin;
     }
     a {
-      color: $plain;
+      color: $white;
       font-size: $contact-link-size;
       text-shadow: $contact-link-shadow;
       :hover {
@@ -368,7 +368,7 @@ nav {
       border: $checkbox-hover-border;
     }
     .checkbox-text {
-      color: $plain;
+      color: $white;
       font: $checkbox;
       margin: $checkbox-margin;
       padding-top: $checkbox-text-padding;
@@ -384,7 +384,7 @@ nav {
     border: $checkbox-button-border;
     border-radius: 0;
     box-shadow: $contact-button-shadow;
-    color: $plain;
+    color: $white;
     font: $contact-button;
     display: block;
     letter-spacing: 5px;
@@ -394,7 +394,7 @@ nav {
     &:hover {
       background: $contact-button-hover-bg;
       border: $contact-button-border;
-      color: $plain;
+      color: $white;
       font-weight: $contact-button-hover;
       .fa-paper-plane {
         display: none;
@@ -418,7 +418,7 @@ nav {
     font: $form;
     &:focus {
       background: $form-focus;
-      border-color: $plain;
+      border-color: $white;
       box-shadow: $form-shadow;
       color: $form-text;
     }
@@ -429,8 +429,18 @@ nav {
 
 .footer {
   background: $footer-background;
-  color: $footer-text;
-  font: $footer;
-  padding-top: $footer-padding;
-  text-transform: uppercase;
+  p {
+    color: $white;
+    display: inline;
+    float: left;
+    font: $footer;
+    text-transform: uppercase;
+    a {
+      color: $white;
+      float: right;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
 }
