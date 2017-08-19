@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Poppins:300,500,700|Open+Sans:300,400');
 @import "partials/_mixins.scss";
 @import "partials/_variables.scss";
 
@@ -6,16 +5,96 @@
   font-family: "King Basil";
   src: url('https://www.dl.dropboxusercontent.com/s/9tq73402qgctp3y/King%20Basil%20Lite.woff2')
     format('woff2');
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "Alcubierre";
   src: url('https://www.dl.dropboxusercontent.com/s/jlgizszqiap6ccn/alcubierre-webfont.woff2')
     format('woff2');
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Foxhole";
+  src: url('https://www.dl.dropboxusercontent.com/s/od3du3me49yvgic/foxhole-regular-webfont.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Mosk Thin";
+  src: url('https://www.dl.dropboxusercontent.com/s/xy7crd98h0ehpuf/Mosk%20Thin%20100.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Mosk Extra-Light";
+  src: url('https://www.dl.dropboxusercontent.com/s/12n9isd61mmg1um/Mosk%20Extra-Light%20200.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Mosk Light";
+  src: url('https://www.dl.dropboxusercontent.com/s/qr29wjexdwfr4gd/Mosk%20Light%20300.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Mosk Normal";
+  src: url('https://www.dl.dropboxusercontent.com/s/cth6qmyuxjcuo8c/Mosk%20Normal%20400.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Mosk Medium";
+  src: url('https://www.dl.dropboxusercontent.com/s/ilylsrzawqmvr0v/Mosk%20Medium%20500.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Mosk Semi-Bold";
+  src: url('https://www.dl.dropboxusercontent.com/s/hxrywhdscam48bq/Mosk%20Semi-Bold%20600.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Mosk Bold";
+  src: url('https://www.dl.dropboxusercontent.com/s/gt1bc6n3rz7xvuy/Mosk%20Bold%20700.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Mosk Extra-Bold";
+  src: url('https://www.dl.dropboxusercontent.com/s/lv708c5rtvtnnf9/Mosk%20Extra-Bold%20800.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Mosk Ultra-Bold";
+  src: url('https://www.dl.dropboxusercontent.com/s/dtsgo4ttjp64isj/Mosk%20Ultra-Bold%20900.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 900;
 }
 
 body {
@@ -46,11 +125,6 @@ body {
 ::selection {
   background: $white;
   color: $black;
-}
-
-.section-head {
-  color: $white;
-  font: $section-header;
 }
 
 // N A V B A R
@@ -89,6 +163,7 @@ nav {
 
 .navbar {
   background: $nav-bg;
+  border: 0;
   .navbar-nav > li > a {
     color: $white;
     font: $nav;
@@ -97,9 +172,6 @@ nav {
   }
   .navbar-nav > li > a:hover {
     background: $nav-bg-haf;
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
     color: $white;
   }
   .navbar-nav > .active > a {
@@ -114,6 +186,9 @@ nav {
   }
   .navbar-collapse {
     background: $nav-bg;
+  }
+  .fa-diamond {
+    font-size: $nav-i;
   }
 }
 
@@ -138,6 +213,7 @@ nav {
   }
   #summary {
     font: $intro-summary;
+    text-transform: uppercase;
   }
 }
 
@@ -156,6 +232,9 @@ nav {
     margin-bottom: $about-margin;
     margin-top: $about-margin;
     width: $about-img-width;
+    @include breakpoint(sm) {
+      float: left;
+    }
   }
   .bio {
     font: $about-bio;
@@ -168,6 +247,10 @@ nav {
       }
     }
   }
+}
+
+span.bio-bold {
+  font: $about-bio-bold;
 }
 
 // P O R T F O L I O
@@ -227,7 +310,6 @@ nav {
     display: block;
     margin: auto;
     margin-bottom: $thumbnail-margin-bottom;
-    margin-top: $thumbnail-margin-top;
     width: $portfolio-width;
     img {
       opacity: 1;
@@ -429,17 +511,29 @@ nav {
 
 .footer {
   background: $footer-background;
-  p {
+  padding-top: 23px;
+  @include breakpoint(sm) {
+    padding-top: 25px;
+  }
+  .left {
     color: $white;
-    display: inline;
-    float: left;
     font: $footer;
-    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    @include breakpoint(sm) {
+      font-size: 1.7rem;
+    }
+  }
+  .right {
+    color: $white;
+    font: $footer;
     a {
       color: $white;
-      float: right;
+      @include breakpoint(sm) {
+        font-size: 1.7rem;
+      }
       &:hover {
-        color: $black;
+        color: $footer-contact;
       }
     }
   }
