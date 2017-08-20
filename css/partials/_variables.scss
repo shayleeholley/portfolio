@@ -6,51 +6,51 @@ $checkbox-border: 2px solid white;
 $checkbox-button-border: 2px solid white;
 $checkbox-hover-border: 2px solid rgba(152, 59, 69, 0.1);
 $checkbox-radius: 30px;
+$footer-logo-border: 3px solid #f7efed;
+$logo-border: 2px solid #f7efed;
+$logo-border-radius: 80px;
+$section-border: 2px solid #69656f;
 $tribute-img-radius: 50px;
 
 // C O L O R S
 
-$about-bg: linear-gradient(rgba(152, 59, 69, 0.35), rgba(152, 59, 69, 0.35));
-$bio-link: #1c1136;
+$bg: linear-gradient(rgba(247, 239, 237, 0.65), rgba(222, 210, 207, 0.65));
+$bio: #69656f;
 $black: #222021;
 $caption-hover: rgb(135, 59, 69);
 $caption-link: rgb(34, 32, 33);
 $checkbox-hover-bg: rgba(152, 59, 69, 0.5);
-$contact-bg: linear-gradient(rgba(34, 32, 33, 0.10), rgba(34, 32, 33, 0.25));
 $contact-button-hover-bg: rgba(152, 59, 69, 0.5);
 $contact-link-color: rgb(135, 59, 69);
-$footer-background: #86929f;
+$footer-background: linear-gradient(
+  rgba(105, 101, 111, 0.85),
+  rgba(105, 101, 111, 0.85)
+);
 $footer-contact: rgb(135, 59, 69);
 $form-text: rgb(34, 32, 33);
 $form-focus: rgba(255, 255, 255, 0.55);
-$intro-text: rgb(135, 59, 69);
-$intro-bg: linear-gradient(
-  rgba(255, 255, 255, 0.45),
-  rgba(255, 255, 255, 0.45)
-);
-$nav-bg: #86929f;
-$nav-bg-haf: rgba(243, 238, 228, 0.3);
-$white: white;
-$portfolio-bg: linear-gradient(
-  rgba(247, 218, 174, 0.45),
-  rgba(247, 218, 174, 0.45)
-);
+$intro-text: #293249;
+$nav-bg: linear-gradient(rgba(105, 101, 111, 0.85), rgba(105, 101, 111, 0.85));
+$nav-bg-haf: rgba(247, 239, 237, 0.37);
+$white: #f7efed;
 
 // F O N T S
 
-$about-bio: 2rem "Mosk Thin", sans-serif;
-$about-bio-bold: 2.2rem "Mosk Normal", sans-serif;
-$caption: normal 2rem "Foxhole", sans-serif;
+$about-bio: 1.5rem "Poppins Light", sans-serif;
+$about-bio-bold: 1.4rem "C&M", sans-serif;
+$caption: 2.2rem "King Basil", sans-serif;
 $checkbox: 300 1.09rem "Mosk Thin", sans-serif;
 $checkbox-hover: 400;
 $contact-button: 300 1.5rem "Mosk Thin", sans-serif;
 $contact-button-hover: 400;
-$footer: 300 1.2rem "Mosk Thin", sans-serif;
+$footer: 1.1rem "Poppins Light", sans-serif;
+$footer-logo: 2.5rem "King Basil", sans-serif;
 $form: 300 1.3rem "Mosk Thin", sans-serif;
 $intro-name: normal 4rem "King Basil", cursive;
-$intro-summary: 3rem "Foxhole", sans-serif;
-$nav: 1.6rem "Mosk light", sans-serif;
+$intro-summary: 3rem "C&M", sans-serif;
+$nav: 1.6rem "Poppins Light", sans-serif;
 $nav-i: 1.3rem;
+$nav-logo: 1.6rem "King Basil", sans-serif;
 $tribute-carousel: 700 1.5rem "Mosk Thin Condensed", sans-serif;
 $tribute-header-big: 700 2.5rem "Mosk Thin Condensed", sans-serif;
 $tribute-header-small: 700 2rem "Mosk Thin Condensed", sans-serif;
@@ -64,8 +64,12 @@ $checkbox-margin: 0 0 0 0;
 $checkbox-margin-bottom: 15px;
 $contact-button-margin: 40px;
 $contact-link-margin: 30px;
+$footer-margin-top: -17px;
 $intro-margin: 20px;
-$nav-margin: 15px 35px 0 0;
+$logo-margin-left: -50px;
+$nav-link-margin: 3px;
+$nav-logo-margin-top: 4px;
+$nav-margin: 13px 35px 0 0;
 $profile-margin: 50px;
 $thumbnail-margin-bottom: 20px;
 $thumbnail-margin-top: 20px;
@@ -98,7 +102,7 @@ $modal-margin-bottom: 30px;
 $modal-margin-top: 30px;
 $modal-padding-left: 5px;
 $modal-padding-top: 15px;
-$modal-title: normal 4rem 'Foxhole', cursive;
+$modal-title: normal 4rem 'Luna', cursive;
 
 // P A D D I N G
 
@@ -110,6 +114,8 @@ $col-padding: 15px;
 $contact-padding: 100px;
 $footer-padding: 30px;
 $intro-padding: 100px;
+$logo-padding: 5px 10px 5px 10px;
+$nav-padding: 7px;
 $portfolio-padding: 100px;
 $tribute-footer-padding: 15px;
 $tribute-main-padding: 0 20px 20px 20px;
@@ -130,7 +136,7 @@ $about-img-width: 350px;
 $about-height: 980px;
 $contact-button-width: 47%;
 $contact-height: 755px;
-$intro-height: 570px;
+$intro-height: 590px;
 $checkbox-width: 600px;
 $contact-link-size: 3.5rem;
 $mobile-01: 1000px;

@@ -10,91 +10,51 @@
 }
 
 @font-face {
-  font-family: "Alcubierre";
-  src: url('https://www.dl.dropboxusercontent.com/s/jlgizszqiap6ccn/alcubierre-webfont.woff2')
+  font-family: "C&M";
+  src: url('https://www.dl.dropboxusercontent.com/s/tez1mivoacxhhb4/cookiesmilk-regular-webfont.woff2')
     format('woff2');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "Foxhole";
-  src: url('https://www.dl.dropboxusercontent.com/s/od3du3me49yvgic/foxhole-regular-webfont.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Mosk Thin";
-  src: url('https://www.dl.dropboxusercontent.com/s/xy7crd98h0ehpuf/Mosk%20Thin%20100.woff2')
+  font-family: "Poppins Light";
+  src: url('https://www.dl.dropboxusercontent.com/s/dny3xggh7rj07s2/poppins-light-webfont.woff2')
     format('woff2');
   font-style: normal;
   font-weight: 100;
 }
 
 @font-face {
-  font-family: "Mosk Extra-Light";
-  src: url('https://www.dl.dropboxusercontent.com/s/12n9isd61mmg1um/Mosk%20Extra-Light%20200.woff2')
+  font-family: "Poppins Medium";
+  src: url('https://www.dl.dropboxusercontent.com/s/keboppo1716fao6/poppins-medium-webfont.woff2')
     format('woff2');
   font-style: normal;
   font-weight: 200;
 }
 
 @font-face {
-  font-family: "Mosk Light";
-  src: url('https://www.dl.dropboxusercontent.com/s/qr29wjexdwfr4gd/Mosk%20Light%20300.woff2')
+  font-family: "Poppins Regular";
+  src: url('https://www.dl.dropboxusercontent.com/s/1501y1vk7x8kr0a/poppins-regular-webfont.woff2')
     format('woff2');
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "Mosk Normal";
-  src: url('https://www.dl.dropboxusercontent.com/s/cth6qmyuxjcuo8c/Mosk%20Normal%20400.woff2')
+  font-family: "Poppins Semibold";
+  src: url('https://www.dl.dropboxusercontent.com/s/pps9oxn8yf0ukau/poppins-semibold-webfont.woff2')
     format('woff2');
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Mosk Medium";
-  src: url('https://www.dl.dropboxusercontent.com/s/ilylsrzawqmvr0v/Mosk%20Medium%20500.woff2')
+  font-family: "Poppins Bold";
+  src: url('https://www.dl.dropboxusercontent.com/s/9b01c82ru3mm0ol/poppins-bold-webfont.woff2')
     format('woff2');
   font-style: normal;
   font-weight: 500;
-}
-
-@font-face {
-  font-family: "Mosk Semi-Bold";
-  src: url('https://www.dl.dropboxusercontent.com/s/hxrywhdscam48bq/Mosk%20Semi-Bold%20600.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "Mosk Bold";
-  src: url('https://www.dl.dropboxusercontent.com/s/gt1bc6n3rz7xvuy/Mosk%20Bold%20700.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Mosk Extra-Bold";
-  src: url('https://www.dl.dropboxusercontent.com/s/lv708c5rtvtnnf9/Mosk%20Extra-Bold%20800.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Mosk Ultra-Bold";
-  src: url('https://www.dl.dropboxusercontent.com/s/dtsgo4ttjp64isj/Mosk%20Ultra-Bold%20900.woff2')
-    format('woff2');
-  font-style: normal;
-  font-weight: 900;
 }
 
 body {
@@ -129,6 +89,10 @@ body {
 
 // N A V B A R
 
+.nav-container {
+  background: $nav-bg;
+}
+
 nav {
   a:hover {
     text-decoration: none;
@@ -157,17 +121,20 @@ nav {
     }
     span {
       display: inline;
+      p {
+        margin-top: $nav-link-margin;
+      }
     }
   }
 }
 
 .navbar {
-  background: $nav-bg;
-  border: 0;
+  position: relative;
   .navbar-nav > li > a {
     color: $white;
     font: $nav;
     letter-spacing: 7px;
+    padding-right: $nav-padding;
     text-transform: lowercase;
   }
   .navbar-nav > li > a:hover {
@@ -184,18 +151,28 @@ nav {
       color: $white;
     }
   }
-  .navbar-collapse {
-    background: $nav-bg;
-  }
   .fa-diamond {
     font-size: $nav-i;
+  }
+  .logo {
+    color: $white;
+    border: $logo-border;
+    border-radius: $logo-border-radius;
+    display: block;
+    font: $nav-logo;
+    left: 51.5%;
+    margin-left: $logo-margin-left !important;
+    margin-top: $nav-logo-margin-top;
+    padding: $logo-padding;
+    position: absolute;
   }
 }
 
 // I N T R O
 
 #intro {
-  background: $intro-bg;
+  background: $bg;
+  border-bottom: 2px solid #69656f;
   color: $intro-text;
   max-height: $intro-height;
   padding-bottom: $intro-padding;
@@ -213,14 +190,14 @@ nav {
   }
   #summary {
     font: $intro-summary;
-    text-transform: uppercase;
   }
 }
 
 // A B O U T
 
 #about {
-  background: $about-bg;
+  background: $bg;
+  border-bottom: 2px solid #69656f;
   color: $white;
   max-height: $about-height;
   padding-bottom: $about-padding;
@@ -237,20 +214,18 @@ nav {
     }
   }
   .bio {
+    color: $bio;
     font: $about-bio;
+    line-height: 25px;
     padding: $about-bio-padding;
-    a {
-      color: $white;
-      text-decoration: none;
-      &:hover {
-        color: $bio-link;
-      }
-    }
   }
-}
-
-span.bio-bold {
-  font: $about-bio-bold;
+  span.bio-bold {
+    color: #293249;
+    font: $about-bio-bold;
+    letter-spacing: 2px;
+    text-shadow: 0 0 0 #293249;
+    text-transform: uppercase;
+  }
 }
 
 // P O R T F O L I O
@@ -301,7 +276,8 @@ span.bio-bold {
 }
 
 #portfolio {
-  background: $portfolio-bg;
+  background: $bg;
+  border-bottom: 2px solid #69656f;
   color: $white;
   max-height: $portfolio-height;
   padding-bottom: $portfolio-padding;
@@ -416,7 +392,7 @@ span.bio-bold {
 // C O N T A C T
 
 #contact {
-  background: $contact-bg;
+  background: $bg;
   color: $white;
   max-height: $contact-height;
   padding-bottom: $contact-padding;
@@ -518,8 +494,7 @@ span.bio-bold {
   .left {
     color: $white;
     font: $footer;
-    letter-spacing: 2px;
-    text-transform: lowercase;
+    text-transform: uppercase;
     @include breakpoint(sm) {
       font-size: 1.7rem;
     }
@@ -536,5 +511,17 @@ span.bio-bold {
         color: $footer-contact;
       }
     }
+  }
+  .footer-logo {
+    color: $white;
+    border: $footer-logo-border;
+    border-radius: $logo-border-radius;
+    display: block;
+    font: $footer-logo;
+    left: 51.5%;
+    margin-left: $logo-margin-left !important;
+    margin-top: $footer-margin-top;
+    padding: $logo-padding;
+    position: absolute;
   }
 }
