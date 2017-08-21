@@ -65,8 +65,9 @@ body {
 // G L O B A L
 
 .bg {
-  background: url('http://res.cloudinary.com/shayleeholley/image/upload/v1502054944/pencils_bw_rec_q0k8yg.jpg')
-    center no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(41, 50, 73, 0.75)),
+    url('http://res.cloudinary.com/shayleeholley/image/upload/v1502054944/pencils_bw_rec_q0k8yg.jpg')
+      center no-repeat;
   -webkit-background: url('http://res.cloudinary.com/shayleeholley/image/upload/v1502054944/pencils_bw_rec_q0k8yg.jpg')
     center no-repeat;
   -moz-background: url('http://res.cloudinary.com/shayleeholley/image/upload/v1502054944/pencils_bw_rec_q0k8yg.jpg')
@@ -168,11 +169,92 @@ nav {
   }
 }
 
+// d i v i d e r s
+
+.divider-1 {
+  color: #69656f;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font: 2.7rem "King Basil", cursive;
+  margin: 0 1em;
+  text-transform: lowercase;
+}
+
+.divider-1::after {
+  content: '';
+  border-radius: 50px;
+  height: 2.2px;
+  background: #69656f;
+  flex: 1;
+  margin: 0 0 0 .50em;
+}
+
+.divider-1::after {
+  transform: skew(-18deg);
+}
+
+.divider-2 {
+  color: #293249;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font: 2.7rem "King Basil", cursive;
+  margin: 0 1em;
+  text-transform: lowercase;
+}
+
+.divider-2::before {
+  content: '';
+  border-radius: 50px;
+  height: 2.2px;
+  background: #293249;
+  flex: 1;
+  margin: 0 .50em 0 0;
+}
+
+.divider-2::after {
+  content: '';
+  border-radius: 50px;
+  height: 2.2px;
+  background: #293249;
+  flex: 1;
+  margin: 0 0 0 .50em;
+}
+
+.divider-2::after {
+  transform: skew(-18deg);
+}
+
+.divider-3 {
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font: 2.7rem "King Basil", cursive;
+  margin: 0 1em;
+  text-transform: lowercase;
+}
+
+.divider-3::before {
+  content: '';
+  border-radius: 50px;
+  height: 2.2px;
+  background: $white;
+  flex: 1;
+  margin: 0 .50em 0 0;
+}
+
+.divider-3::before {
+  transform: skew(-18deg);
+}
+
 // I N T R O
 
 #intro {
-  background: $bg;
-  border-bottom: 2px solid #69656f;
   color: $intro-text;
   max-height: $intro-height;
   padding-bottom: $intro-padding;
@@ -196,18 +278,14 @@ nav {
 // A B O U T
 
 #about {
-  background: $bg;
-  border-bottom: 2px solid #69656f;
   color: $white;
   max-height: $about-height;
   padding-bottom: $about-padding;
   padding-top: $about-padding;
   img {
-    border-radius: $about-radius;
     display: block;
     margin: auto;
     margin-bottom: $about-margin;
-    margin-top: $about-margin;
     width: $about-img-width;
     @include breakpoint(sm) {
       float: left;
@@ -216,16 +294,26 @@ nav {
   .bio {
     color: $bio;
     font: $about-bio;
-    line-height: 25px;
+    line-height: $about-line-height;
     padding: $about-bio-padding;
+    text-shadow: 0 0 0 $bio;
   }
-  span.bio-bold {
+  .bio-link {
+    color: $bio;
+    font: $bio-link;
+    padding: $about-bio-padding;
+    text-shadow: 0 0 0 $bio;
+    text-transform: uppercase;
+    a {
+      color: $bio-a;
+    }
+  } /* a {
     color: #293249;
     font: $about-bio-bold;
     letter-spacing: 2px;
     text-shadow: 0 0 0 #293249;
     text-transform: uppercase;
-  }
+  } */
 }
 
 // P O R T F O L I O
@@ -276,8 +364,8 @@ nav {
 }
 
 #portfolio {
-  background: $bg;
-  border-bottom: 2px solid #69656f;
+  /*  background: $bg; */
+  /* border-bottom: 2px solid #69656f; */
   color: $white;
   max-height: $portfolio-height;
   padding-bottom: $portfolio-padding;
@@ -392,7 +480,7 @@ nav {
 // C O N T A C T
 
 #contact {
-  background: $bg;
+  /* background: $bg; */
   color: $white;
   max-height: $contact-height;
   padding-bottom: $contact-padding;
@@ -487,23 +575,23 @@ nav {
 
 .footer {
   background: $footer-background;
-  padding-top: 23px;
+  padding-top: 30px;
   @include breakpoint(sm) {
     padding-top: 25px;
   }
   .left {
-    color: $white;
+    color: $footer-text;
     font: $footer;
-    text-transform: uppercase;
+    text-transform: lowercase;
     @include breakpoint(sm) {
       font-size: 1.7rem;
     }
   }
   .right {
-    color: $white;
+    color: $footer-text;
     font: $footer;
     a {
-      color: $white;
+      color: $footer-text;
       @include breakpoint(sm) {
         font-size: 1.7rem;
       }
@@ -513,7 +601,7 @@ nav {
     }
   }
   .footer-logo {
-    color: $white;
+    color: $footer-text;
     border: $footer-logo-border;
     border-radius: $logo-border-radius;
     display: block;
