@@ -264,7 +264,7 @@ nav span {
 
 #about {
   color: #f7efed;
-  max-height: 980px;
+  max-height: 1220px;
   padding-bottom: 100px;
   padding-top: 100px;
   /* a {
@@ -292,7 +292,7 @@ nav span {
 #about .bio {
   color: #293249;
   font: 2rem "Poppins Light", sans-serif;
-  line-height: 25px;
+  line-height: 45px;
   padding: 10px 10px 0 10px;
   text-shadow: 0 0 0 #293249;
 }
