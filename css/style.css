@@ -1,4 +1,6 @@
 /* $bg: linear-gradient(rgba(247, 239, 237, 0.65), rgba(41, 50, 73, 0.65)); */
+/* $caption-hover: rgb(135, 59, 69); */
+/* $contact-button-hover-bg: rgba(152, 59, 69, 0.5); */
 @font-face {
   font-family: 'Amastery Extras';
   src: url("https://www.dl.dropboxusercontent.com/s/0omva1j3c1rk1nm/amastery_extras-webfont.eot");
@@ -155,10 +157,6 @@ nav span {
   color: #f7efed;
 }
 
-.navbar .fa-diamond {
-  font-size: 1.3rem;
-}
-
 .navbar .logo {
   color: #f7efed;
   border: 2px solid #f7efed;
@@ -166,9 +164,10 @@ nav span {
   display: block;
   font: 1.6rem "Amastery Script", sans-serif;
   left: 51.5%;
+  line-height: 30px;
   margin-left: -50px !important;
   margin-top: 4px;
-  padding: 0 0 0 0;
+  padding: 0 5px 0 5px;
   position: absolute;
 }
 
@@ -182,7 +181,7 @@ nav span {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font: 2.7rem "Amastery Script", cursive;
+  font: 3rem "Amastery Script", cursive;
   margin: 0 1em;
   text-transform: lowercase;
 }
@@ -206,7 +205,7 @@ nav span {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font: 2.7rem "Amastery Script", cursive;
+  font: 3rem "Amastery Script", cursive;
   margin: 0 1em;
   text-transform: lowercase;
 }
@@ -239,7 +238,7 @@ nav span {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font: 2.7rem "Amastery Script", cursive;
+  font: 3rem "Amastery Script", cursive;
   margin: 0 1em;
   text-transform: lowercase;
 }
@@ -260,8 +259,8 @@ nav span {
 #intro {
   color: #293249;
   max-height: 590px;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 #intro img {
@@ -275,7 +274,7 @@ nav span {
 #intro #name {
   font: normal 4rem "Amastery Script", cursive;
   line-height: 55px;
-  margin-top: -20px;
+  margin-top: 10px;
   text-transform: lowercase;
 }
 
@@ -295,15 +294,8 @@ nav span {
 #about {
   color: #f7efed;
   max-height: 1220px;
-  padding-bottom: 100px;
-  padding-top: 100px;
-  /* a {
-    color: #293249;
-    font: $about-bio-bold;
-    letter-spacing: 2px;
-    text-shadow: 0 0 0 #293249;
-    text-transform: uppercase;
-  } */
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 #about img {
@@ -322,7 +314,7 @@ nav span {
 #about .bird {
   color: #f7efed;
   font: 13rem "Amastery Extras";
-  line-height: 110px;
+  line-height: 160px;
   text-shadow: 1px 1px 3px rgba(150, 150, 150, 0.5);
 }
 
@@ -336,8 +328,9 @@ nav span {
 
 #about .bio-link {
   color: #293249;
-  font: 2rem "Amastery Hand", sans-serif;
+  font: 2.5rem "Amastery Hand", sans-serif;
   letter-spacing: 1px;
+  line-height: 30px;
   padding: 10px 10px 0 10px;
   text-shadow: 0 0 0 #293249;
   text-transform: uppercase;
@@ -394,12 +387,10 @@ nav span {
 }
 
 #portfolio {
-  /*  background: $bg; */
-  /* border-bottom: 2px solid #69656f; */
   color: #f7efed;
   max-height: 575px;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 #portfolio .thumbnail {
@@ -422,12 +413,11 @@ nav span {
 }
 
 #portfolio .caption a {
-  color: #222021;
+  color: #69656f;
   text-decoration: none;
-}
-
-#portfolio .caption a :hover {
-  color: #873b45;
+  /*  :hover {  
+        color: $caption-hover;
+      } */
 }
 
 * {
@@ -511,8 +501,8 @@ nav span {
   /* background: $bg; */
   color: #f7efed;
   max-height: 755px;
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 #contact #links i {
@@ -601,15 +591,19 @@ nav span {
 
 #contact .form-control {
   background: #f7efed;
-  color: #222021;
+  color: #293249;
   font: 300 1.2rem "Poppins Light", sans-serif;
 }
 
 #contact .form-control:focus {
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(222, 210, 207, 0.85);
   border-color: #f7efed;
   box-shadow: 0 0 5px rgba(34, 32, 33, 0.4);
-  color: #222021;
+  color: #293249;
+}
+
+#contact ::placeholder {
+  color: #69656f;
 }
 
 .footer {
@@ -625,7 +619,7 @@ nav span {
 
 .footer .left {
   color: #293249;
-  font: 1.2rem "Poppins Medium", sans-serif;
+  font: 1.2rem "Poppins Light", sans-serif;
   text-transform: lowercase;
 }
 
@@ -637,7 +631,7 @@ nav span {
 
 .footer .right {
   color: #293249;
-  font: 1.2rem "Poppins Medium", sans-serif;
+  font: 1.2rem "Poppins Light", sans-serif;
 }
 
 .footer .right a {
@@ -661,8 +655,9 @@ nav span {
   display: block;
   font: 2.5rem "Amastery Script", sans-serif;
   left: 51.5%;
+  line-height: 35px;
   margin-left: -50px !important;
   margin-top: -17px;
-  padding: 0 0 0 0;
+  padding: 0 5px 0 5px;
   position: absolute;
 }

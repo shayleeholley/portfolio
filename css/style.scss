@@ -235,9 +235,6 @@ nav {
       color: $white;
     }
   }
-  .fa-diamond {
-    font-size: $nav-i;
-  }
   .logo {
     color: $white;
     border: $logo-border;
@@ -245,6 +242,7 @@ nav {
     display: block;
     font: $nav-logo;
     left: 51.5%;
+    line-height: 30px;
     margin-left: $logo-margin-left !important;
     margin-top: $nav-logo-margin-top;
     padding: $logo-padding;
@@ -263,7 +261,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font: 2.7rem "Amastery Script", cursive;
+  font: $divider;
   margin: 0 1em;
   text-transform: lowercase;
 }
@@ -287,7 +285,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font: 2.7rem "Amastery Script", cursive;
+  font: $divider;
   margin: 0 1em;
   text-transform: lowercase;
 }
@@ -320,7 +318,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font: 2.7rem "Amastery Script", cursive;
+  font: $divider;
   margin: 0 1em;
   text-transform: lowercase;
 }
@@ -390,7 +388,7 @@ nav {
   .bird {
     color: $white;
     font: $bio-bird;
-    line-height: 110px;
+    line-height: $bird-line-height;
     text-shadow: $bio-bird-shadow;
   }
   .bio {
@@ -404,19 +402,14 @@ nav {
     color: $bio;
     font: $bio-link;
     letter-spacing: 1px;
+    line-height: $bio-contact-line-height;
     padding: $about-bio-padding;
     text-shadow: 0 0 0 $bio;
     text-transform: uppercase;
     a {
       color: $bio-a;
     }
-  } /* a {
-    color: #293249;
-    font: $about-bio-bold;
-    letter-spacing: 2px;
-    text-shadow: 0 0 0 #293249;
-    text-transform: uppercase;
-  } */
+  }
 }
 
 // P O R T F O L I O
@@ -467,8 +460,6 @@ nav {
 }
 
 #portfolio {
-  /*  background: $bg; */
-  /* border-bottom: 2px solid #69656f; */
   color: $white;
   max-height: $portfolio-height;
   padding-bottom: $portfolio-padding;
@@ -490,9 +481,9 @@ nav {
     a {
       color: $caption-link;
       text-decoration: none;
-      :hover {
+      /*  :hover {  
         color: $caption-hover;
-      }
+      } */
     }
   }
 }
@@ -598,8 +589,8 @@ nav {
       margin-left: 3px;
       margin-right: 3px;
       text-shadow: $contact-link-shadow;
-      :hover {
-        color: $contact-link-color;
+      /* :hover {
+        color: $contact-link-color; */
       }
     }
   }
@@ -675,6 +666,9 @@ nav {
       color: $form-text;
     }
   }
+  ::placeholder {
+    color: #69656f;
+  }
 }
 
 // F O O T E R
@@ -713,6 +707,7 @@ nav {
     display: block;
     font: $footer-logo;
     left: 51.5%;
+    line-height: 35px;
     margin-left: $logo-margin-left !important;
     margin-top: $footer-margin-top;
     padding: $logo-padding;

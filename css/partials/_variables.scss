@@ -18,10 +18,10 @@ $tribute-img-radius: 50px;
 $bio: #293249;
 $bio-a: #f7efed;
 $black: #222021;
-$caption-hover: rgb(135, 59, 69);
-$caption-link: rgb(34, 32, 33);
+/* $caption-hover: rgb(135, 59, 69); */
+$caption-link: #69656f;
 $checkbox-hover-bg: rgba(152, 59, 69, 0.5);
-$contact-button-hover-bg: rgba(152, 59, 69, 0.5);
+/* $contact-button-hover-bg: rgba(152, 59, 69, 0.5); */
 $contact-link-color: rgb(135, 59, 69);
 $footer-background: linear-gradient(
   rgba(222, 210, 207, 0.85),
@@ -29,8 +29,8 @@ $footer-background: linear-gradient(
 );
 $footer-contact: rgb(135, 59, 69);
 $footer-text: #293249;
-$form-text: rgb(34, 32, 33);
-$form-focus: rgba(255, 255, 255, 0.55);
+$form-text: #293249;
+$form-focus: rgba(222, 210, 207, 0.85);
 $intro-text: #293249;
 $nav-bg: linear-gradient(rgba(105, 101, 111, 0.85), rgba(105, 101, 111, 0.85));
 $nav-bg-haf: rgba(247, 239, 237, 0.37);
@@ -40,13 +40,14 @@ $white: #f7efed;
 
 $about-bio: 2rem "Poppins Light", sans-serif;
 $bio-bird: 13rem "Amastery Extras";
-$bio-link: 2rem "Amastery Hand", sans-serif;
+$bio-link: 2.5rem "Amastery Hand", sans-serif;
 $caption: 3rem "Amastery Hand", sans-serif;
 $checkbox: 300 1.03rem "Poppins Light", sans-serif;
 $checkbox-hover: 400;
 $contact-button: 300 1.5rem "Poppins Light", sans-serif;
 $contact-button-hover: 400;
-$footer: 1.2rem "Poppins Medium", sans-serif;
+$divider: 3rem "Amastery Script", cursive;
+$footer: 1.2rem "Poppins Light", sans-serif;
 $footer-logo: 2.5rem "Amastery Script", sans-serif;
 $form: 300 1.2rem "Poppins Light", sans-serif;
 $intro-name: normal 4rem "Amastery Script", cursive;
@@ -69,7 +70,7 @@ $checkbox-margin-bottom: 15px;
 $contact-button-margin: 40px;
 $contact-link-margin: 30px;
 $footer-margin-top: -17px;
-$intro-margin: -20px;
+$intro-margin: 10px;
 $intro-title-margin-left: 7px;
 $logo-margin-left: -50px;
 $nav-link-margin: 3px;
@@ -112,16 +113,16 @@ $modal-title: normal 4rem 'Luna', cursive;
 // P A D D I N G
 
 $about-bio-padding: 10px 10px 0 10px;
-$about-padding: 100px;
+$about-padding: 50px;
 $checkbox-padding: 3px 0 6px 0;
 $checkbox-text-padding: 7px;
 $col-padding: 15px;
-$contact-padding: 100px;
+$contact-padding: 50px;
 $footer-padding: 10px;
-$intro-padding: 100px;
-$logo-padding: 0 0 0 0;
+$intro-padding: 50px;
+$logo-padding: 0 5px 0 5px;
 $nav-padding: 7px;
-$portfolio-padding: 100px;
+$portfolio-padding: 50px;
 $tribute-footer-padding: 15px;
 $tribute-main-padding: 0 20px 20px 20px;
 
@@ -141,6 +142,8 @@ $tribute-img-shadow: 3px 3px 7px gray;
 $about-img-width: 350px;
 $about-height: 1220px;
 $about-line-height: 35px;
+$bio-contact-line-height: 30px;
+$bird-line-height: 160px;
 $contact-button-width: 47%;
 $contact-height: 755px;
 $checkbox-width: 600px;
