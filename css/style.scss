@@ -2,59 +2,139 @@
 @import "partials/_variables.scss";
 
 @font-face {
-  font-family: "King Basil";
-  src: url('https://www.dl.dropboxusercontent.com/s/9tq73402qgctp3y/King%20Basil%20Lite.woff2')
-    format('woff2');
-  font-style: normal;
+  font-family: 'Amastery Extras';
+  src: url('https://www.dl.dropboxusercontent.com/s/0omva1j3c1rk1nm/amastery_extras-webfont.eot');
+  src: url('https://www.dl.dropboxusercontent.com/s/0omva1j3c1rk1nm/amastery_extras-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://www.dl.dropboxusercontent.com/s/y1cxo0pg46mjvpg/amastery_extras-webfont.woff2')
+      format('woff2'),
+    url('https://www.dl.dropboxusercontent.com/s/sh1shz2brgmtsbp/amastery_extras-webfont.woff')
+      format('woff'),
+    url('https://www.dl.dropboxusercontent.com/s/2xjocg3hrsmg4km/amastery_extras-webfont.ttf')
+      format('truetype'),
+    url('https://www.dl.dropboxusercontent.com/s/56yx08up0eiq1b6/amastery_extras-webfont.svg#amastery_extrasamasteryXs')
+      format('svg');
   font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "C&M";
-  src: url('https://www.dl.dropboxusercontent.com/s/tez1mivoacxhhb4/cookiesmilk-regular-webfont.woff2')
-    format('woff2');
-  font-style: normal;
+  font-family: 'Amastery Hand';
+  src: url('https://www.dl.dropboxusercontent.com/s/qcs5m5eye04uqlz/amastery_hand-webfont.eot');
+  src: url('https://www.dl.dropboxusercontent.com/s/qcs5m5eye04uqlz/amastery_hand-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://www.dl.dropboxusercontent.com/s/5xbp67ojb66n2ht/amastery_hand-webfont.woff2')
+      format('woff2'),
+    url('https://www.dl.dropboxusercontent.com/s/r2n2mg1c70x698b/amastery_hand-webfont.woff')
+      format('woff'),
+    url('https://www.dl.dropboxusercontent.com/s/trx1869sxac2qdy/amastery_hand-webfont.ttf')
+      format('truetype'),
+    url('https://www.dl.dropboxusercontent.com/s/wja6ydnu5okp0om/amastery_hand-webfont.svg#amastery_handamastery_hand')
+      format('svg');
   font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Poppins Light";
-  src: url('https://www.dl.dropboxusercontent.com/s/dny3xggh7rj07s2/poppins-light-webfont.woff2')
-    format('woff2');
+  font-family: 'Amastery Script';
+  src: url('https://www.dl.dropboxusercontent.com/s/lss7nv68lp66ckb/amastery_script-webfont.eot');
+  src: url('https://www.dl.dropboxusercontent.com/s/lss7nv68lp66ckb/amastery_script-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://www.dl.dropboxusercontent.com/s/5432mu46ic8mqvk/amastery_script-webfont.woff2')
+      format('woff2'),
+    url('https://www.dl.dropboxusercontent.com/s/iev6tg1s8ermmg1/amastery_script-webfont.woff')
+      format('woff'),
+    url('https://www.dl.dropboxusercontent.com/s/cex2jjse981mmuq/amastery_script-webfont.ttf')
+      format('truetype'),
+    url('https://www.dl.dropboxusercontent.com/s/n6bl7wta2xz2hj2/amastery_script-webfont.svg#amastery_scriptamasteryscript')
+      format('svg');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 100;
 }
 
 @font-face {
-  font-family: "Poppins Medium";
-  src: url('https://www.dl.dropboxusercontent.com/s/keboppo1716fao6/poppins-medium-webfont.woff2')
-    format('woff2');
+  font-family: 'Poppins Light';
+  src: url('https://www.dl.dropboxusercontent.com/s/9q0ngiejy8hw3xz/poppins-light-webfont.eot');
+  src: url('https://www.dl.dropboxusercontent.com/s/9q0ngiejy8hw3xz/poppins-light-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://www.dl.dropboxusercontent.com/s/dny3xggh7rj07s2/poppins-light-webfont.woff2')
+      format('woff2'),
+    url('https://www.dl.dropboxusercontent.com/s/vg8rsml3x2z1a9k/poppins-light-webfont.woff')
+      format('woff'),
+    url('https://www.dl.dropboxusercontent.com/s/q3r47ciezxsfxdy/poppins-light-webfont.ttf')
+      format('truetype'),
+    url('https://www.dl.dropboxusercontent.com/s/zyqjhek70x803bo/poppins-light-webfont.svg#poppinslight')
+      format('svg');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 200;
 }
 
 @font-face {
-  font-family: "Poppins Regular";
-  src: url('https://www.dl.dropboxusercontent.com/s/1501y1vk7x8kr0a/poppins-regular-webfont.woff2')
-    format('woff2');
+  font-family: 'Poppins Medium';
+  src: url('https://www.dl.dropboxusercontent.com/s/vgs53tsy3fc9o5a/poppins-medium-webfont.eot');
+  src: url('https://www.dl.dropboxusercontent.com/s/vgs53tsy3fc9o5a/poppins-medium-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://www.dl.dropboxusercontent.com/s/keboppo1716fao6/poppins-medium-webfont.woff2')
+      format('woff2'),
+    url('https://www.dl.dropboxusercontent.com/s/75gusqaeveo1ppn/poppins-medium-webfont.woff')
+      format('woff'),
+    url('https://www.dl.dropboxusercontent.com/s/weaulhxu7c3pvth/poppins-medium-webfont.ttf')
+      format('truetype'),
+    url('https://www.dl.dropboxusercontent.com/s/6g7cj3i1osriu0p/poppins-medium-webfont.svg#poppinsmedium')
+      format('svg');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 300;
 }
 
 @font-face {
-  font-family: "Poppins Semibold";
-  src: url('https://www.dl.dropboxusercontent.com/s/pps9oxn8yf0ukau/poppins-semibold-webfont.woff2')
-    format('woff2');
+  font-family: 'Poppins Regular';
+  src: url('https://www.dl.dropboxusercontent.com/s/frt74su02ok9xv7/poppins-regular-webfont.eot');
+  src: url('https://www.dl.dropboxusercontent.com/s/frt74su02ok9xv7/poppins-regular-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://www.dl.dropboxusercontent.com/s/1501y1vk7x8kr0a/poppins-regular-webfont.woff2')
+      format('woff2'),
+    url('https://www.dl.dropboxusercontent.com/s/sumbe6eosesqb5t/poppins-regular-webfont.woff')
+      format('woff'),
+    url('https://www.dl.dropboxusercontent.com/s/q0osvoelzw11466/poppins-regular-webfont.ttf')
+      format('truetype'),
+    url('https://www.dl.dropboxusercontent.com/s/5busbm12ye55bm8/poppins-regular-webfont.svg#poppinsregular')
+      format('svg');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Poppins Bold";
-  src: url('https://www.dl.dropboxusercontent.com/s/9b01c82ru3mm0ol/poppins-bold-webfont.woff2')
-    format('woff2');
+  font-family: 'Poppins Semibold';
+  src: url('https://www.dl.dropboxusercontent.com/s/uu2x6xp4e8xebg4/poppins-semibold-webfont.eot');
+  src: url('https://www.dl.dropboxusercontent.com/s/uu2x6xp4e8xebg4/poppins-semibold-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://www.dl.dropboxusercontent.com/s/pps9oxn8yf0ukau/poppins-semibold-webfont.woff2')
+      format('woff2'),
+    url('https://www.dl.dropboxusercontent.com/s/57magdrgt84w92j/poppins-semibold-webfont.woff')
+      format('woff'),
+    url('https://www.dl.dropboxusercontent.com/s/n1cfjqg43rt9s1d/poppins-semibold-webfont.ttf')
+      format('truetype'),
+    url('https://www.dl.dropboxusercontent.com/s/4nkgc0y40fyjlh6/poppins-semibold-webfont.svg#poppinssemibold')
+      format('svg');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('https://www.dl.dropboxusercontent.com/s/j4wkpobl22thywl/poppins-bold-webfont.eot');
+  src: url('https://www.dl.dropboxusercontent.com/s/j4wkpobl22thywl/poppins-bold-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://www.dl.dropboxusercontent.com/s/9b01c82ru3mm0ol/poppins-bold-webfont.woff2')
+      format('woff2'),
+    url('https://www.dl.dropboxusercontent.com/s/h88srru0ol1oa5o/poppins-bold-webfont.woff')
+      format('woff'),
+    url('https://www.dl.dropboxusercontent.com/s/0609xav3vsju9yx/poppins-bold-webfont.ttf')
+      format('truetype'),
+    url('https://www.dl.dropboxusercontent.com/s/6kfprhcxmqh5cy4/poppins-bold-webfont.svg#poppinsbold')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -65,7 +145,10 @@ body {
 // G L O B A L
 
 .bg {
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(41, 50, 73, 0.75)),
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(41, 50, 73, 0.65)
+    ),
     url('http://res.cloudinary.com/shayleeholley/image/upload/v1502054944/pencils_bw_rec_q0k8yg.jpg')
       center no-repeat;
   -webkit-background: url('http://res.cloudinary.com/shayleeholley/image/upload/v1502054944/pencils_bw_rec_q0k8yg.jpg')
@@ -167,6 +250,9 @@ nav {
     padding: $logo-padding;
     position: absolute;
   }
+  .nav-bird {
+    font: $nav-bird;
+  }
 }
 
 // d i v i d e r s
@@ -177,7 +263,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font: 2.7rem "King Basil", cursive;
+  font: 2.7rem "Amastery Script", cursive;
   margin: 0 1em;
   text-transform: lowercase;
 }
@@ -201,7 +287,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font: 2.7rem "King Basil", cursive;
+  font: 2.7rem "Amastery Script", cursive;
   margin: 0 1em;
   text-transform: lowercase;
 }
@@ -234,7 +320,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font: 2.7rem "King Basil", cursive;
+  font: 2.7rem "Amastery Script", cursive;
   margin: 0 1em;
   text-transform: lowercase;
 }
@@ -268,10 +354,20 @@ nav {
   }
   #name {
     font: $intro-name;
+    line-height: $intro-name-line-height;
     margin-top: $intro-margin;
+    text-transform: lowercase;
   }
-  #summary {
-    font: $intro-summary;
+  #title {
+    font: $intro-title;
+    letter-spacing: 5px;
+    line-height: $intro-title-line-height;
+    margin-left: $intro-title-margin-left;
+  }
+  #skills {
+    font: $intro-skills;
+    line-height: $intro-skills-line-height;
+    text-shadow: 0 0 0 $intro-text;
   }
 }
 
@@ -291,6 +387,12 @@ nav {
       float: left;
     }
   }
+  .bird {
+    color: $white;
+    font: $bio-bird;
+    line-height: 110px;
+    text-shadow: $bio-bird-shadow;
+  }
   .bio {
     color: $bio;
     font: $about-bio;
@@ -301,6 +403,7 @@ nav {
   .bio-link {
     color: $bio;
     font: $bio-link;
+    letter-spacing: 1px;
     padding: $about-bio-padding;
     text-shadow: 0 0 0 $bio;
     text-transform: uppercase;
@@ -463,7 +566,7 @@ nav {
   }
 }
 
-.footer {
+.tribute-footer {
   font-size: $tribute-footer-font;
   padding: $tribute-footer-padding;
   text-align: center;
@@ -492,6 +595,8 @@ nav {
     a {
       color: $white;
       font-size: $contact-link-size;
+      margin-left: 3px;
+      margin-right: 3px;
       text-shadow: $contact-link-shadow;
       :hover {
         color: $contact-link-color;
@@ -537,7 +642,7 @@ nav {
     margin: auto;
     max-width: $contact-button-width;
     text-transform: uppercase;
-    &:hover {
+    /* &:hover {
       background: $contact-button-hover-bg;
       border: $contact-button-border;
       color: $white;
@@ -546,12 +651,12 @@ nav {
         display: none;
       }
       .fa-paper-plane-o {
-        display: inline;
+        display: inline;     
       }
       &:focus {
         outline: none;
       }
-    }
+    } */
     .fa-paper-plane-o {
       display: none;
     }
@@ -560,6 +665,7 @@ nav {
     outline: none;
   }
   .form-control {
+    background: $white;
     color: $form-text;
     font: $form;
     &:focus {
@@ -575,7 +681,7 @@ nav {
 
 .footer {
   background: $footer-background;
-  padding-top: 30px;
+  padding-top: $footer-padding;
   @include breakpoint(sm) {
     padding-top: 25px;
   }

@@ -1,3 +1,10 @@
+// C H E V R O N   A N I M A T E
+
+$(".navbar-toggle").click(function() {
+  $(this).next("i").slideToggle("500");
+  $(this).find("i").toggleClass("fa-chevron-circle-down fa-chevron-circle-up");
+});
+
 // S C R O L L S P Y   A N I M A T I O N
 
 $(document).ready(function() {

@@ -2,11 +2,11 @@
 
 $about-radius: 20px;
 $contact-button-border: 2px solid rgba(152, 59, 69, 0.1);
-$checkbox-border: 2px solid white;
-$checkbox-button-border: 2px solid white;
+$checkbox-border: 2px solid #f7efed;
+$checkbox-button-border: 2px solid #f7efed;
 $checkbox-hover-border: 2px solid rgba(152, 59, 69, 0.1);
 $checkbox-radius: 30px;
-$footer-logo-border: 3px solid #69656f;
+$footer-logo-border: 3px solid #293249;
 $logo-border: 2px solid #f7efed;
 $logo-border-radius: 80px;
 $section-border: 2px solid #69656f;
@@ -23,13 +23,12 @@ $caption-link: rgb(34, 32, 33);
 $checkbox-hover-bg: rgba(152, 59, 69, 0.5);
 $contact-button-hover-bg: rgba(152, 59, 69, 0.5);
 $contact-link-color: rgb(135, 59, 69);
-$divider: #69656f;
 $footer-background: linear-gradient(
-  rgba(247, 239, 237, 0.85),
-  rgba(247, 239, 237, 0.85)
+  rgba(222, 210, 207, 0.85),
+  rgba(222, 210, 207, 0.85)
 );
 $footer-contact: rgb(135, 59, 69);
-$footer-text: #69656f;
+$footer-text: #293249;
 $form-text: rgb(34, 32, 33);
 $form-focus: rgba(255, 255, 255, 0.55);
 $intro-text: #293249;
@@ -40,25 +39,27 @@ $white: #f7efed;
 // F O N T S
 
 $about-bio: 2rem "Poppins Light", sans-serif;
-$bio-link: 2.7rem "C&M", sans-serif;
-$caption: 2.2rem "King Basil", sans-serif;
+$bio-bird: 13rem "Amastery Extras";
+$bio-link: 2rem "Amastery Hand", sans-serif;
+$caption: 3rem "Amastery Hand", sans-serif;
 $checkbox: 300 1.03rem "Poppins Light", sans-serif;
 $checkbox-hover: 400;
-$contact-button: 300 1.5rem "Mosk Thin", sans-serif;
+$contact-button: 300 1.5rem "Poppins Light", sans-serif;
 $contact-button-hover: 400;
-$footer: 1.3rem "Poppins Medium", sans-serif;
-$footer-logo: 2.5rem "King Basil", sans-serif;
-$form: 300 1.3rem "Mosk Thin", sans-serif;
-$intro-name: normal 4rem "King Basil", cursive;
-$intro-summary: 3rem "C&M", sans-serif;
+$footer: 1.2rem "Poppins Medium", sans-serif;
+$footer-logo: 2.5rem "Amastery Script", sans-serif;
+$form: 300 1.2rem "Poppins Light", sans-serif;
+$intro-name: normal 4rem "Amastery Script", cursive;
+$intro-skills: 1.2rem "Poppins Light", sans-serif;
+$intro-title: 2rem "Amastery Hand", sans-serif;
 $nav: 1.6rem "Poppins Light", sans-serif;
-$nav-i: 1.3rem;
-$nav-logo: 1.6rem "King Basil", sans-serif;
-$tribute-carousel: 700 1.5rem "Mosk Thin Condensed", sans-serif;
-$tribute-header-big: 700 2.5rem "Mosk Thin Condensed", sans-serif;
-$tribute-header-small: 700 2rem "Mosk Thin Condensed", sans-serif;
-$tribute-main-text: 3rem "Mosk Thin Condensed", sans-serif;
-$tribute-title: 700 4rem "Mosk Thin Condensed", sans-serif;
+$nav-bird: 1.7rem "Amastery Extras";
+$nav-logo: 1.6rem "Amastery Script", sans-serif;
+$tribute-carousel: 700 1.5rem "Poppins Light Condensed", sans-serif;
+$tribute-header-big: 700 2.5rem "Poppins Light Condensed", sans-serif;
+$tribute-header-small: 700 2rem "Poppins Light Condensed", sans-serif;
+$tribute-main-text: 3rem "Poppins Light Condensed", sans-serif;
+$tribute-title: 700 4rem "Poppins Light Condensed", sans-serif;
 
 // M A R G I N S
 
@@ -68,7 +69,8 @@ $checkbox-margin-bottom: 15px;
 $contact-button-margin: 40px;
 $contact-link-margin: 30px;
 $footer-margin-top: -17px;
-$intro-margin: 20px;
+$intro-margin: -20px;
+$intro-title-margin-left: 7px;
 $logo-margin-left: -50px;
 $nav-link-margin: 3px;
 $nav-logo-margin-top: 4px;
@@ -115,9 +117,9 @@ $checkbox-padding: 3px 0 6px 0;
 $checkbox-text-padding: 7px;
 $col-padding: 15px;
 $contact-padding: 100px;
-$footer-padding: 30px;
+$footer-padding: 10px;
 $intro-padding: 100px;
-$logo-padding: 5px 10px 5px 10px;
+$logo-padding: 0 0 0 0;
 $nav-padding: 7px;
 $portfolio-padding: 100px;
 $tribute-footer-padding: 15px;
@@ -125,6 +127,7 @@ $tribute-main-padding: 0 20px 20px 20px;
 
 // S H A D O W S
 
+$bio-bird-shadow: 1px 1px 3px rgba(150, 150, 150, 0.50);
 $checkbox-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
 $checkbox-text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
 $contact-button-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
@@ -137,12 +140,15 @@ $tribute-img-shadow: 3px 3px 7px gray;
 
 $about-img-width: 350px;
 $about-height: 1220px;
-$about-line-height: 45px;
+$about-line-height: 35px;
 $contact-button-width: 47%;
 $contact-height: 755px;
-$intro-height: 590px;
 $checkbox-width: 600px;
 $contact-link-size: 3.5rem;
+$intro-height: 590px;
+$intro-name-line-height: 55px;
+$intro-skills-line-height: 25px;
+$intro-title-line-height: 2px;
 $mobile-01: 1000px;
 $placeholder-font-size: 1.4rem;
 $portfolio-height: 575px;
