@@ -647,7 +647,7 @@ nav span {
   text-decoration: none;
 }
 
-#portfolio .caption:active {
+#portfolio .caption:visited {
   color: #293249;
 }
 

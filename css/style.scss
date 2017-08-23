@@ -575,7 +575,7 @@ nav {
   .caption {
     font: $caption;
     text-decoration: none;
-    &:active {
+    &:visited {
       color: $caption-link;
     }
     @include breakpoint(sm) {
