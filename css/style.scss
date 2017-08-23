@@ -574,6 +574,7 @@ nav {
   }
   .caption {
     font: $caption;
+    text-decoration: none;
     @include breakpoint(sm) {
       font-size: 4rem;
     }
@@ -758,7 +759,6 @@ nav {
   .checkbox {
     background: none;
     border: $contact-border;
-    /*     border-radius: $checkbox-radius; */
     box-shadow: $checkbox-shadow;
     display: flex;
     justify-content: center;
