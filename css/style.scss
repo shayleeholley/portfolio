@@ -575,22 +575,23 @@ nav {
   .caption {
     font: $caption;
     text-decoration: none;
-    &:visited {
+    a {
       color: $caption-link;
-    }
-    @include breakpoint(sm) {
-      font-size: 4rem;
-    }
-    @include breakpoint(lg) {
-      font-size: 5rem;
-      a {
+      text-decoration: none;
+      &:visited {
         color: $caption-link;
-        text-decoration: none;
-        &:hover {
-          color: $caption-hover;
-        }
-        &:active {
+      }
+      @include breakpoint(sm) {
+        font-size: 4rem;
+      }
+      @include breakpoint(lg) {
+        font-size: 5rem;
+        a {
           color: $caption-link;
+          text-decoration: none;
+          &:hover {
+            color: $caption-hover;
+          }
         }
       }
     }
@@ -873,7 +874,6 @@ nav {
   .left {
     color: $footer-text;
     font: $footer;
-    text-transform: lowercase;
     @include breakpoint(sm) {
       font-size: 1.9rem;
     }

@@ -647,29 +647,31 @@ nav span {
   text-decoration: none;
 }
 
-#portfolio .caption:visited {
+#portfolio .caption a {
+  color: #293249;
+  text-decoration: none;
+}
+
+#portfolio .caption a:visited {
   color: #293249;
 }
 
 @media (min-width: 768px) {
-  #portfolio .caption {
+  #portfolio .caption a {
     font-size: 4rem;
   }
 }
 
 @media (min-width: 1200px) {
-  #portfolio .caption {
+  #portfolio .caption a {
     font-size: 5rem;
   }
-  #portfolio .caption a {
+  #portfolio .caption a a {
     color: #293249;
     text-decoration: none;
   }
-  #portfolio .caption a:hover {
+  #portfolio .caption a a:hover {
     color: #69656f;
-  }
-  #portfolio .caption a:active {
-    color: #293249;
   }
 }
 
@@ -982,7 +984,6 @@ nav span {
 .footer .left {
   color: #293249;
   font: 1.2rem "Poppins Light", sans-serif;
-  text-transform: lowercase;
 }
 
 @media (min-width: 768px) {
@@ -1007,7 +1008,7 @@ nav span {
 }
 
 .footer .right a:hover {
-  color: #873b45;
+  color: #69656f;
 }
 
 .footer .footer-logo {
