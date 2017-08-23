@@ -19,33 +19,3 @@
     @warn "Breakpoint mixin supports: xs, sm, md, lg";
   }
 }
-
-@mixin tiny-screen() {
-  @media only screen and (max-width: 480px) {
-    @content;
-  }
-}
-
-@mixin small-screen() {
-  @media only screen and (max-width: 768px) {
-    @content;
-  }
-}
-
-@mixin medium-screen() {
-  @media only screen and (max-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin normal-screen() {
-  @media only screen and (max-width: 1280px) {
-    @content;
-  }
-}
-
-@mixin large-screen() {
-  @media only screen and (max-width: 1920px) {
-    @content;
-  }
-}

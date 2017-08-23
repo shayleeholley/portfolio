@@ -166,6 +166,8 @@ body {
   z-index: -1;
 }
 
+//unfinished
+
 ::selection {
   background: $white;
   color: $black;
@@ -196,6 +198,15 @@ nav {
 .navbar-links {
   float: left;
   margin: $nav-margin;
+  @include breakpoint(sm) {
+    margin: 12.5px 20px 0 0;
+  }
+  @include breakpoint(md) {
+    margin: 11.7px 25px 0 0;
+  }
+  @include breakpoint(lg) {
+    margin: 15.5px 30px 0 0;
+  }
   a:hover {
     background-color: none;
   }
@@ -220,6 +231,18 @@ nav {
     letter-spacing: 7px;
     padding-right: $nav-padding;
     text-transform: lowercase;
+    @include breakpoint(sm) {
+      font-size: 1.4rem;
+      letter-spacing: 4px;
+    }
+    @include breakpoint(md) {
+      font-size: 1.7rem;
+      letter-spacing: 5px;
+    }
+    @include breakpoint(lg) {
+      font-size: 2rem;
+      letter-spacing: 6px;
+    }
   }
   .navbar-nav > li > a:hover {
     background: $nav-bg-haf;
@@ -235,44 +258,46 @@ nav {
       color: $white;
     }
   }
-  .logo {
-    color: $white;
-    border: $logo-border;
-    border-radius: $logo-border-radius;
-    display: block;
-    font: $nav-logo;
-    left: 51.5%;
-    line-height: 30px;
-    margin-left: $logo-margin-left !important;
-    margin-top: $nav-logo-margin-top;
-    padding: $logo-padding;
-    position: absolute;
-  }
-  .nav-bird {
-    font: $nav-bird;
-  }
 }
 
 // d i v i d e r s
 
 .divider-1 {
+  align-items: center;
   color: #69656f;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font: $divider;
+  justify-content: center;
   margin: 0 1em;
   text-transform: lowercase;
+  @include breakpoint(sm) {
+    font-size: 4rem;
+  }
+  @include breakpoint(md) {
+    font-size: 5rem;
+  }
+  @include breakpoint(lg) {
+    font-size: 7rem;
+  }
 }
 
 .divider-1::after {
-  content: '';
-  border-radius: 50px;
-  height: 2.2px;
   background: #69656f;
+  border-radius: 50px;
+  content: '';
   flex: 1;
+  height: 2.2px;
   margin: 0 0 0 .50em;
+  @include breakpoint(sm) {
+    height: 3px;
+  }
+  @include breakpoint(md) {
+    height: 3.5px;
+  }
+  @include breakpoint(lg) {
+    height: 5px;
+  }
 }
 
 .divider-1::after {
@@ -280,32 +305,59 @@ nav {
 }
 
 .divider-2 {
+  align-items: center;
   color: #293249;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font: $divider;
+  justify-content: center;
   margin: 0 1em;
   text-transform: lowercase;
+  @include breakpoint(sm) {
+    font-size: 4rem;
+  }
+  @include breakpoint(md) {
+    font-size: 5rem;
+  }
+  @include breakpoint(lg) {
+    font-size: 7rem;
+  }
 }
 
 .divider-2::before {
-  content: '';
-  border-radius: 50px;
-  height: 2.2px;
   background: #293249;
+  border-radius: 50px;
+  content: '';
   flex: 1;
+  height: 2.2px;
   margin: 0 .50em 0 0;
+  @include breakpoint(sm) {
+    height: 3px;
+  }
+  @include breakpoint(md) {
+    height: 3.5px;
+  }
+  @include breakpoint(lg) {
+    height: 5px;
+  }
 }
 
 .divider-2::after {
-  content: '';
-  border-radius: 50px;
-  height: 2.2px;
   background: #293249;
+  border-radius: 50px;
+  content: '';
   flex: 1;
+  height: 2.2px;
   margin: 0 0 0 .50em;
+  @include breakpoint(sm) {
+    height: 3px;
+  }
+  @include breakpoint(md) {
+    height: 3.5px;
+  }
+  @include breakpoint(lg) {
+    height: 5px;
+  }
 }
 
 .divider-2::after {
@@ -313,23 +365,41 @@ nav {
 }
 
 .divider-3 {
+  align-items: center;
   color: $white;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font: $divider;
+  justify-content: center;
   margin: 0 1em;
   text-transform: lowercase;
+  @include breakpoint(sm) {
+    font-size: 4rem;
+  }
+  @include breakpoint(md) {
+    font-size: 5rem;
+  }
+  @include breakpoint(lg) {
+    font-size: 7rem;
+  }
 }
 
 .divider-3::before {
-  content: '';
-  border-radius: 50px;
-  height: 2.2px;
   background: $white;
+  border-radius: 50px;
+  content: '';
   flex: 1;
+  height: 2.2px;
   margin: 0 .50em 0 0;
+  @include breakpoint(sm) {
+    height: 3px;
+  }
+  @include breakpoint(md) {
+    height: 3.5px;
+  }
+  @include breakpoint(lg) {
+    height: 5px;
+  }
 }
 
 .divider-3::before {
@@ -349,23 +419,68 @@ nav {
     margin: auto;
     margin-top: $profile-margin;
     width: $profile-width;
+    @include breakpoint(sm) {
+      width: 175px;
+    }
+    @include breakpoint(md) {
+      width: 200px;
+    }
+    @include breakpoint(lg) {
+      width: 250px;
+    }
   }
   #name {
     font: $intro-name;
     line-height: $intro-name-line-height;
     margin-top: $intro-margin;
     text-transform: lowercase;
+    @include breakpoint(sm) {
+      font-size: 5rem;
+      line-height: 65px;
+    }
+    @include breakpoint(md) {
+      font-size: 5.5rem;
+      line-height: 70px;
+    }
+    @include breakpoint(lg) {
+      font-size: 7rem;
+      line-height: 90px;
+    }
   }
   #title {
     font: $intro-title;
     letter-spacing: 5px;
     line-height: $intro-title-line-height;
     margin-left: $intro-title-margin-left;
+    @include breakpoint(sm) {
+      font-size: 3rem;
+      line-height: 5px;
+    }
+    @include breakpoint(md) {
+      font-size: 3.5rem;
+      line-height: 7px;
+    }
+    @include breakpoint(lg) {
+      font-size: 5rem;
+      line-height: 9px;
+    }
   }
   #skills {
     font: $intro-skills;
     line-height: $intro-skills-line-height;
     text-shadow: 0 0 0 $intro-text;
+    @include breakpoint(sm) {
+      font-size: 2.2rem;
+      line-height: 35px;
+    }
+    @include breakpoint(md) {
+      font-size: 2.5rem;
+      line-height: 45px;
+    }
+    @include breakpoint(lg) {
+      font-size: 3.2rem;
+      line-height: 60px;
+    }
   }
 }
 
@@ -376,20 +491,22 @@ nav {
   max-height: $about-height;
   padding-bottom: $about-padding;
   padding-top: $about-padding;
-  img {
-    display: block;
-    margin: auto;
-    margin-bottom: $about-margin;
-    width: $about-img-width;
-    @include breakpoint(sm) {
-      float: left;
-    }
-  }
   .bird {
     color: $white;
     font: $bio-bird;
     line-height: $bird-line-height;
     text-shadow: $bio-bird-shadow;
+    @include breakpoint(sm) {
+      font-size: 17rem;
+    }
+    @include breakpoint(md) {
+      font-size: 20rem;
+      line-height: 180px;
+    }
+    @include breakpoint(lg) {
+      font-size: 25rem;
+      line-height: 250px;
+    }
   }
   .bio {
     color: $bio;
@@ -397,6 +514,15 @@ nav {
     line-height: $about-line-height;
     padding: $about-bio-padding;
     text-shadow: 0 0 0 $bio;
+    @include breakpoint(sm) {
+      font-size: 2.3rem;
+    }
+    @include breakpoint(md) {
+      font-size: 2.5rem;
+    }
+    @include breakpoint(lg) {
+      font-size: 2.8rem;
+    }
   }
   .bio-link {
     color: $bio;
@@ -406,6 +532,12 @@ nav {
     padding: $about-bio-padding;
     text-shadow: 0 0 0 $bio;
     text-transform: uppercase;
+    @include breakpoint(sm) {
+      font-size: 3rem;
+    }
+    @include breakpoint(md) {
+      font-size: 4rem;
+    }
     a {
       color: $bio-a;
     }
@@ -413,6 +545,50 @@ nav {
 }
 
 // P O R T F O L I O
+
+#portfolio {
+  color: $white;
+  max-height: $portfolio-height;
+  padding-bottom: $portfolio-padding;
+  padding-top: $portfolio-padding;
+  .thumbnail {
+    display: block;
+    margin: auto;
+    margin-bottom: $thumbnail-margin-bottom;
+    width: $portfolio-width;
+    @include breakpoint(sm) {
+      width: 250px;
+    }
+    @include breakpoint(md) {
+      width: 300px;
+    }
+    @include breakpoint(lg) {
+      width: 450px;
+    }
+    img {
+      opacity: 1;
+      &:hover {
+        /* opacity: 1; */
+      }
+    }
+  }
+  .caption {
+    font: $caption;
+    @include breakpoint(sm) {
+      font-size: 4rem;
+    }
+    @include breakpoint(lg) {
+      font-size: 5rem;
+    }
+    a {
+      color: $caption-link;
+      text-decoration: none;
+      /*  :hover {  
+        color: $caption-hover;
+      } */
+    }
+  }
+}
 
 // --- m o d a l
 
@@ -457,35 +633,6 @@ nav {
 
 .modal-title {
   font: $modal-title;
-}
-
-#portfolio {
-  color: $white;
-  max-height: $portfolio-height;
-  padding-bottom: $portfolio-padding;
-  padding-top: $portfolio-padding;
-  .thumbnail {
-    display: block;
-    margin: auto;
-    margin-bottom: $thumbnail-margin-bottom;
-    width: $portfolio-width;
-    img {
-      opacity: 1;
-      &:hover {
-        /* opacity: 1; */
-      }
-    }
-  }
-  .caption {
-    font: $caption;
-    a {
-      color: $caption-link;
-      text-decoration: none;
-      /*  :hover {  
-        color: $caption-hover;
-      } */
-    }
-  }
 }
 
 // t r i b u t e
@@ -574,7 +721,6 @@ nav {
 // C O N T A C T
 
 #contact {
-  /* background: $bg; */
   color: $white;
   max-height: $contact-height;
   padding-bottom: $contact-padding;
@@ -589,14 +735,29 @@ nav {
       margin-left: 3px;
       margin-right: 3px;
       text-shadow: $contact-link-shadow;
-      /* :hover {
-        color: $contact-link-color; */
+      @include breakpoint(sm) {
+        font-size: 4.5rem;
+        margin-left: 12px;
+        margin-right: 12px;
+      }
+      @include breakpoint(md) {
+        font-size: 5rem;
+        margin-left: 17px;
+        margin-right: 17px;
+      }
+      @include breakpoint(lg) {
+        font-size: 6rem;
+        margin-left: 22px;
+        margin-right: 22px;
+        &:hover {
+          color: $contact-link-color;
+        }
       }
     }
   }
   .checkbox {
     background: none;
-    border: $checkbox-border;
+    border: $contact-border;
     border-radius: $checkbox-radius;
     box-shadow: $checkbox-shadow;
     display: flex;
@@ -606,8 +767,8 @@ nav {
     padding: $checkbox-padding;
     max-width: $checkbox-width;
     &:hover {
-      background: $checkbox-hover-bg;
-      border: $checkbox-hover-border;
+      background: $contact-hover-bg;
+      border: $contact-border-hover;
     }
     .checkbox-text {
       color: $white;
@@ -616,6 +777,11 @@ nav {
       padding-top: $checkbox-text-padding;
       text-shadow: $checkbox-text-shadow;
       text-transform: uppercase;
+      @include breakpoint(sm) {
+        font-size: 1.5rem;
+        padding-top: 5px;
+        text-transform: none;
+      }
     }
   }
   .button {
@@ -623,7 +789,7 @@ nav {
   }
   .btn-block {
     background: none;
-    border: $checkbox-button-border;
+    border: $contact-border;
     border-radius: 0;
     box-shadow: $contact-button-shadow;
     color: $white;
@@ -633,21 +799,30 @@ nav {
     margin: auto;
     max-width: $contact-button-width;
     text-transform: uppercase;
-    /* &:hover {
-      background: $contact-button-hover-bg;
-      border: $contact-button-border;
-      color: $white;
-      font-weight: $contact-button-hover;
-      .fa-paper-plane {
-        display: none;
+    @include breakpoint(sm) {
+      font-size: 1.7rem;
+    }
+    @include breakpoint(md) {
+      font-size: 2rem;
+    }
+    @include breakpoint(lg) {
+      font-size: 2.5rem;
+      &:hover {
+        background: $contact-hover-bg;
+        border: $contact-border-hover;
+        color: $white;
+        font-weight: $contact-button-hover;
+        .fa-paper-plane {
+          display: none;
+        }
+        .fa-paper-plane-o {
+          display: inline;
+        }
+        &:focus {
+          outline: none;
+        }
       }
-      .fa-paper-plane-o {
-        display: inline;     
-      }
-      &:focus {
-        outline: none;
-      }
-    } */
+    }
     .fa-paper-plane-o {
       display: none;
     }
@@ -659,6 +834,14 @@ nav {
     background: $white;
     color: $form-text;
     font: $form;
+    @include breakpoint(sm) {
+      font-size: 1.5rem;
+      padding-top: 8px;
+    }
+    @include breakpoint(md) {
+      font-size: 1.7rem;
+      padding-top: 8px;
+    }
     &:focus {
       background: $form-focus;
       border-color: $white;
@@ -675,16 +858,18 @@ nav {
 
 .footer {
   background: $footer-background;
+  height: $footer-height;
   padding-top: $footer-padding;
   @include breakpoint(sm) {
-    padding-top: 25px;
+    height: 100px;
+    padding-top: 43px;
   }
   .left {
     color: $footer-text;
     font: $footer;
     text-transform: lowercase;
     @include breakpoint(sm) {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
     }
   }
   .right {
@@ -693,7 +878,7 @@ nav {
     a {
       color: $footer-text;
       @include breakpoint(sm) {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
       }
       &:hover {
         color: $footer-contact;
@@ -702,15 +887,19 @@ nav {
   }
   .footer-logo {
     color: $footer-text;
-    border: $footer-logo-border;
+    border: $logo-border;
     border-radius: $logo-border-radius;
-    display: block;
+    display: inline-block;
     font: $footer-logo;
-    left: 51.5%;
-    line-height: 35px;
+    line-height: $footer-logo-line-height;
+    margin: auto;
     margin-left: $logo-margin-left !important;
     margin-top: $footer-margin-top;
     padding: $logo-padding;
     position: absolute;
+    @include breakpoint(sm) {
+      font-size: 2.5rem;
+      padding: 5px 11px 5px 14px;
+    }
   }
 }

@@ -1,28 +1,24 @@
 // B O R D E R S
 
 $about-radius: 20px;
-$contact-button-border: 2px solid rgba(152, 59, 69, 0.1);
-$checkbox-border: 2px solid #f7efed;
-$checkbox-button-border: 2px solid #f7efed;
-$checkbox-hover-border: 2px solid rgba(152, 59, 69, 0.1);
 $checkbox-radius: 30px;
-$footer-logo-border: 3px solid #293249;
-$logo-border: 2px solid #f7efed;
+$contact-border: 2px solid #f7efed;
+$contact-border-hover: 2px solid rgba(222, 210, 207, 0.05);
+$logo-border: 2px solid #293249;
 $logo-border-radius: 80px;
+$nav-border: 1px solid #f7efed;
 $section-border: 2px solid #69656f;
 $tribute-img-radius: 50px;
 
 // C O L O R S
 
-/* $bg: linear-gradient(rgba(247, 239, 237, 0.65), rgba(41, 50, 73, 0.65)); */
 $bio: #293249;
 $bio-a: #f7efed;
 $black: #222021;
 /* $caption-hover: rgb(135, 59, 69); */
 $caption-link: #69656f;
-$checkbox-hover-bg: rgba(152, 59, 69, 0.5);
-/* $contact-button-hover-bg: rgba(152, 59, 69, 0.5); */
-$contact-link-color: rgb(135, 59, 69);
+$contact-hover-bg: rgba(222, 210, 207, 0.55);
+$contact-link-color: #ded2cf;
 $footer-background: linear-gradient(
   rgba(222, 210, 207, 0.85),
   rgba(222, 210, 207, 0.85)
@@ -46,16 +42,17 @@ $checkbox: 300 1.03rem "Poppins Light", sans-serif;
 $checkbox-hover: 400;
 $contact-button: 300 1.5rem "Poppins Light", sans-serif;
 $contact-button-hover: 400;
+$contact-link-size: 3.5rem;
 $divider: 3rem "Amastery Script", cursive;
 $footer: 1.2rem "Poppins Light", sans-serif;
-$footer-logo: 2.5rem "Amastery Script", sans-serif;
+$footer-logo: 2rem "Amastery Script", sans-serif;
 $form: 300 1.2rem "Poppins Light", sans-serif;
 $intro-name: normal 4rem "Amastery Script", cursive;
-$intro-skills: 1.2rem "Poppins Light", sans-serif;
+$intro-skills: 1.6rem "Poppins Light", sans-serif;
 $intro-title: 2rem "Amastery Hand", sans-serif;
 $nav: 1.6rem "Poppins Light", sans-serif;
-$nav-bird: 1.7rem "Amastery Extras";
 $nav-logo: 1.6rem "Amastery Script", sans-serif;
+$placeholder-font-size: 1.4rem;
 $tribute-carousel: 700 1.5rem "Poppins Light Condensed", sans-serif;
 $tribute-header-big: 700 2.5rem "Poppins Light Condensed", sans-serif;
 $tribute-header-small: 700 2rem "Poppins Light Condensed", sans-serif;
@@ -118,9 +115,9 @@ $checkbox-padding: 3px 0 6px 0;
 $checkbox-text-padding: 7px;
 $col-padding: 15px;
 $contact-padding: 50px;
-$footer-padding: 10px;
+$footer-padding: 37px;
 $intro-padding: 50px;
-$logo-padding: 0 5px 0 5px;
+$logo-padding: 0 10px 0 10px;
 $nav-padding: 7px;
 $portfolio-padding: 50px;
 $tribute-footer-padding: 15px;
@@ -147,16 +144,16 @@ $bird-line-height: 160px;
 $contact-button-width: 47%;
 $contact-height: 755px;
 $checkbox-width: 600px;
-$contact-link-size: 3.5rem;
+$footer-height: 80px;
+$footer-logo-line-height: 35px;
 $intro-height: 590px;
 $intro-name-line-height: 55px;
 $intro-skills-line-height: 25px;
 $intro-title-line-height: 2px;
 $mobile-01: 1000px;
-$placeholder-font-size: 1.4rem;
 $portfolio-height: 575px;
 $portfolio-width: 230px;
-$profile-width: 200px;
+$profile-width: 125px;
 $tribute-carousel-height: 900px;
 $tribute-carousel-width: 100%;
 $tribute-footer-font: 14px;
