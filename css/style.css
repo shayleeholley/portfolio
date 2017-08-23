@@ -664,6 +664,9 @@ nav span {
   #portfolio .caption a:hover {
     color: #69656f;
   }
+  #portfolio .caption a:active {
+    color: #293249;
+  }
 }
 
 .btn {
