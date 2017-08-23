@@ -579,13 +579,13 @@ nav {
     }
     @include breakpoint(lg) {
       font-size: 5rem;
-    }
-    a {
-      color: $caption-link;
-      text-decoration: none;
-      /*  :hover {  
-        color: $caption-hover;
-      } */
+      a {
+        color: $caption-link;
+        text-decoration: none;
+        &:hover {
+          color: $caption-hover;
+        }
+      }
     }
   }
 }
