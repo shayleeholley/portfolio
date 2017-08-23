@@ -837,7 +837,7 @@ nav span {
 #contact .checkbox {
   background: none;
   border: 2px solid #f7efed;
-  border-radius: 30px;
+  /*     border-radius: $checkbox-radius; */
   box-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
   display: flex;
   justify-content: center;
