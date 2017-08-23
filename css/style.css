@@ -647,6 +647,10 @@ nav span {
   text-decoration: none;
 }
 
+#portfolio .caption:active {
+  color: #293249;
+}
+
 @media (min-width: 768px) {
   #portfolio .caption {
     font-size: 4rem;
