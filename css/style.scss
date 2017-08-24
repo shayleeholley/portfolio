@@ -463,7 +463,7 @@ nav {
   padding-top: $intro-padding;
   @include breakpoint(lg) {
     margin-bottom: 250px;
-    padding-top: 225px;
+    padding-top: 100px;
   }
   img {
     box-shadow: $profile-shadow;
