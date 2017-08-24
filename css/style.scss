@@ -53,6 +53,40 @@
 }
 
 @font-face {
+  font-family: 'OSC Bold';
+  src: url('https://www.dl.dropboxusercontent.com/s/ma0xcdy071clpmx/opensans-condbold-webfont.eot');
+  src: url('https://www.dl.dropboxusercontent.com/s/ma0xcdy071clpmx/opensans-condbold-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://www.dl.dropboxusercontent.com/s/hy6uk5ngyf7fm1p/opensans-condbold-webfont.woff2')
+      format('woff2'),
+    url('https://www.dl.dropboxusercontent.com/s/t7bmmrjhti5ke36/opensans-condbold-webfont.woff')
+      format('woff'),
+    url('https://www.dl.dropboxusercontent.com/s/7fn8rb9wskpv6xj/opensans-condbold-webfont.ttf')
+      format('truetype'),
+    url('https://www.dl.dropboxusercontent.com/s/u802zltf03rpg48/opensans-condbold-webfont.svg#open_sans_condensedbold')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OSC Light';
+  src: url('https://www.dl.dropboxusercontent.com/s/14dsa0forg8009g/opensans-condlight-webfont.eot');
+  src: url('https://www.dl.dropboxusercontent.com/s/14dsa0forg8009g/opensans-condlight-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://www.dl.dropboxusercontent.com/s/3cvfhuy3cuhn882/opensans-condlight-webfont.woff2')
+      format('woff2'),
+    url('https://www.dl.dropboxusercontent.com/s/iu722ulftxgjbq4/opensans-condlight-webfont.woff')
+      format('woff'),
+    url('https://www.dl.dropboxusercontent.com/s/zutul5gpky5toiy/opensans-condlight-webfont.ttf')
+      format('truetype'),
+    url('https://www.dl.dropboxusercontent.com/s/fs1zlsm7l14ch59/opensans-condlight-webfont.svg#open_sanscondensed_light')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Poppins Light';
   src: url('https://www.dl.dropboxusercontent.com/s/9q0ngiejy8hw3xz/poppins-light-webfont.eot');
   src: url('https://www.dl.dropboxusercontent.com/s/9q0ngiejy8hw3xz/poppins-light-webfont.eot?#iefix')
@@ -198,6 +232,7 @@ nav {
 .navbar-links {
   float: left;
   margin: $nav-margin;
+  text-shadow: 1px 1px 1px gray;
   @include breakpoint(sm) {
     margin: 12.5px 20px 0 0;
   }
@@ -205,7 +240,7 @@ nav {
     margin: 11.7px 25px 0 0;
   }
   @include breakpoint(lg) {
-    margin: 15.5px 30px 0 0;
+    margin: 14px 30px 0 0;
   }
   a:hover {
     background-color: none;
@@ -238,10 +273,12 @@ nav {
     @include breakpoint(md) {
       font-size: 1.7rem;
       letter-spacing: 5px;
+      text-shadow: 1px 1px 3px gray;
     }
     @include breakpoint(lg) {
       font-size: 2rem;
       letter-spacing: 6px;
+      text-shadow: 1px 1px 3px gray;
     }
   }
   .navbar-nav > li > a:hover {
@@ -270,6 +307,7 @@ nav {
   font: $divider;
   justify-content: center;
   margin: 0 1em;
+  text-shadow: $divider-shadow;
   text-transform: lowercase;
   @include breakpoint(sm) {
     font-size: 4rem;
@@ -285,6 +323,7 @@ nav {
 .divider-1::after {
   background: #69656f;
   border-radius: 50px;
+  box-shadow: $divider-shadow;
   content: '';
   flex: 1;
   height: 2.2px;
@@ -301,7 +340,7 @@ nav {
 }
 
 .divider-1::after {
-  transform: skew(-18deg);
+  transform: skew(-30deg);
 }
 
 .divider-2 {
@@ -312,6 +351,7 @@ nav {
   font: $divider;
   justify-content: center;
   margin: 0 1em;
+  text-shadow: $divider-shadow;
   text-transform: lowercase;
   @include breakpoint(sm) {
     font-size: 4rem;
@@ -327,6 +367,7 @@ nav {
 .divider-2::before {
   background: #293249;
   border-radius: 50px;
+  box-shadow: $divider-shadow;
   content: '';
   flex: 1;
   height: 2.2px;
@@ -345,6 +386,7 @@ nav {
 .divider-2::after {
   background: #293249;
   border-radius: 50px;
+  box-shadow: $divider-shadow;
   content: '';
   flex: 1;
   height: 2.2px;
@@ -360,8 +402,12 @@ nav {
   }
 }
 
+.divider-2::before {
+  transform: skew(-30deg);
+}
+
 .divider-2::after {
-  transform: skew(-18deg);
+  transform: skew(-30deg);
 }
 
 .divider-3 {
@@ -372,6 +418,7 @@ nav {
   font: $divider;
   justify-content: center;
   margin: 0 1em;
+  text-shadow: $divider-shadow;
   text-transform: lowercase;
   @include breakpoint(sm) {
     font-size: 4rem;
@@ -387,6 +434,7 @@ nav {
 .divider-3::before {
   background: $white;
   border-radius: 50px;
+  box-shadow: $divider-shadow;
   content: '';
   flex: 1;
   height: 2.2px;
@@ -403,7 +451,7 @@ nav {
 }
 
 .divider-3::before {
-  transform: skew(-18deg);
+  transform: skew(-30deg);
 }
 
 // I N T R O
@@ -413,6 +461,10 @@ nav {
   max-height: $intro-height;
   padding-bottom: $intro-padding;
   padding-top: $intro-padding;
+  @include breakpoint(lg) {
+    margin-bottom: 250px;
+    padding-top: 225px;
+  }
   img {
     box-shadow: $profile-shadow;
     display: block;
@@ -433,6 +485,7 @@ nav {
     font: $intro-name;
     line-height: $intro-name-line-height;
     margin-top: $intro-margin;
+    text-shadow: $intro-text-shadow;
     text-transform: lowercase;
     @include breakpoint(sm) {
       font-size: 5rem;
@@ -452,6 +505,7 @@ nav {
     letter-spacing: 5px;
     line-height: $intro-title-line-height;
     margin-left: $intro-title-margin-left;
+    text-shadow: $intro-text-shadow;
     @include breakpoint(sm) {
       font-size: 3rem;
       line-height: 5px;
@@ -468,7 +522,7 @@ nav {
   #skills {
     font: $intro-skills;
     line-height: $intro-skills-line-height;
-    text-shadow: 0 0 0 $intro-text;
+    text-shadow: $intro-text-shadow;
     @include breakpoint(sm) {
       font-size: 2.2rem;
       line-height: 35px;
@@ -513,7 +567,7 @@ nav {
     font: $about-bio;
     line-height: $about-line-height;
     padding: $about-bio-padding;
-    text-shadow: 0 0 0 $bio;
+    text-shadow: $bio-shadow;
     @include breakpoint(sm) {
       font-size: 2.3rem;
     }
@@ -530,7 +584,7 @@ nav {
     letter-spacing: 1px;
     line-height: $bio-contact-line-height;
     padding: $about-bio-padding;
-    text-shadow: 0 0 0 $bio;
+    text-shadow: $bio-shadow;
     text-transform: uppercase;
     @include breakpoint(sm) {
       font-size: 3rem;
@@ -540,6 +594,8 @@ nav {
     }
     a {
       color: $bio-a;
+      text-decoration: none;
+      text-shadow: $bio-shadow;
     }
   }
 }
@@ -551,6 +607,9 @@ nav {
   max-height: $portfolio-height;
   padding-bottom: $portfolio-padding;
   padding-top: $portfolio-padding;
+  @include breakpoint(lg) {
+    max-height: 1000px;
+  }
   .thumbnail {
     display: block;
     margin: auto;
@@ -578,20 +637,13 @@ nav {
     a {
       color: $caption-link;
       text-decoration: none;
-      &:visited {
-        color: $caption-link;
-      }
       @include breakpoint(sm) {
         font-size: 4rem;
       }
       @include breakpoint(lg) {
         font-size: 5rem;
-        a {
-          color: $caption-link;
-          text-decoration: none;
-          &:hover {
-            color: $caption-hover;
-          }
+        &:hover {
+          color: $caption-hover;
         }
       }
     }
@@ -600,18 +652,15 @@ nav {
 
 // --- m o d a l
 
-.btn {
+.modal-button.btn {
   background: $modal-button-default;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: $modal-button-radius;
-  border-top-left-radius: $modal-button-radius;
-  border-top-right-radius: 0;
+  border-radius: 0;
   color: $white;
   display: block;
   font: $modal-button;
   letter-spacing: 5px;
   margin: auto;
-  margin-top: $modal-margin-top;
+  margin-top: $modal-button-margin-top;
   padding: 0;
   padding-left: $modal-padding-left;
   padding-top: $modal-padding-top;
@@ -624,14 +673,19 @@ nav {
 }
 
 .modal-body p {
+  color: $modal-body-color;
   font: $modal-body;
   margin-bottom: $modal-margin-bottom;
+  line-height: $modal-line-height;
   a {
     color: $modal-link;
     text-decoration: none;
     :hover {
       color: $modal-link-hover;
     }
+  }
+  span.modal-bold {
+    font-family: $modal-body-bold;
   }
 }
 
@@ -640,7 +694,9 @@ nav {
 }
 
 .modal-title {
+  color: $modal-title-color;
   font: $modal-title;
+  letter-spacing: 1px;
 }
 
 // t r i b u t e
@@ -733,9 +789,14 @@ nav {
   max-height: $contact-height;
   padding-bottom: $contact-padding;
   padding-top: $contact-padding;
+  @include breakpoint(lg) {
+    max-height: 1200px;
+    padding-bottom: 150px;
+  }
   #links {
     i {
       margin-bottom: $contact-link-margin;
+      text-shadow: $contact-link-shadow;
     }
     a {
       color: $white;
@@ -773,9 +834,11 @@ nav {
     margin-bottom: $checkbox-margin-bottom;
     padding: $checkbox-padding;
     max-width: $checkbox-width;
-    &:hover {
-      background: $contact-hover-bg;
-      border: $contact-border-hover;
+    @include breakpoint(lg) {
+      &:hover {
+        background: $contact-hover-bg;
+        border: $contact-border-hover;
+      }
     }
     .checkbox-text {
       color: $white;
@@ -805,6 +868,7 @@ nav {
     letter-spacing: 5px;
     margin: auto;
     max-width: $contact-button-width;
+    text-shadow: $contact-button-text-shadow;
     text-transform: uppercase;
     @include breakpoint(sm) {
       font-size: 1.7rem;
@@ -874,13 +938,18 @@ nav {
   .left {
     color: $footer-text;
     font: $footer;
+    text-shadow: $footer-shadow;
     @include breakpoint(sm) {
-      font-size: 1.9rem;
+      font-size: 1.7rem;
+    }
+    @include breakpoint(lg) {
+      font-family: "Poppins Medium";
     }
   }
   .right {
     color: $footer-text;
     font: $footer;
+    text-shadow: $footer-shadow;
     a {
       color: $footer-text;
       @include breakpoint(sm) {
@@ -903,6 +972,7 @@ nav {
     margin-top: $footer-margin-top;
     padding: $logo-padding;
     position: absolute;
+    text-shadow: $footer-shadow;
     @include breakpoint(sm) {
       font-size: 2.5rem;
       padding: 5px 11px 5px 14px;

@@ -23,6 +23,22 @@
 }
 
 @font-face {
+  font-family: 'OSC Bold';
+  src: url("https://www.dl.dropboxusercontent.com/s/ma0xcdy071clpmx/opensans-condbold-webfont.eot");
+  src: url("https://www.dl.dropboxusercontent.com/s/ma0xcdy071clpmx/opensans-condbold-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/hy6uk5ngyf7fm1p/opensans-condbold-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/t7bmmrjhti5ke36/opensans-condbold-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/7fn8rb9wskpv6xj/opensans-condbold-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/u802zltf03rpg48/opensans-condbold-webfont.svg#open_sans_condensedbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OSC Light';
+  src: url("https://www.dl.dropboxusercontent.com/s/14dsa0forg8009g/opensans-condlight-webfont.eot");
+  src: url("https://www.dl.dropboxusercontent.com/s/14dsa0forg8009g/opensans-condlight-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/3cvfhuy3cuhn882/opensans-condlight-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/iu722ulftxgjbq4/opensans-condlight-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/zutul5gpky5toiy/opensans-condlight-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/fs1zlsm7l14ch59/opensans-condlight-webfont.svg#open_sanscondensed_light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Poppins Light';
   src: url("https://www.dl.dropboxusercontent.com/s/9q0ngiejy8hw3xz/poppins-light-webfont.eot");
   src: url("https://www.dl.dropboxusercontent.com/s/9q0ngiejy8hw3xz/poppins-light-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/dny3xggh7rj07s2/poppins-light-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/vg8rsml3x2z1a9k/poppins-light-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/q3r47ciezxsfxdy/poppins-light-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/zyqjhek70x803bo/poppins-light-webfont.svg#poppinslight") format("svg");
@@ -109,6 +125,7 @@ nav span {
 .navbar-links {
   float: left;
   margin: 13px 35px 0 0;
+  text-shadow: 1px 1px 1px gray;
 }
 
 @media (min-width: 768px) {
@@ -125,7 +142,7 @@ nav span {
 
 @media (min-width: 1200px) {
   .navbar-links {
-    margin: 15.5px 30px 0 0;
+    margin: 14px 30px 0 0;
   }
 }
 
@@ -168,6 +185,7 @@ nav span {
   .navbar .navbar-nav > li > a {
     font-size: 1.7rem;
     letter-spacing: 5px;
+    text-shadow: 1px 1px 3px gray;
   }
 }
 
@@ -175,6 +193,7 @@ nav span {
   .navbar .navbar-nav > li > a {
     font-size: 2rem;
     letter-spacing: 6px;
+    text-shadow: 1px 1px 3px gray;
   }
 }
 
@@ -201,6 +220,7 @@ nav span {
   font: 3rem "Amastery Script", cursive;
   justify-content: center;
   margin: 0 1em;
+  text-shadow: 1px 1px 1px gray;
   text-transform: lowercase;
 }
 
@@ -225,6 +245,7 @@ nav span {
 .divider-1::after {
   background: #69656f;
   border-radius: 50px;
+  box-shadow: 1px 1px 1px gray;
   content: '';
   flex: 1;
   height: 2.2px;
@@ -250,7 +271,7 @@ nav span {
 }
 
 .divider-1::after {
-  transform: skew(-18deg);
+  transform: skew(-30deg);
 }
 
 .divider-2 {
@@ -261,6 +282,7 @@ nav span {
   font: 3rem "Amastery Script", cursive;
   justify-content: center;
   margin: 0 1em;
+  text-shadow: 1px 1px 1px gray;
   text-transform: lowercase;
 }
 
@@ -285,6 +307,7 @@ nav span {
 .divider-2::before {
   background: #293249;
   border-radius: 50px;
+  box-shadow: 1px 1px 1px gray;
   content: '';
   flex: 1;
   height: 2.2px;
@@ -312,6 +335,7 @@ nav span {
 .divider-2::after {
   background: #293249;
   border-radius: 50px;
+  box-shadow: 1px 1px 1px gray;
   content: '';
   flex: 1;
   height: 2.2px;
@@ -336,8 +360,12 @@ nav span {
   }
 }
 
+.divider-2::before {
+  transform: skew(-30deg);
+}
+
 .divider-2::after {
-  transform: skew(-18deg);
+  transform: skew(-30deg);
 }
 
 .divider-3 {
@@ -348,6 +376,7 @@ nav span {
   font: 3rem "Amastery Script", cursive;
   justify-content: center;
   margin: 0 1em;
+  text-shadow: 1px 1px 1px gray;
   text-transform: lowercase;
 }
 
@@ -372,6 +401,7 @@ nav span {
 .divider-3::before {
   background: #f7efed;
   border-radius: 50px;
+  box-shadow: 1px 1px 1px gray;
   content: '';
   flex: 1;
   height: 2.2px;
@@ -397,14 +427,21 @@ nav span {
 }
 
 .divider-3::before {
-  transform: skew(-18deg);
+  transform: skew(-30deg);
 }
 
 #intro {
   color: #293249;
   max-height: 590px;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+@media (min-width: 1200px) {
+  #intro {
+    margin-bottom: 250px;
+    padding-top: 225px;
+  }
 }
 
 #intro img {
@@ -437,6 +474,7 @@ nav span {
   font: normal 4rem "Amastery Script", cursive;
   line-height: 55px;
   margin-top: 10px;
+  text-shadow: 1px 1px 1px lightgray;
   text-transform: lowercase;
 }
 
@@ -466,6 +504,7 @@ nav span {
   letter-spacing: 5px;
   line-height: 2px;
   margin-left: 7px;
+  text-shadow: 1px 1px 1px lightgray;
 }
 
 @media (min-width: 768px) {
@@ -492,7 +531,7 @@ nav span {
 #intro #skills {
   font: 1.6rem "Poppins Light", sans-serif;
   line-height: 25px;
-  text-shadow: 0 0 0 #293249;
+  text-shadow: 1px 1px 1px lightgray;
 }
 
 @media (min-width: 768px) {
@@ -555,7 +594,7 @@ nav span {
   font: 2rem "Poppins Light", sans-serif;
   line-height: 35px;
   padding: 10px 10px 0 10px;
-  text-shadow: 0 0 0 #293249;
+  text-shadow: 1px 1px 3px darkgray;
 }
 
 @media (min-width: 768px) {
@@ -582,7 +621,7 @@ nav span {
   letter-spacing: 1px;
   line-height: 30px;
   padding: 10px 10px 0 10px;
-  text-shadow: 0 0 0 #293249;
+  text-shadow: 1px 1px 3px darkgray;
   text-transform: uppercase;
 }
 
@@ -600,6 +639,8 @@ nav span {
 
 #about .bio-link a {
   color: #f7efed;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px darkgray;
 }
 
 #portfolio {
@@ -607,6 +648,12 @@ nav span {
   max-height: 575px;
   padding-bottom: 50px;
   padding-top: 50px;
+}
+
+@media (min-width: 1200px) {
+  #portfolio {
+    max-height: 1000px;
+  }
 }
 
 #portfolio .thumbnail {
@@ -652,10 +699,6 @@ nav span {
   text-decoration: none;
 }
 
-#portfolio .caption a:visited {
-  color: #293249;
-}
-
 @media (min-width: 768px) {
   #portfolio .caption a {
     font-size: 4rem;
@@ -666,46 +709,41 @@ nav span {
   #portfolio .caption a {
     font-size: 5rem;
   }
-  #portfolio .caption a a {
-    color: #293249;
-    text-decoration: none;
-  }
-  #portfolio .caption a a:hover {
+  #portfolio .caption a:hover {
     color: #69656f;
   }
 }
 
-.btn {
-  background: #86929f;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 0;
+.modal-button.btn {
+  background: #69656f;
+  border-radius: 0;
   color: #f7efed;
   display: block;
-  font: normal 2rem "Alcubierre", sans-serif;
+  font: normal 2rem "Poppins Medium", sans-serif;
   letter-spacing: 5px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 50px;
   padding: 0;
   padding-left: 5px;
-  padding-top: 15px;
+  padding-top: 5px;
   text-transform: uppercase;
   width: 125px;
 }
 
-.btn:hover {
-  background: #983b45;
+.modal-button.btn:hover {
+  background: #aca1a1;
   color: #f7efed;
 }
 
 .modal-body p {
-  font: 300 1.7rem "Open Sans", sans-serif;
+  color: #293249;
+  font: 300 1.6rem "Poppins Light", sans-serif;
   margin-bottom: 30px;
+  line-height: 25px;
 }
 
 .modal-body p a {
-  color: #e9b68e;
+  color: #aca1a1;
   text-decoration: none;
 }
 
@@ -713,12 +751,18 @@ nav span {
   color: #983b45;
 }
 
+.modal-body p span.modal-bold {
+  font-family: "Poppins Regular";
+}
+
 .modal-content {
   border-radius: 30px;
 }
 
 .modal-title {
-  font: normal 4rem "Luna", cursive;
+  color: #293249;
+  font: normal 3rem "Amastery Hand", cursive;
+  letter-spacing: 1px;
 }
 
 * {
@@ -745,12 +789,12 @@ nav span {
 }
 
 .header #header1 {
-  font: 700 2.5rem "Poppins Light Condensed", sans-serif;
+  font: 2rem "OSC Bold", sans-serif;
   text-transform: lowercase;
 }
 
 .header #header2 {
-  font: 700 2rem "Poppins Light Condensed", sans-serif;
+  font: 1.5rem "OSC Bold", sans-serif;
 }
 
 #my-carousel img {
@@ -759,7 +803,7 @@ nav span {
 }
 
 #my-carousel .carousel-text {
-  font: 700 1.5rem "Poppins Light Condensed", sans-serif;
+  font: 1.5rem "OSC Light", sans-serif;
 }
 
 #main-contain {
@@ -769,12 +813,12 @@ nav span {
 }
 
 #main-contain .main-title {
-  font: 700 4rem "Poppins Light Condensed", sans-serif;
+  font: 4rem "OSC Bold", sans-serif;
   text-transform: uppercase;
 }
 
 #main-contain .main-text {
-  font: 3rem "Poppins Light Condensed", sans-serif;
+  font: 3rem "OSC Light", sans-serif;
   margin-top: 25px;
 }
 
@@ -800,13 +844,21 @@ nav span {
 
 #contact {
   color: #f7efed;
-  max-height: 755px;
+  max-height: 900px;
   padding-bottom: 50px;
   padding-top: 50px;
 }
 
+@media (min-width: 1200px) {
+  #contact {
+    max-height: 1200px;
+    padding-bottom: 150px;
+  }
+}
+
 #contact #links i {
   margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
 }
 
 #contact #links a {
@@ -856,9 +908,11 @@ nav span {
   max-width: 600px;
 }
 
-#contact .checkbox:hover {
-  background: rgba(222, 210, 207, 0.55);
-  border: 2px solid rgba(222, 210, 207, 0.05);
+@media (min-width: 1200px) {
+  #contact .checkbox:hover {
+    background: rgba(222, 210, 207, 0.55);
+    border: 2px solid rgba(222, 210, 207, 0.05);
+  }
 }
 
 #contact .checkbox .checkbox-text {
@@ -893,6 +947,7 @@ nav span {
   letter-spacing: 5px;
   margin: auto;
   max-width: 47%;
+  text-shadow: 1px 1px 3px slategray;
   text-transform: uppercase;
 }
 
@@ -984,17 +1039,25 @@ nav span {
 .footer .left {
   color: #293249;
   font: 1.2rem "Poppins Light", sans-serif;
+  text-shadow: 1px 1px 1px gray;
 }
 
 @media (min-width: 768px) {
   .footer .left {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer .left {
+    font-family: "Poppins Medium";
   }
 }
 
 .footer .right {
   color: #293249;
   font: 1.2rem "Poppins Light", sans-serif;
+  text-shadow: 1px 1px 1px gray;
 }
 
 .footer .right a {
@@ -1023,6 +1086,7 @@ nav span {
   margin-top: -17px;
   padding: 0 10px 0 10px;
   position: absolute;
+  text-shadow: 1px 1px 1px gray;
 }
 
 @media (min-width: 768px) {

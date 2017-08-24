@@ -53,11 +53,11 @@ $intro-title: 2rem "Amastery Hand", sans-serif;
 $nav: 1.6rem "Poppins Light", sans-serif;
 $nav-logo: 1.6rem "Amastery Script", sans-serif;
 $placeholder-font-size: 1.4rem;
-$tribute-carousel: 700 1.5rem "Poppins Light Condensed", sans-serif;
-$tribute-header-big: 700 2.5rem "Poppins Light Condensed", sans-serif;
-$tribute-header-small: 700 2rem "Poppins Light Condensed", sans-serif;
-$tribute-main-text: 3rem "Poppins Light Condensed", sans-serif;
-$tribute-title: 700 4rem "Poppins Light Condensed", sans-serif;
+$tribute-carousel: 1.5rem "OSC Light", sans-serif;
+$tribute-header-big: 2rem "OSC Bold", sans-serif;
+$tribute-header-small: 1.5rem "OSC Bold", sans-serif;
+$tribute-main-text: 3rem "OSC Light", sans-serif;
+$tribute-title: 4rem "OSC Bold", sans-serif;
 
 // M A R G I N S
 
@@ -93,19 +93,24 @@ $large-font-size-header-1: 4.5rem;
 // M O D A L
 
 $modal-body-radius: 30px;
-$modal-body: 300 1.7rem 'Open Sans', sans-serif;
-$modal-button: normal 2rem 'Alcubierre', sans-serif;
-$modal-button-default: #86929f;
-$modal-button-hover: #983b45;
+$modal-body: 300 1.6rem 'Poppins Light', sans-serif;
+$modal-body-bold: "Poppins Regular";
+$modal-body-color: #293249;
+$modal-button: normal 2rem 'Poppins Medium', sans-serif;
+$modal-button-default: #69656f;
+$modal-button-hover: #aca1a1;
+$modal-button-margin-top: 50px;
 $modal-button-radius: 20px;
 $modal-button-width: 125px;
-$modal-link: #e9b68e;
+$modal-line-height: 25px;
+$modal-link: #aca1a1;
 $modal-link-hover: #983b45;
 $modal-margin-bottom: 30px;
 $modal-margin-top: 30px;
 $modal-padding-left: 5px;
-$modal-padding-top: 15px;
-$modal-title: normal 4rem 'Luna', cursive;
+$modal-padding-top: 5px;
+$modal-title: normal 3rem 'Amastery Hand', cursive;
+$modal-title-color: #293249;
 
 // P A D D I N G
 
@@ -116,7 +121,7 @@ $checkbox-text-padding: 8px;
 $col-padding: 15px;
 $contact-padding: 50px;
 $footer-padding: 37px;
-$intro-padding: 50px;
+$intro-padding: 30px;
 $logo-padding: 0 10px 0 10px;
 $nav-padding: 7px;
 $portfolio-padding: 50px;
@@ -126,11 +131,16 @@ $tribute-main-padding: 0 20px 20px 20px;
 // S H A D O W S
 
 $bio-bird-shadow: 1px 1px 3px rgba(150, 150, 150, 0.50);
+$bio-shadow: 1px 1px 3px darkgray;
 $checkbox-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
 $checkbox-text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
 $contact-button-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
+$contact-button-text-shadow: 1px 1px 3px slategray;
 $contact-link-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
+$divider-shadow: 1px 1px 1px gray;
+$footer-shadow: 1px 1px 1px gray;
 $form-shadow: 0 0 5px rgba(34, 32, 33, 0.4);
+$intro-text-shadow: 1px 1px 1px lightgray;
 $profile-shadow: 1px 1px 5px gray;
 $tribute-img-shadow: 3px 3px 7px gray;
 
@@ -142,7 +152,7 @@ $about-line-height: 35px;
 $bio-contact-line-height: 30px;
 $bird-line-height: 160px;
 $contact-button-width: 47%;
-$contact-height: 755px;
+$contact-height: 900px;
 $checkbox-width: 600px;
 $footer-height: 80px;
 $footer-logo-line-height: 35px;
