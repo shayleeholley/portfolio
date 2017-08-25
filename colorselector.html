@@ -24,22 +24,23 @@
     <div class="bg">
 
         <!-- M O D A L -->
-        <div class="modal fade" id="myModal">
+        <!-- <div class="modal fade" id="myModal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button class="close" data-dismiss="modal" type="button">&times;</button>
-                        <p class="modal-title text-center">Jeff Kaplan Tribute</p>
+                        <p class="modal-title text-center">Color Selector</p>
                     </div>
                     <div class="modal-body">
-                        <p class="text-center">This is a project that I did for a <a href="http://freecodecamp.org" target="_blank"><span class="modal-bold">FreeCodeCamp</span></a>                            course. Since I'm a huge fan of Overwatch, I put together a simple tribute to its director, the
-                            infamous Jeff Kaplan.</p>
-                        <p class="text-center"><span class="modal-bold">Technologies used:</span> Bootstrap, CSS, HTML & SASS</p>
+                        <p class="text-center">This project was inspired by <a href="https://code.sololearn.com/WJly9ZuywWBU/#html">this color picker</a>,
+                            found in the SoloLearn Playground. It was my first time using JavaScript, and it was a blast
+                            to do.</p>
+                        <p class="text-center"><span class="modal-bold">Technologies used:</span> Bootstrap, CSS, HTML, JavaScript & SASS</p>
                         <button class="btn modal-button" data-dismiss="modal" type="button">Close</button>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- N A V B A R -->
         <nav class="navbar navbar-fixed-top">
@@ -89,26 +90,34 @@
         <div class="container selector-container">
             <p id="selector-title" class="text-center">Color Selector</p>
             <div class="rgb">
-                <h2 id="value">#000000</h2>
+                <p class="text-center" id="value">#000000</p>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="colors" id="divRed" style="color:red" onclick="input(x,r)">Red</div>
+                    <div class="colors text-center" id="divRed" onclick="input(x,r)">Red</div>
                     <input type="range" id="red" min="0" max="255" step="1" value="0" onchange="getColor()"></input>
                 </div>
                 <div class="col-md-4">
-                    <div class="colors" id="divGreen" style="color:Green" onclick="input(y,g)">Green</div>
+                    <div class="colors text-center" id="divGreen" onclick="input(y,g)">Green</div>
                     <input type="range" id="green" min="0" max="255" step="1" value="0" onchange="getColor()"></input>
                 </div>
                 <div class="col-md-4">
-                    <div class="colors" id="divBlue" style="color:Blue" onclick="input(z,b)">Blue</div>
+                    <div class="colors text-center" id="divBlue" onclick="input(z,b)">Blue</div>
                     <input type="range" id="blue" min="0" max="255" step="1" value="0" onchange="getColor()"></input>
                 </div>
             </div>
-            <div class="rgb">
-                <h2 id="value1">#000000</h2>
-                <h2 id="value2">#000000</h2>
-                <h2 id="value3">#000000</h2>
+
+            <p class="text-center" id="similar">Similar Hues</p>
+            <div class="similar-rgb">
+                <div class="selector-left">
+                    <p class="text-center pull-left" id="value1">#000000</p>
+                </div>
+                <div class="selector-right">
+                    <p class="text-center pull-right" id="value3">#000000</p>
+                </div>
+                <div class="selector-center">
+                    <p class="text-center pull-center" id="value2">#000000</p>
+                </div>
             </div>
         </div>
 

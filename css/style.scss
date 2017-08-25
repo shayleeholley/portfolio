@@ -188,23 +188,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Wire One';
-  src: url('https://www.dl.dropboxusercontent.com/s/1jssvfis9xrkc2k/wireone-webfont.eot');
-  src: url('https://www.dl.dropboxusercontent.com/s/1jssvfis9xrkc2k/wireone-webfont.eot?#iefix')
-      format('embedded-opentype'),
-    url('https://www.dl.dropboxusercontent.com/s/ping55uw8pj2vij/wireone-webfont.woff2')
-      format('woff2'),
-    url('https://www.dl.dropboxusercontent.com/s/r7iujqjg2caaejb/wireone-webfont.woff')
-      format('woff'),
-    url('https://www.dl.dropboxusercontent.com/s/cr8tr0z89bxsk8h/wireone-webfont.ttf')
-      format('truetype'),
-    url('https://www.dl.dropboxusercontent.com/s/mhb8xvrojccpe72/wireone-webfont.svg#wire_oneregular')
-      format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   height: 100%;
   overflow: scroll;
@@ -722,6 +705,9 @@ nav {
     @include breakpoint(md) {
       font-family: "Poppins Regular";
     }
+    @include breakpoint(lg) {
+      font-family: "Poppins Semibold";
+    }
   }
 }
 
@@ -734,6 +720,7 @@ nav {
   letter-spacing: 1px;
   margin: auto;
   margin-top: $modal-button-margin-top;
+  outline: none;
   padding: 0;
   padding-bottom: $modal-padding-bottom;
   padding-left: $modal-padding-left;
@@ -901,12 +888,51 @@ nav {
 // c o l o r   s e l e c t o r
 
 .selector-container {
-  padding-top: 100px;
+  padding-top: $selector-container-top;
 }
 
 #selector-title {
   font: $selector-title;
+  letter-spacing: 7px;
+  padding-left: $selector-title-padding;
   text-transform: uppercase;
+}
+
+.rgb {
+  display: block;
+  margin: auto;
+  width: $selector-color-size;
+  p {
+    background: white;
+    border-radius: $selector-border-radius;
+    box-shadow: $selector-box-shadow;
+    height: $selector-color-size;
+    padding-top: $selector-color-padding-top;
+  }
+}
+
+#similar {
+  font: $selector-similar;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.similar-rgb {
+  p {
+    background: white;
+    border-radius: $selector-border-radius;
+    box-shadow: $selector-box-shadow;
+    height: $selector-color-size;
+    margin-bottom: 50px;
+    padding-top: $selector-color-padding-top;
+    width: $selector-color-size;
+  }
+  .pull-center {
+    box-shadow: $selector-box-shadow;
+    display: block;
+    margin: auto;
+    width: $selector-color-size;
+  }
 }
 
 // r e s u m e s
