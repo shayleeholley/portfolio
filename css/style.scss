@@ -171,6 +171,40 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Six Caps';
+  src: url('https://www.dl.dropboxusercontent.com/s/j129sqy57uu83mw/sixcaps-webfont.eot');
+  src: url('https://www.dl.dropboxusercontent.com/s/j129sqy57uu83mw/sixcaps-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://www.dl.dropboxusercontent.com/s/s7avvldmt4cscxe/sixcaps-webfont.woff2')
+      format('woff2'),
+    url('https://www.dl.dropboxusercontent.com/s/25dvsbkfgdcjvlb/sixcaps-webfont.woff')
+      format('woff'),
+    url('https://www.dl.dropboxusercontent.com/s/jq5vatnsxwen026/sixcaps-webfont.ttf')
+      format('truetype'),
+    url('https://www.dl.dropboxusercontent.com/s/vwlft7h2c0dyw0l/sixcaps-webfont.svg#six_capsregular')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Wire One';
+  src: url('https://www.dl.dropboxusercontent.com/s/1jssvfis9xrkc2k/wireone-webfont.eot');
+  src: url('https://www.dl.dropboxusercontent.com/s/1jssvfis9xrkc2k/wireone-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://www.dl.dropboxusercontent.com/s/ping55uw8pj2vij/wireone-webfont.woff2')
+      format('woff2'),
+    url('https://www.dl.dropboxusercontent.com/s/r7iujqjg2caaejb/wireone-webfont.woff')
+      format('woff'),
+    url('https://www.dl.dropboxusercontent.com/s/cr8tr0z89bxsk8h/wireone-webfont.ttf')
+      format('truetype'),
+    url('https://www.dl.dropboxusercontent.com/s/mhb8xvrojccpe72/wireone-webfont.svg#wire_oneregular')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   height: 100%;
   overflow: scroll;
@@ -447,6 +481,10 @@ nav {
     margin-bottom: 250px;
     padding-top: 50px;
   }
+  @include breakpoint(xl) {
+    margin-bottom: 300px;
+    padding-top: 200px;
+  }
   img {
     box-shadow: $profile-shadow;
     display: block;
@@ -589,8 +627,11 @@ nav {
   max-height: $portfolio-height;
   padding-bottom: $portfolio-padding;
   padding-top: $portfolio-padding;
+  @include breakpoint(md) {
+    max-height: 1275px;
+  }
   @include breakpoint(lg) {
-    max-height: 1000px;
+    max-height: 2700px;
   }
   .thumbnail {
     display: block;
@@ -772,6 +813,12 @@ nav {
   }
   .carousel-text {
     font: $tribute-carousel;
+    @include breakpoint(md) {
+      font-size: 2rem;
+    }
+    @include breakpoint(lg) {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -779,13 +826,19 @@ nav {
 
 #main-contain {
   background: $white;
+  margin-bottom: $tribute-main-margin-bottom;
   margin-top: $tribute-main-margin-top;
   padding: $tribute-main-padding;
   @include breakpoint(md) {
     display: block;
     margin: auto;
+    margin-bottom: $tribute-main-margin-bottom;
     margin-top: $tribute-main-margin-top;
     width: 80%;
+  }
+  @include breakpoint(lg) {
+    margin-bottom: $tribute-main-margin-bottom;
+    margin-top: $tribute-main-margin-top;
   }
   .main-title {
     font: $tribute-title;
@@ -847,6 +900,15 @@ nav {
 
 // c o l o r   s e l e c t o r
 
+.selector-container {
+  padding-top: 100px;
+}
+
+#selector-title {
+  font: $selector-title;
+  text-transform: uppercase;
+}
+
 // r e s u m e s
 
 // C O N T A C T
@@ -856,6 +918,10 @@ nav {
   max-height: $contact-height;
   padding-bottom: $contact-padding;
   padding-top: $contact-padding;
+  @include breakpoint(md) {
+    max-height: 1300px;
+    padding-bottom: 150px;
+  }
   @include breakpoint(lg) {
     max-height: 1200px;
     padding-bottom: 150px;

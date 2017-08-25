@@ -8,7 +8,6 @@ $logo-border: 2px solid #293249;
 $logo-border-radius: 80px;
 $nav-border: 1px solid #f7efed;
 $section-border: 2px solid #69656f;
-$tribute-img-radius: 20px;
 
 // C O L O R S
 
@@ -30,8 +29,6 @@ $form-focus: rgba(222, 210, 207, 0.85);
 $intro-text: #293249;
 $nav-bg: linear-gradient(rgba(105, 101, 111, 0.85), rgba(105, 101, 111, 0.85));
 $nav-bg-haf: rgba(247, 239, 237, 0.37);
-$tribute-link: #aca1a1;
-$tribute-link-hover: #69656f;
 $white: #f7efed;
 
 // F O N T S
@@ -55,12 +52,6 @@ $intro-title: 2rem "Amastery Hand", sans-serif;
 $nav: 1.6rem "Poppins Light", sans-serif;
 $nav-logo: 1.6rem "Amastery Script", sans-serif;
 $placeholder-font-size: 1.4rem;
-$tribute-carousel: 1.5rem "OSC Light", sans-serif;
-$tribute-footer-font: 1rem;
-$tribute-header-big: 3rem "OSC Bold", sans-serif;
-$tribute-header-small: 2.5rem "OSC Light", sans-serif;
-$tribute-main-text: 2rem "OSC Light", sans-serif;
-$tribute-title: 4rem "OSC Bold", sans-serif;
 
 // M A R G I N S
 
@@ -79,9 +70,6 @@ $nav-margin: 13px 35px 0 0;
 $profile-margin: 50px;
 $thumbnail-margin-bottom: 20px;
 $thumbnail-margin-top: 20px;
-$tribute-header-margin-top: 50px;
-$tribute-main-margin-top: 20px;
-$tribute-main-margin-top: 25px;
 
 // M E D I A   Q U E R I E S
 
@@ -130,8 +118,6 @@ $intro-padding: 30px;
 $logo-padding: 0 10px 0 10px;
 $nav-padding: 7px;
 $portfolio-padding: 50px;
-$tribute-footer-padding: 15px;
-$tribute-main-padding: 0 20px 20px 20px;
 
 // S H A D O W S
 
@@ -147,7 +133,6 @@ $footer-shadow: 1px 1px 1px rgb(172, 161, 161);
 $form-shadow: 0 0 5px rgba(34, 32, 33, 0.4);
 $intro-text-shadow: 1px 1px 1px lightgray;
 $profile-shadow: 1px 1px 5px gray;
-$tribute-img-shadow: 3px 3px 7px gray;
 
 // S I Z E S
 
@@ -166,12 +151,36 @@ $intro-name-line-height: 55px;
 $intro-skills-line-height: 25px;
 $intro-title-line-height: 2px;
 $mobile-01: 1000px;
-$portfolio-height: 575px;
+$portfolio-height: 1000px;
 $portfolio-width: 230px;
 $profile-width: 125px;
+
+// U R L S
+
+// T R I B U T E
+
+$tribute-carousel: 1.5rem "OSC Bold", sans-serif;
 $tribute-carousel-height: 900px;
 $tribute-carousel-width: 100%;
 $tribute-col-width: 100%;
+$tribute-footer-font: 1rem;
+$tribute-footer-padding: 15px;
+$tribute-header-big: 3rem "OSC Bold", sans-serif;
+$tribute-header-margin-top: 50px;
+$tribute-header-small: 2.5rem "OSC Light", sans-serif;
+$tribute-img-radius: 20px;
 $tribute-img-width: 250px;
+$tribute-img-shadow: 3px 3px 7px gray;
+$tribute-link: #aca1a1;
+$tribute-link-hover: #69656f;
+$tribute-main-margin-bottom: 20px;
+$tribute-main-margin-top: 20px;
+$tribute-main-padding: 0 20px 20px 20px;
+$tribute-main-text: 2rem "OSC Light", sans-serif;
+$tribute-title: 4rem "OSC Bold", sans-serif;
 
-// U R L S
+// S E L E C T O R
+
+$selector-title: 5rem "Six Caps", sans-serif;
+
+// R E S U M E S

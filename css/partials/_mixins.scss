@@ -15,7 +15,11 @@
     @media (min-width: 1200px) {
       @content;
     }
+  } @else if $class == xl {
+    @media (min-width: 1918px) {
+      @content;
+    }
   } @else {
-    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    @warn "Breakpoint mixin supports: xs, sm, md, lg & xl";
   }
 }
