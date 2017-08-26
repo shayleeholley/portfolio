@@ -5,6 +5,16 @@ $(".navbar-toggle").click(function() {
   $(this).find("i").toggleClass("fa-chevron-circle-down fa-chevron-circle-up");
 });
 
+// F A D E - I N
+
+$("img")
+  .hide()
+  .one("load", function() {
+    $(this).fadeIn(3000);
+  })
+  .each(function() {
+    if (this.complete) $(this).trigger("load");
+  });
 // S C R O L L S P Y   A N I M A T I O N
 
 $(document).ready(function() {

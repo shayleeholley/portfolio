@@ -656,103 +656,7 @@ nav {
   }
 }
 
-// --- m o d a l
-
-.modal-content {
-  display: block;
-  margin: auto;
-  .modal-header {
-    .close {
-      color: $modal-close !important;
-      opacity: 1 !important;
-      @include breakpoint(md) {
-        font-size: 3rem !important;
-      }
-    }
-  }
-}
-
-.modal-title {
-  color: $modal-title-color;
-  font: $modal-title;
-  letter-spacing: 1px;
-  @include breakpoint(md) {
-    font-size: 5rem;
-  }
-}
-
-.modal-body p {
-  color: $modal-body-color;
-  font: $modal-body;
-  margin-bottom: $modal-margin-bottom;
-  line-height: $modal-line-height;
-  @include breakpoint(md) {
-    font-size: 1.8rem;
-  }
-  @include breakpoint(lg) {
-    font-size: 2rem;
-  }
-  a {
-    color: $modal-link;
-    text-decoration: none;
-    :hover {
-      color: $modal-link-hover;
-    }
-  }
-  span.modal-bold {
-    font-family: $modal-body-bold;
-    text-transform: uppercase;
-    @include breakpoint(md) {
-      font-family: "Poppins Regular";
-    }
-    @include breakpoint(lg) {
-      font-family: "Poppins Semibold";
-    }
-  }
-}
-
-.modal-button.btn {
-  background: $modal-button-default;
-  border-radius: $modal-button-radius;
-  color: $white;
-  display: block;
-  font: $modal-button;
-  letter-spacing: 1px;
-  margin: auto;
-  margin-top: $modal-button-margin-top;
-  outline: none;
-  padding: 0;
-  padding-bottom: $modal-padding-bottom;
-  padding-left: $modal-padding-left;
-  padding-top: $modal-padding-top;
-  width: $modal-button-width;
-  @include breakpoint(md) {
-    border-radius: 30px;
-    font-size: 2.5rem;
-    width: 120px;
-  }
-  &:hover {
-    background: $modal-button-hover;
-    color: $white;
-  }
-}
-
 // t r i b u t e
-
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: $col-padding;
-}
 
 // --- h e a d e r
 
@@ -770,6 +674,9 @@ nav {
     @include breakpoint(lg) {
       font-size: 5rem;
     }
+    @include breakpoint(xl) {
+      font-size: 6rem;
+    }
   }
   #header2 {
     font: $tribute-header-small;
@@ -778,6 +685,9 @@ nav {
     }
     @include breakpoint(lg) {
       font-size: 4rem;
+    }
+    @include breakpoint(xl) {
+      font-size: 4.5rem;
     }
   }
 }
@@ -790,12 +700,19 @@ nav {
     margin: auto;
     width: 80%;
   }
+  @include breakpoint(xl) {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
   img {
     max-height: $tribute-carousel-height;
     width: $tribute-carousel-width;
     @include breakpoint(md) {
       display: block;
       margin: auto;
+    }
+    @include breakpoint(xl) {
     }
   }
   .carousel-text {
@@ -805,6 +722,9 @@ nav {
     }
     @include breakpoint(lg) {
       font-size: 3rem;
+    }
+    @include breakpoint(xl) {
+      font-size: 3.5rem;
     }
   }
 }
@@ -827,11 +747,21 @@ nav {
     margin-bottom: $tribute-main-margin-bottom;
     margin-top: $tribute-main-margin-top;
   }
+  @include breakpoint(xl) {
+    display: block;
+    margin: auto;
+    margin-bottom: $tribute-main-margin-bottom;
+    margin-top: $tribute-main-margin-top;
+    width: 100%;
+  }
   .main-title {
     font: $tribute-title;
     text-transform: uppercase;
     @include breakpoint(lg) {
       font-size: 6rem;
+    }
+    @include breakpoint(xl) {
+      font-size: 6.5rem;
     }
   }
   .main-text {
@@ -842,6 +772,9 @@ nav {
     }
     @include breakpoint(lg) {
       font-size: 3.5rem;
+    }
+    @include breakpoint(xl) {
+      font-size: 4rem;
     }
     a {
       color: $tribute-link;
@@ -863,6 +796,9 @@ nav {
     @include breakpoint(lg) {
       max-width: 700px;
     }
+    @include breakpoint(xl) {
+      max-width: 900px;
+    }
   }
 }
 
@@ -879,10 +815,6 @@ nav {
       color: $tribute-link-hover;
     }
   }
-}
-
-[class*="col-"] {
-  width: $tribute-col-width;
 }
 
 // c o l o r   s e l e c t o r

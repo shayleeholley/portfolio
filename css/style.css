@@ -715,124 +715,6 @@ nav span {
   }
 }
 
-.modal-content {
-  display: block;
-  margin: auto;
-}
-
-.modal-content .modal-header .close {
-  color: #293249 !important;
-  opacity: 1 !important;
-}
-
-@media (min-width: 992px) {
-  .modal-content .modal-header .close {
-    font-size: 3rem !important;
-  }
-}
-
-.modal-title {
-  color: #293249;
-  font: normal 3rem "Amastery Hand", cursive;
-  letter-spacing: 1px;
-}
-
-@media (min-width: 992px) {
-  .modal-title {
-    font-size: 5rem;
-  }
-}
-
-.modal-body p {
-  color: #293249;
-  font: 300 1.6rem "Poppins Light", sans-serif;
-  margin-bottom: 30px;
-  line-height: 25px;
-}
-
-@media (min-width: 992px) {
-  .modal-body p {
-    font-size: 1.8rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .modal-body p {
-    font-size: 2rem;
-  }
-}
-
-.modal-body p a {
-  color: #aca1a1;
-  text-decoration: none;
-}
-
-.modal-body p a :hover {
-  color: #983b45;
-}
-
-.modal-body p span.modal-bold {
-  font-family: "Poppins Regular";
-  text-transform: uppercase;
-}
-
-@media (min-width: 992px) {
-  .modal-body p span.modal-bold {
-    font-family: "Poppins Regular";
-  }
-}
-
-@media (min-width: 1200px) {
-  .modal-body p span.modal-bold {
-    font-family: "Poppins Semibold";
-  }
-}
-
-.modal-button.btn {
-  background: #69656f;
-  border-radius: 20px;
-  color: #f7efed;
-  display: block;
-  font: normal 1.6rem "Amastery Hand", sans-serif;
-  letter-spacing: 1px;
-  margin: auto;
-  margin-top: 30px;
-  outline: none;
-  padding: 0;
-  padding-bottom: 8px;
-  padding-left: 3px;
-  padding-top: 10px;
-  width: 70px;
-}
-
-@media (min-width: 992px) {
-  .modal-button.btn {
-    border-radius: 30px;
-    font-size: 2.5rem;
-    width: 120px;
-  }
-}
-
-.modal-button.btn:hover {
-  background: #aca1a1;
-  color: #f7efed;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
 .header {
   margin-top: 50px;
 }
@@ -858,6 +740,12 @@ nav span {
   }
 }
 
+@media (min-width: 1918px) {
+  .header #header1 {
+    font-size: 6rem;
+  }
+}
+
 .header #header2 {
   font: 2.5rem "OSC Light", sans-serif;
 }
@@ -874,11 +762,25 @@ nav span {
   }
 }
 
+@media (min-width: 1918px) {
+  .header #header2 {
+    font-size: 4.5rem;
+  }
+}
+
 @media (min-width: 992px) {
   #my-carousel {
     display: block;
     margin: auto;
     width: 80%;
+  }
+}
+
+@media (min-width: 1918px) {
+  #my-carousel {
+    display: block;
+    margin: auto;
+    width: 100%;
   }
 }
 
@@ -910,6 +812,12 @@ nav span {
   }
 }
 
+@media (min-width: 1918px) {
+  #my-carousel .carousel-text {
+    font-size: 3.5rem;
+  }
+}
+
 #main-contain {
   background: #f7efed;
   margin-bottom: 20px;
@@ -934,6 +842,16 @@ nav span {
   }
 }
 
+@media (min-width: 1918px) {
+  #main-contain {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
 #main-contain .main-title {
   font: 4rem "OSC Bold", sans-serif;
   text-transform: uppercase;
@@ -942,6 +860,12 @@ nav span {
 @media (min-width: 1200px) {
   #main-contain .main-title {
     font-size: 6rem;
+  }
+}
+
+@media (min-width: 1918px) {
+  #main-contain .main-title {
+    font-size: 6.5rem;
   }
 }
 
@@ -959,6 +883,12 @@ nav span {
 @media (min-width: 1200px) {
   #main-contain .main-text {
     font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1918px) {
+  #main-contain .main-text {
+    font-size: 4rem;
   }
 }
 
@@ -991,6 +921,12 @@ nav span {
   }
 }
 
+@media (min-width: 1918px) {
+  #main-contain img {
+    max-width: 900px;
+  }
+}
+
 .tribute-footer {
   font-size: 1rem;
   padding: 15px;
@@ -1009,10 +945,6 @@ nav span {
 
 .tribute-footer a:hover {
   color: #69656f;
-}
-
-[class*="col-"] {
-  width: 100%;
 }
 
 .selector-container {
