@@ -220,8 +220,8 @@ body {
 //unfinished
 
 ::selection {
-  background: $white;
-  color: $black;
+  background: $black;
+  color: $white;
 }
 
 // N A V B A R
@@ -610,6 +610,9 @@ nav {
   max-height: $portfolio-height;
   padding-bottom: $portfolio-padding;
   padding-top: $portfolio-padding;
+  @include breakpoint(sm) {
+    max-height: 1090px;
+  }
   @include breakpoint(md) {
     max-height: 1275px;
   }
@@ -621,15 +624,6 @@ nav {
     margin: auto;
     margin-bottom: $thumbnail-margin-bottom;
     width: $portfolio-width;
-    @include breakpoint(sm) {
-      width: 250px;
-    }
-    @include breakpoint(md) {
-      width: 300px;
-    }
-    @include breakpoint(lg) {
-      width: 450px;
-    }
     img {
       opacity: 1;
       &:hover {
@@ -644,7 +638,7 @@ nav {
       color: $caption-link;
       text-decoration: none;
       @include breakpoint(sm) {
-        font-size: 4rem;
+        font-size: 1.8rem;
       }
       @include breakpoint(lg) {
         font-size: 5rem;
@@ -823,30 +817,46 @@ nav {
   padding-top: $selector-container-top;
 }
 
-#selector-title {
-  font: $selector-title;
-  letter-spacing: 7px;
-  padding-left: $selector-title-padding;
-  text-transform: uppercase;
-}
-
 .rgb {
   display: block;
   margin: auto;
+  margin-bottom: $selector-color-margin;
   width: $selector-color-size;
+  @include breakpoint(sm) {
+    width: 150px;
+  }
+  @include breakpoint(md) {
+    width: 175px;
+  }
+  @include breakpoint(lg) {
+    width: 250px;
+  }
   p {
     background: white;
     border-radius: $selector-border-radius;
     box-shadow: $selector-box-shadow;
+    font: $selector-color-font;
     height: $selector-color-size;
     padding-top: $selector-color-padding-top;
+    @include breakpoint(sm) {
+      border-radius: 80px;
+      font-size: 2rem;
+      height: 150px;
+      padding-top: 67px;
+    }
+    @include breakpoint(md) {
+      border-radius: 100px;
+      font-size: 2.5rem;
+      height: 175px;
+      padding-top: 75px;
+    }
+    @include breakpoint(lg) {
+      border-radius: 150px;
+      font-size: 3.5rem;
+      height: 250px;
+      padding-top: 108px;
+    }
   }
-}
-
-#similar {
-  font: $selector-similar;
-  letter-spacing: 3px;
-  text-transform: uppercase;
 }
 
 .similar-rgb {
@@ -854,16 +864,137 @@ nav {
     background: white;
     border-radius: $selector-border-radius;
     box-shadow: $selector-box-shadow;
-    height: $selector-color-size;
+    font: $selector-similar-font;
+    height: $selector-similar-size;
     margin-bottom: 50px;
-    padding-top: $selector-color-padding-top;
-    width: $selector-color-size;
+    padding-top: $selector-similar-padding-top;
+    width: $selector-similar-size;
+    @include breakpoint(sm) {
+      border-radius: 80px;
+      font-size: 1.5rem;
+      height: 125px;
+      padding-top: 55px;
+      width: 125px;
+    }
+    @include breakpoint(md) {
+      border-radius: 80px;
+      font-size: 2rem;
+      height: 150px;
+      margin-left: 75px;
+      margin-right: 75px;
+      padding-top: 65px;
+      width: 150px;
+    }
+    @include breakpoint(lg) {
+      border-radius: 100px;
+      font-size: 3rem;
+      height: 175px;
+      margin-left: 85px;
+      margin-right: 85px;
+      padding-top: 75px;
+      width: 175px;
+    }
   }
   .pull-center {
     box-shadow: $selector-box-shadow;
     display: block;
     margin: auto;
-    width: $selector-color-size;
+    margin-top: $selector-similar-margin;
+    width: $selector-similar-size;
+    @include breakpoint(sm) {
+      width: 125px;
+    }
+    @include breakpoint(md) {
+      width: 150px;
+    }
+    @include breakpoint(lg) {
+      width: 175px;
+    }
+  }
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  display: block;
+  margin-top: $selector-input-range-margin;
+  margin: auto;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  animate: 0.2s;
+  background: $white;
+  border-radius: $selector-input-track-border;
+  box-shadow: $selector-input-track-shadow;
+  cursor: pointer;
+  height: $selector-input-track-height;
+  width: 100%;
+  @include breakpoint(sm) {
+    height: 12px;
+  }
+  @include breakpoint(md) {
+    height: 20px;
+  }
+  @include breakpoint(lg) {
+    height: 28px;
+  }
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: $selector-input-slider-color;
+  border-radius: $selector-input-slider-radius;
+  box-shadow: $selector-input-slider-shadow;
+  cursor: pointer;
+  height: $selector-input-slider-size;
+  margin-top: $selector-input-slider-margin;
+  width: $selector-input-slider-size;
+  @include breakpoint(sm) {
+    height: 20px;
+    width: 20px;
+  }
+  @include breakpoint(md) {
+    height: 28px;
+    width: 28px;
+  }
+  @include breakpoint(md) {
+    height: 36px;
+    width: 36px;
+  }
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: $selector-input-focus;
+}
+
+#red {
+  margin-bottom: 30px;
+}
+
+#green {
+  margin-bottom: 30px;
+}
+
+#rgb-value {
+  background: $white;
+  border: none;
+  border-radius: 20px;
+  color: $black;
+  display: block;
+  margin: auto;
+  margin-top: $selector-value-margin;
+  @include breakpoint(sm) {
+    font-size: 1.8rem;
+    height: 35px;
+  }
+  @include breakpoint(md) {
+    font-size: 2.2rem;
+    height: 40px;
+  }
+  @include breakpoint(lg) {
+    border-radius: 50px;
+    font-size: 3rem;
+    height: 50px;
   }
 }
 

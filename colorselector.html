@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Shaylee Holley &rarr; Portfolio</title>
+    <title>Shaylee Holley &rarr; Color Selector</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
@@ -64,26 +64,26 @@
 
         <!-- S E L E C T O R -->
         <div class="container selector-container">
-            <p id="selector-title" class="text-center">Color Selector</p>
             <div class="rgb">
                 <p class="text-center" id="value">#000000</p>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="colors text-center" id="divRed" onclick="input(x,r)">Red</div>
-                    <input type="range" id="red" min="0" max="255" step="1" value="0" onchange="getColor()"></input>
+                    <div class="colors text-center" id="divRed" onclick="input(x,r)"></div>
+                    <input type="range" id="red" min="0" max="255" step="1" value="0" onchange="getColor()">
                 </div>
                 <div class="col-md-4">
-                    <div class="colors text-center" id="divGreen" onclick="input(y,g)">Green</div>
-                    <input type="range" id="green" min="0" max="255" step="1" value="0" onchange="getColor()"></input>
+                    <div class="colors text-center" id="divGreen" onclick="input(y,g)"></div>
+                    <input type="range" id="green" min="0" max="255" step="1" value="0" onchange="getColor()">
                 </div>
                 <div class="col-md-4">
-                    <div class="colors text-center" id="divBlue" onclick="input(z,b)">Blue</div>
-                    <input type="range" id="blue" min="0" max="255" step="1" value="0" onchange="getColor()"></input>
+                    <div class="colors text-center" id="divBlue" onclick="input(z,b)"></div>
+                    <input type="range" id="blue" min="0" max="255" step="1" value="0" onchange="getColor()">
                 </div>
             </div>
 
-            <p class="text-center" id="similar">Similar Hues</p>
+            <input id="rgb-value" class="text-center" value="rgb(0, 0, 0)">
+
             <div class="similar-rgb">
                 <div class="selector-left">
                     <p class="text-center pull-left" id="value1">#000000</p>

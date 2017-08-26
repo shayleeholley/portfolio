@@ -71,40 +71,6 @@ $profile-margin: 50px;
 $thumbnail-margin-bottom: 20px;
 $thumbnail-margin-top: 20px;
 
-// M E D I A   Q U E R I E S
-
-// - - - t r i b u t e - - -
-
-$tiny-font-size-header-1: 3.5rem;
-$small-font-size-header-1: 3.8rem;
-$medium-font-size-header-1: 4rem;
-$normal-font-size-header-1: 4.3rem;
-$large-font-size-header-1: 4.5rem;
-
-// M O D A L
-
-$modal-body-radius: 30px;
-$modal-body: 300 1.6rem 'Poppins Light', sans-serif;
-$modal-body-bold: "Poppins Regular";
-$modal-body-color: #293249;
-$modal-button: normal 1.6rem 'Amastery Hand', sans-serif;
-$modal-button-default: #69656f;
-$modal-button-hover: #aca1a1;
-$modal-button-margin-top: 30px;
-$modal-button-radius: 20px;
-$modal-button-width: 70px;
-$modal-close: #293249;
-$modal-line-height: 25px;
-$modal-link: #aca1a1;
-$modal-link-hover: #983b45;
-$modal-margin-bottom: 30px;
-$modal-margin-top: 30px;
-$modal-padding-bottom: 8px;
-$modal-padding-left: 3px;
-$modal-padding-top: 10px;
-$modal-title: normal 3rem 'Amastery Hand', cursive;
-$modal-title-color: #293249;
-
 // P A D D I N G
 
 $about-bio-padding: 10px 10px 0 10px;
@@ -137,7 +103,7 @@ $profile-shadow: 1px 1px 5px gray;
 // S I Z E S
 
 $about-img-width: 350px;
-$about-height: 1220px;
+$about-height: 850px;
 $about-line-height: 35px;
 $bio-contact-line-height: 30px;
 $bird-line-height: 160px;
@@ -151,7 +117,7 @@ $intro-name-line-height: 55px;
 $intro-skills-line-height: 25px;
 $intro-title-line-height: 2px;
 $mobile-01: 1000px;
-$portfolio-height: 1000px;
+$portfolio-height: 950px;
 $portfolio-width: 230px;
 $profile-width: 125px;
 
@@ -162,13 +128,31 @@ $profile-width: 125px;
 // - - - S E L E C T O R
 
 $selector-border-radius: 50px;
-$selector-box-shadow: 1px 1px 3px gray;
-$selector-color-padding-top: 28px;
-$selector-color-size: 75px;
+$selector-box-shadow: 1px 1px 5px #696969;
+$selector-color-font: 1.5rem "Poppins Light", sans-serif;
+$selector-colors-font: 1.5rem "Poppins Light", sans-serif;
+$selector-colors-margin: 10px 0 5px 0;
+$selector-colors-padding: 5px;
+$selector-color-padding-top: 43px;
+$selector-color-margin: 20px;
+$selector-color-size: 100px;
 $selector-container-top: 100px;
-$selector-similar: 2.5rem "Six Caps", sans-serif;
-$selector-title: 5rem "Six Caps", sans-serif;
-$selector-title-padding: 7px;
+$selector-input-focus: rgb(222, 210, 207);
+$selector-input-range-margin: 18px;
+$selector-input-slider-color: #293249;
+$selector-input-slider-margin: -4px;
+$selector-input-slider-radius: 60px;
+$selector-input-slider-size: 16px;
+$selector-input-slider-shadow: 1px 1px 3px gray, 0px 0px 1px #0d0d0d;
+$selector-input-track-border: 1.3px;
+$selector-input-track-height: 8px;
+$selector-input-track-shadow: 1px 1px 3px gray;
+$selector-similar-font: 1rem "Poppins Light", sans-serif;
+$selector-similar-margin: 30px;
+$selector-similar-padding-top: 33.5px;
+$selector-similar-size: 75px;
+$selector-text-shadow: 0 0 0 #222021;
+$selector-value-margin: 20px;
 
 // - - - T R I B U T E
 

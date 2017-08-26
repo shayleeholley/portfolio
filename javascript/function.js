@@ -7,14 +7,6 @@ $(".navbar-toggle").click(function() {
 
 // F A D E - I N
 
-$("img")
-  .hide()
-  .one("load", function() {
-    $(this).fadeIn(3000);
-  })
-  .each(function() {
-    if (this.complete) $(this).trigger("load");
-  });
 // S C R O L L S P Y   A N I M A T I O N
 
 $(document).ready(function() {
@@ -114,11 +106,14 @@ var x = 0,
 
 function getColor() {
   x = parseInt(document.getElementById("red").value);
-  document.getElementById("divRed").innerHTML = "Red = " + x;
+  document.getElementById("divRed").innerHTML;
   y = parseInt(document.getElementById("green").value);
-  document.getElementById("divGreen").innerHTML = "Green = " + y;
+  document.getElementById("divGreen").innerHTML;
   z = parseInt(document.getElementById("blue").value);
-  document.getElementById("divBlue").innerHTML = "Blue = " + z;
+  document.getElementById("divBlue").innerHTML;
+
+  document.getElementById("rgb-value").value =
+    "rgb(" + x + ", " + y + ", " + z + ")";
 
   var color = "#" + rgbToHex(x, y, z);
   var color1 = "#" + rgbToHex(x + 50, y + 50, z + 50);
