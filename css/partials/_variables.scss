@@ -7,6 +7,7 @@ $contact-border-hover: 2px solid rgba(222, 210, 207, 0.05);
 $logo-border: 2px solid #293249;
 $logo-border-radius: 80px;
 $nav-border: 1px solid #f7efed;
+$portfolio-border: 3px solid #f7efed;
 $section-border: 2px solid #69656f;
 
 // C O L O R S
@@ -36,7 +37,6 @@ $white: #f7efed;
 $about-bio: 2rem "Poppins Light", sans-serif;
 $bio-bird: 13rem "Amastery Extras";
 $bio-link: 2.5rem "Amastery Hand", sans-serif;
-$caption: 3rem "Amastery Hand", sans-serif;
 $checkbox: 300 1.03rem "Poppins Light", sans-serif;
 $checkbox-hover: 400;
 $contact-button: 300 1.5rem "Poppins Light", sans-serif;
@@ -52,6 +52,7 @@ $intro-title: 2rem "Amastery Hand", sans-serif;
 $nav: 1.6rem "Poppins Light", sans-serif;
 $nav-logo: 1.6rem "Amastery Script", sans-serif;
 $placeholder-font-size: 1.4rem;
+$portfolio-caption: 3rem "Amastery Hand", sans-serif;
 
 // M A R G I N S
 
@@ -68,8 +69,6 @@ $nav-link-margin: 3px;
 $nav-logo-margin-top: 4px;
 $nav-margin: 13px 35px 0 0;
 $profile-margin: 50px;
-$thumbnail-margin-bottom: 20px;
-$thumbnail-margin-top: 20px;
 
 // P A D D I N G
 
@@ -117,7 +116,7 @@ $intro-name-line-height: 55px;
 $intro-skills-line-height: 25px;
 $intro-title-line-height: 2px;
 $mobile-01: 1000px;
-$portfolio-height: 950px;
+$portfolio-height: 850px;
 $portfolio-width: 230px;
 $profile-width: 125px;
 
@@ -129,11 +128,14 @@ $profile-width: 125px;
 
 $selector-border-radius: 50px;
 $selector-box-shadow: 1px 1px 5px #696969;
+$selector-button-font: 2rem "Poppins Light", sans-serif;
+$selector-button-border: 2px solid #f7efed;
+$selector-button-margin: 20px;
 $selector-color-font: 1.5rem "Poppins Light", sans-serif;
 $selector-colors-font: 1.5rem "Poppins Light", sans-serif;
 $selector-colors-margin: 10px 0 5px 0;
 $selector-colors-padding: 5px;
-$selector-color-padding-top: 43px;
+$selector-color-padding-top: 45%;
 $selector-color-margin: 20px;
 $selector-color-size: 100px;
 $selector-container-top: 100px;
@@ -142,13 +144,11 @@ $selector-input-range-margin: 18px;
 $selector-input-slider-color: #293249;
 $selector-input-slider-margin: -4px;
 $selector-input-slider-radius: 60px;
-$selector-input-slider-size: 16px;
+$selector-input-slider-size: 32px;
 $selector-input-slider-shadow: 1px 1px 3px gray, 0px 0px 1px #0d0d0d;
-$selector-input-track-border: 1.3px;
-$selector-input-track-height: 8px;
+$selector-input-track-height: 24px;
 $selector-input-track-shadow: 1px 1px 3px gray;
 $selector-similar-font: 1rem "Poppins Light", sans-serif;
-$selector-similar-margin: 30px;
 $selector-similar-padding-top: 33.5px;
 $selector-similar-size: 75px;
 $selector-text-shadow: 0 0 0 #222021;

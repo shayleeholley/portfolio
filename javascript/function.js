@@ -106,11 +106,11 @@ var x = 0,
 
 function getColor() {
   x = parseInt(document.getElementById("red").value);
-  document.getElementById("divRed").innerHTML;
+  //document.getElementById("divRed").innerHTML;
   y = parseInt(document.getElementById("green").value);
-  document.getElementById("divGreen").innerHTML;
+  //document.getElementById("divGreen").innerHTML;
   z = parseInt(document.getElementById("blue").value);
-  document.getElementById("divBlue").innerHTML;
+  //document.getElementById("divBlue").innerHTML;
 
   document.getElementById("rgb-value").value =
     "rgb(" + x + ", " + y + ", " + z + ")";
@@ -120,6 +120,7 @@ function getColor() {
   var color2 = "#" + rgbToHex(x + 15, y + 15, z + 15);
   var color3 = "#" + rgbToHex(x - 25, y - 25, z - 25);
 
+  document.getElementById("hex-value").value = color;
   document.getElementById("value").style.backgroundColor = color;
   document.getElementById("value1").style.backgroundColor = color1;
   document.getElementById("value2").style.backgroundColor = color2;
@@ -141,6 +142,50 @@ function getColor() {
   document.getElementById("value1").innerHTML = color1;
   document.getElementById("value2").innerHTML = color2;
   document.getElementById("value3").innerHTML = color3;
+}
+
+function hexToRgb() {
+  var hex = document.getElementById("hex-value").value;
+  var hexCalc = {
+    0: 0,
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    7: 7,
+    8: 8,
+    9: 9,
+    a: 10,
+    b: 11,
+    c: 12,
+    d: 13,
+    e: 14,
+    f: 15
+  };
+  var hexCheck = true;
+  if (hex.length != 7) hexCheck = false;
+  else {
+    if (hex.charAt(0) != "#") hexCheck = false;
+    for (var i = 1; i < 7; i++) {
+      if (!hexCalc[hex.charAt(i).toLowerCase()] && hex.charAt(i) != 0)
+        hexCheck = false;
+    }
+  }
+  if (!hexCheck) alert("That hex value is invalid.");
+  else {
+    var hexR = hex.substring(1, 3);
+    var hexG = hex.substring(3, 5);
+    var hexB = hex.substring(5);
+    document.getElementById("red").value =
+      hexCalc[hexR.charAt(0)] * 16 + hexCalc[hexR.charAt(1)];
+    document.getElementById("green").value =
+      hexCalc[hexG.charAt(0)] * 16 + hexCalc[hexG.charAt(1)];
+    document.getElementById("blue").value =
+      hexCalc[hexB.charAt(0)] * 16 + hexCalc[hexB.charAt(1)];
+    getColor();
+  }
 }
 
 function rgbToHex(R, G, B) {

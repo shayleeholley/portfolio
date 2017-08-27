@@ -65,36 +65,42 @@
         <!-- S E L E C T O R -->
         <div class="container selector-container">
             <div class="rgb">
-                <p class="text-center" id="value">#000000</p>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="colors text-center" id="divRed" onclick="input(x,r)"></div>
-                    <input type="range" id="red" min="0" max="255" step="1" value="0" onchange="getColor()">
-                </div>
-                <div class="col-md-4">
-                    <div class="colors text-center" id="divGreen" onclick="input(y,g)"></div>
-                    <input type="range" id="green" min="0" max="255" step="1" value="0" onchange="getColor()">
-                </div>
-                <div class="col-md-4">
-                    <div class="colors text-center" id="divBlue" onclick="input(z,b)"></div>
-                    <input type="range" id="blue" min="0" max="255" step="1" value="0" onchange="getColor()">
-                </div>
+                <p class="text-center" id="value">#ffffff</p>
             </div>
 
-            <input id="rgb-value" class="text-center" value="rgb(0, 0, 0)">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="colors text-center" id="divRed" onclick="(x,r)"></div>
+                    <input type="range" id="red" min="0" max="255" step="1" value="255" onchange="getColor()">
+                </div>
+                <div class="col-md-4">
+                    <div class="colors text-center" id="divGreen" onclick="(y,g)"></div>
+                    <input type="range" id="green" min="0" max="255" step="1" value="255" onchange="getColor()">
+                </div>
+                <div class="col-md-4">
+                    <div class="colors text-center" id="divBlue" onclick="(z,b)"></div>
+                    <input type="range" id="blue" min="0" max="255" step="1" value="255" onchange="getColor()">
+                </div>
+            </div>
 
             <div class="similar-rgb">
                 <div class="selector-left">
-                    <p class="text-center pull-left" id="value1">#000000</p>
+                    <p class="text-center pull-left" id="value1">#ffffff</p>
                 </div>
                 <div class="selector-right">
-                    <p class="text-center pull-right" id="value3">#000000</p>
+                    <p class="text-center pull-right" id="value3">#ffffff</p>
                 </div>
                 <div class="selector-center">
-                    <p class="text-center pull-center" id="value2">#000000</p>
+                    <p class="text-center pull-center" id="value2">#ffffff</p>
                 </div>
             </div>
+
+            <input id="hex-value" class="text-center" value="#ffffff">
+
+            <input id="rgb-value" class="text-center" value="rgb(255, 255, 255)">
+
+            <button class="btn btn-block get-value-btn" id="get-value" onclick="hexToRgb()">Get Values</button>
+
         </div>
 
         <!-- F O O T E R -->

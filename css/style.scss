@@ -619,35 +619,70 @@ nav {
   @include breakpoint(lg) {
     max-height: 2700px;
   }
-  .thumbnail {
+  img {
     display: block;
     margin: auto;
-    margin-bottom: $thumbnail-margin-bottom;
+    margin-bottom: 50px;
+    opacity: 0.2;
+    position: relative;
     width: $portfolio-width;
-    img {
-      opacity: 1;
+    @include breakpoint(md) {
+      width: 310px;
       &:hover {
-        /* opacity: 1; */
+        opacity: 0.5;
+      }
+    }
+    @include breakpoint(lg) {
+      width: 380px;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    @include breakpoint(xl) {
+      &:hover {
+        opacity: 0.5;
       }
     }
   }
-  .caption {
-    font: $caption;
-    text-decoration: none;
-    a {
-      color: $caption-link;
-      text-decoration: none;
-      @include breakpoint(sm) {
-        font-size: 1.8rem;
-      }
-      @include breakpoint(lg) {
-        font-size: 5rem;
-        &:hover {
-          color: $caption-hover;
-        }
-      }
+  .portfolio-caption {
+    background: rgba(140, 142, 150, 0.25);
+    border: $portfolio-border;
+    color: $white;
+    font: $portfolio-caption;
+    left: 10%;
+    padding: 73px 0 73px 0;
+    position: absolute;
+    top: 0%;
+    width: 80%;
+    z-index: 2;
+    @include breakpoint(sm) {
+      font-size: 3rem;
+    }
+    @include breakpoint(lg) {
+      font-size: 3rem;
     }
   }
+}
+
+.post-content {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  min-width: 500px;
+  min-height: 500px;
+  position: absolute;
+  color: #ffffff;
+}
+
+.thumbnail {
+  position: relative;
+}
+.details {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  color: #ffffff;
 }
 
 // t r i b u t e
@@ -838,6 +873,7 @@ nav {
     font: $selector-color-font;
     height: $selector-color-size;
     padding-top: $selector-color-padding-top;
+    text-transform: lowercase;
     @include breakpoint(sm) {
       border-radius: 80px;
       font-size: 2rem;
@@ -868,11 +904,13 @@ nav {
     height: $selector-similar-size;
     margin-bottom: 50px;
     padding-top: $selector-similar-padding-top;
+    text-transform: lowercase;
     width: $selector-similar-size;
     @include breakpoint(sm) {
       border-radius: 80px;
       font-size: 1.5rem;
       height: 125px;
+      margin: 0 100px 0 100px;
       padding-top: 55px;
       width: 125px;
     }
@@ -899,7 +937,8 @@ nav {
     box-shadow: $selector-box-shadow;
     display: block;
     margin: auto;
-    margin-top: $selector-similar-margin;
+    margin-bottom: $selector-color-margin;
+    margin-top: $selector-color-margin;
     width: $selector-similar-size;
     @include breakpoint(sm) {
       width: 125px;
@@ -926,17 +965,10 @@ input[type=range]:focus {
 input[type=range]::-webkit-slider-runnable-track {
   animate: 0.2s;
   background: $white;
-  border-radius: $selector-input-track-border;
   box-shadow: $selector-input-track-shadow;
   cursor: pointer;
   height: $selector-input-track-height;
   width: 100%;
-  @include breakpoint(sm) {
-    height: 12px;
-  }
-  @include breakpoint(md) {
-    height: 20px;
-  }
   @include breakpoint(lg) {
     height: 28px;
   }
@@ -950,14 +982,6 @@ input[type=range]::-webkit-slider-thumb {
   height: $selector-input-slider-size;
   margin-top: $selector-input-slider-margin;
   width: $selector-input-slider-size;
-  @include breakpoint(sm) {
-    height: 20px;
-    width: 20px;
-  }
-  @include breakpoint(md) {
-    height: 28px;
-    width: 28px;
-  }
   @include breakpoint(md) {
     height: 36px;
     width: 36px;
@@ -975,10 +999,32 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   margin-bottom: 30px;
 }
 
+#hex-value {
+  background: $white;
+  border: none;
+  color: $black;
+  display: block;
+  margin: auto;
+  margin-bottom: $selector-value-margin;
+  text-transform: lowercase;
+  width: 100px;
+  @include breakpoint(sm) {
+    font-size: 1.8rem;
+    height: 35px;
+  }
+  @include breakpoint(md) {
+    font-size: 2.2rem;
+    height: 40px;
+  }
+  @include breakpoint(lg) {
+    font-size: 3rem;
+    height: 50px;
+  }
+}
+
 #rgb-value {
   background: $white;
   border: none;
-  border-radius: 20px;
   color: $black;
   display: block;
   margin: auto;
@@ -996,6 +1042,22 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     font-size: 3rem;
     height: 50px;
   }
+}
+
+.btn.btn-block.get-value-btn {
+  background: none;
+  border: $selector-button-border;
+  border-radius: 0;
+  color: $white;
+  display: block;
+  font: $selector-button-font;
+  letter-spacing: 2px;
+  margin: auto;
+  margin-bottom: $selector-button-margin;
+  margin-top: $selector-button-margin;
+  outline: 0;
+  padding-left: 2px;
+  text-transform: uppercase;
 }
 
 // r e s u m e s
