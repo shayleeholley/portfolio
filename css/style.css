@@ -424,6 +424,7 @@ nav span {
 #intro {
   color: #293249;
   max-height: 590px;
+  padding-top: 50px;
 }
 
 @media (min-width: 1200px) {

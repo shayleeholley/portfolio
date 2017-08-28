@@ -461,6 +461,7 @@ nav {
 #intro {
   color: $intro-text;
   max-height: $intro-height;
+  padding-top: 50px;
   @include breakpoint(lg) {
     margin-bottom: 250px;
     padding-top: 50px;
