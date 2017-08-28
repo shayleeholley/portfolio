@@ -306,6 +306,7 @@ nav {
   font: $divider;
   justify-content: center;
   margin: 0 1em;
+  padding-top: 30px;
   text-shadow: $divider-shadow;
   text-transform: lowercase;
   @include breakpoint(sm) {
@@ -350,6 +351,7 @@ nav {
   font: $divider;
   justify-content: center;
   margin: 0 1em;
+  padding-bottom: 30px;
   text-shadow: $divider-shadow;
   text-transform: lowercase;
   @include breakpoint(sm) {
@@ -417,6 +419,7 @@ nav {
   font: $divider;
   justify-content: center;
   margin: 0 1em;
+  padding: 30px 0 30px 0;
   text-shadow: $divider-shadow;
   text-transform: lowercase;
   @include breakpoint(sm) {
@@ -458,8 +461,6 @@ nav {
 #intro {
   color: $intro-text;
   max-height: $intro-height;
-  padding-bottom: $intro-padding;
-  padding-top: $intro-padding;
   @include breakpoint(lg) {
     margin-bottom: 250px;
     padding-top: 50px;
@@ -546,23 +547,11 @@ nav {
 #about {
   color: $white;
   max-height: $about-height;
-  padding-bottom: $about-padding;
-  padding-top: $about-padding;
   .bird {
     color: $white;
     font: $bio-bird;
     line-height: $bird-line-height;
     text-shadow: $bio-bird-shadow;
-    @include breakpoint(sm) {
-      font-size: 17rem;
-    }
-    @include breakpoint(md) {
-      font-size: 18rem;
-      line-height: 180px;
-    }
-    @include breakpoint(lg) {
-      font-size: 19rem;
-    }
   }
   .bio {
     color: $bio;
@@ -608,89 +597,195 @@ nav {
 #portfolio {
   color: $white;
   max-height: $portfolio-height;
-  padding-bottom: $portfolio-padding;
-  padding-top: $portfolio-padding;
-  @include breakpoint(sm) {
-    max-height: 1090px;
+  .portfolio-items {
+    border: $portfolio-border;
+    font: $portfolio-caption;
+    padding: $portfolio-caption-padding;
+    @include breakpoint(md) {
+      display: block;
+      margin: auto;
+      margin-bottom: 10px;
+      width: 60%;
+    }
+    a {
+      color: $white;
+      display: block;
+      margin: auto;
+      text-decoration: none;
+    }
+    &:hover {
+      background: $portfolio-hover;
+    }
   }
+}
+
+// c o l o r   s e l e c t o r
+
+.selector-container {
+  padding-top: $selector-container-top;
+}
+
+.rgb {
+  display: block;
+  margin: auto;
+  margin-bottom: $selector-color-margin;
+  width: $selector-color-size;
   @include breakpoint(md) {
-    max-height: 1275px;
+    margin-bottom: 30px;
   }
-  @include breakpoint(lg) {
-    max-height: 2700px;
+  p {
+    background: white;
+    border-radius: $selector-border-radius;
+    box-shadow: $selector-box-shadow;
+    font: $selector-color-font;
+    height: $selector-color-size;
+    padding-top: $selector-color-padding-top;
+    text-transform: lowercase;
   }
-  img {
+}
+
+.similar-rgb {
+  p {
+    background: white;
+    border-radius: $selector-border-radius;
+    box-shadow: $selector-box-shadow;
+    font: $selector-similar-font;
+    height: $selector-similar-size;
+    margin-bottom: $selector-similar-margin;
+    padding-top: $selector-similar-padding-top;
+    text-transform: lowercase;
+    width: $selector-similar-size;
+    @include breakpoint(sm) {
+      margin-left: 130px;
+      margin-right: 130px;
+    }
+    @include breakpoint(md) {
+      margin-left: 110px;
+      margin-right: 110px;
+    }
+    @include breakpoint(lg) {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+  }
+  .pull-center {
+    box-shadow: $selector-box-shadow;
     display: block;
     margin: auto;
-    margin-bottom: 50px;
-    opacity: 0.2;
-    position: relative;
-    width: $portfolio-width;
+    margin-bottom: $selector-color-margin;
+    margin-top: $selector-color-margin;
+    width: $selector-similar-size;
     @include breakpoint(md) {
-      width: 310px;
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-    @include breakpoint(lg) {
-      width: 380px;
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-    @include breakpoint(xl) {
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-  }
-  .portfolio-caption {
-    background: rgba(140, 142, 150, 0.25);
-    border: $portfolio-border;
-    color: $white;
-    font: $portfolio-caption;
-    left: 10%;
-    padding: 73px 0 73px 0;
-    position: absolute;
-    top: 0%;
-    width: 80%;
-    z-index: 2;
-    @include breakpoint(sm) {
-      font-size: 3rem;
-    }
-    @include breakpoint(lg) {
-      font-size: 3rem;
+      margin-top: 0;
     }
   }
 }
 
-.post-content {
-  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  min-width: 500px;
-  min-height: 500px;
-  position: absolute;
-  color: #ffffff;
+input[type=range] {
+  -webkit-appearance: none;
+  display: block;
+  margin-top: $selector-input-range-margin;
+  margin: auto;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  animate: 0.2s;
+  background: $white;
+  box-shadow: $selector-input-track-shadow;
+  cursor: pointer;
+  height: $selector-input-track-height;
+  width: 100%;
+  @include breakpoint(lg) {
+    height: 28px;
+  }
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: $selector-input-slider-color;
+  border-radius: $selector-input-slider-radius;
+  box-shadow: $selector-input-slider-shadow;
+  cursor: pointer;
+  height: $selector-input-slider-size;
+  margin-top: $selector-input-slider-margin;
+  width: $selector-input-slider-size;
+  @include breakpoint(md) {
+    height: 36px;
+    margin-top: -5.5px;
+    width: 36px;
+  }
+  @include breakpoint(lg) {
+    margin-top: -4px;
+  }
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: $selector-input-focus;
 }
 
-.thumbnail {
-  position: relative;
+#red {
+  margin-bottom: 30px;
 }
-.details {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  color: #ffffff;
+
+#green {
+  margin-bottom: 30px;
+}
+
+#hex-value {
+  background: $white;
+  border: none;
+  color: $black;
+  font: $selector-value-font;
+  display: block;
+  line-height: 20px;
+  margin: auto;
+  margin-bottom: $selector-value-margin;
+  padding-top: 5px;
+  text-shadow: $selector-text-shadow;
+  text-transform: lowercase;
+  width: 100px;
+}
+
+#rgb-value {
+  background: $white;
+  border: none;
+  color: $black;
+  font: $selector-value-font;
+  display: block;
+  line-height: 20px;
+  margin: auto;
+  margin-bottom: $selector-value-margin;
+  padding-top: 5px;
+  text-shadow: $selector-text-shadow;
+  text-transform: lowercase;
+  width: 200px;
+}
+
+.btn.btn-block.get-value-btn {
+  background: none;
+  border: $selector-button-border;
+  border-radius: 0;
+  color: $white;
+  display: block;
+  font: $selector-button-font;
+  letter-spacing: 2px;
+  margin: auto;
+  margin-bottom: $selector-button-margin;
+  margin-top: $selector-button-margin;
+  outline: 0;
+  padding-left: 2px;
+  text-transform: uppercase;
+  @include breakpoint(sm) {
+    width: 40%;
+  }
 }
 
 // t r i b u t e
 
-// --- h e a d e r
-
 .header {
   margin-top: $tribute-header-margin-top;
+  padding-bottom: 10px;
   p {
     display: inline;
   }
@@ -720,8 +815,6 @@ nav {
     }
   }
 }
-
-// --- c a r o u s e l
 
 #my-carousel {
   @include breakpoint(md) {
@@ -757,8 +850,6 @@ nav {
     }
   }
 }
-
-// --- m a i n
 
 #main-contain {
   background: $white;
@@ -846,220 +937,6 @@ nav {
   }
 }
 
-// c o l o r   s e l e c t o r
-
-.selector-container {
-  padding-top: $selector-container-top;
-}
-
-.rgb {
-  display: block;
-  margin: auto;
-  margin-bottom: $selector-color-margin;
-  width: $selector-color-size;
-  @include breakpoint(sm) {
-    width: 150px;
-  }
-  @include breakpoint(md) {
-    width: 175px;
-  }
-  @include breakpoint(lg) {
-    width: 250px;
-  }
-  p {
-    background: white;
-    border-radius: $selector-border-radius;
-    box-shadow: $selector-box-shadow;
-    font: $selector-color-font;
-    height: $selector-color-size;
-    padding-top: $selector-color-padding-top;
-    text-transform: lowercase;
-    @include breakpoint(sm) {
-      border-radius: 80px;
-      font-size: 2rem;
-      height: 150px;
-      padding-top: 67px;
-    }
-    @include breakpoint(md) {
-      border-radius: 100px;
-      font-size: 2.5rem;
-      height: 175px;
-      padding-top: 75px;
-    }
-    @include breakpoint(lg) {
-      border-radius: 150px;
-      font-size: 3.5rem;
-      height: 250px;
-      padding-top: 108px;
-    }
-  }
-}
-
-.similar-rgb {
-  p {
-    background: white;
-    border-radius: $selector-border-radius;
-    box-shadow: $selector-box-shadow;
-    font: $selector-similar-font;
-    height: $selector-similar-size;
-    margin-bottom: 50px;
-    padding-top: $selector-similar-padding-top;
-    text-transform: lowercase;
-    width: $selector-similar-size;
-    @include breakpoint(sm) {
-      border-radius: 80px;
-      font-size: 1.5rem;
-      height: 125px;
-      margin: 0 100px 0 100px;
-      padding-top: 55px;
-      width: 125px;
-    }
-    @include breakpoint(md) {
-      border-radius: 80px;
-      font-size: 2rem;
-      height: 150px;
-      margin-left: 75px;
-      margin-right: 75px;
-      padding-top: 65px;
-      width: 150px;
-    }
-    @include breakpoint(lg) {
-      border-radius: 100px;
-      font-size: 3rem;
-      height: 175px;
-      margin-left: 85px;
-      margin-right: 85px;
-      padding-top: 75px;
-      width: 175px;
-    }
-  }
-  .pull-center {
-    box-shadow: $selector-box-shadow;
-    display: block;
-    margin: auto;
-    margin-bottom: $selector-color-margin;
-    margin-top: $selector-color-margin;
-    width: $selector-similar-size;
-    @include breakpoint(sm) {
-      width: 125px;
-    }
-    @include breakpoint(md) {
-      width: 150px;
-    }
-    @include breakpoint(lg) {
-      width: 175px;
-    }
-  }
-}
-
-input[type=range] {
-  -webkit-appearance: none;
-  display: block;
-  margin-top: $selector-input-range-margin;
-  margin: auto;
-  width: 100%;
-}
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]::-webkit-slider-runnable-track {
-  animate: 0.2s;
-  background: $white;
-  box-shadow: $selector-input-track-shadow;
-  cursor: pointer;
-  height: $selector-input-track-height;
-  width: 100%;
-  @include breakpoint(lg) {
-    height: 28px;
-  }
-}
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: $selector-input-slider-color;
-  border-radius: $selector-input-slider-radius;
-  box-shadow: $selector-input-slider-shadow;
-  cursor: pointer;
-  height: $selector-input-slider-size;
-  margin-top: $selector-input-slider-margin;
-  width: $selector-input-slider-size;
-  @include breakpoint(md) {
-    height: 36px;
-    width: 36px;
-  }
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: $selector-input-focus;
-}
-
-#red {
-  margin-bottom: 30px;
-}
-
-#green {
-  margin-bottom: 30px;
-}
-
-#hex-value {
-  background: $white;
-  border: none;
-  color: $black;
-  display: block;
-  margin: auto;
-  margin-bottom: $selector-value-margin;
-  text-transform: lowercase;
-  width: 100px;
-  @include breakpoint(sm) {
-    font-size: 1.8rem;
-    height: 35px;
-  }
-  @include breakpoint(md) {
-    font-size: 2.2rem;
-    height: 40px;
-  }
-  @include breakpoint(lg) {
-    font-size: 3rem;
-    height: 50px;
-  }
-}
-
-#rgb-value {
-  background: $white;
-  border: none;
-  color: $black;
-  display: block;
-  margin: auto;
-  margin-top: $selector-value-margin;
-  @include breakpoint(sm) {
-    font-size: 1.8rem;
-    height: 35px;
-  }
-  @include breakpoint(md) {
-    font-size: 2.2rem;
-    height: 40px;
-  }
-  @include breakpoint(lg) {
-    border-radius: 50px;
-    font-size: 3rem;
-    height: 50px;
-  }
-}
-
-.btn.btn-block.get-value-btn {
-  background: none;
-  border: $selector-button-border;
-  border-radius: 0;
-  color: $white;
-  display: block;
-  font: $selector-button-font;
-  letter-spacing: 2px;
-  margin: auto;
-  margin-bottom: $selector-button-margin;
-  margin-top: $selector-button-margin;
-  outline: 0;
-  padding-left: 2px;
-  text-transform: uppercase;
-}
-
 // r e s u m e s
 
 // C O N T A C T
@@ -1067,15 +944,12 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 #contact {
   color: $white;
   max-height: $contact-height;
-  padding-bottom: $contact-padding;
-  padding-top: $contact-padding;
+  padding-bottom: 100px;
   @include breakpoint(md) {
-    max-height: 1300px;
-    padding-bottom: 150px;
+    max-height: 1000px;
   }
-  @include breakpoint(lg) {
-    max-height: 1200px;
-    padding-bottom: 150px;
+  @include breakpoint(md) {
+    max-height: 1100px;
   }
   #links {
     i {

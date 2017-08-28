@@ -192,6 +192,16 @@ function rgbToHex(R, G, B) {
   return toHex(R) + toHex(G) + toHex(B);
 }
 
+/* function submitRgb() {
+  var rgb = document.getElementById("rgb-value").value;
+  document.getElementById("red").value = parseInt(rgb.substring(1, 3));
+  document.getElementById("green").value = parseInt(rgb.substring(3, 5));
+  document.getElementById("blue").value = parseInt(rgb.substring(5));
+  alert(parseInt(rgb.substring(1, 3)));
+    getColor();
+}
+ */
+
 function toHex(n) {
   n = parseInt(n, 10);
   if (isNaN(n)) return "00";
