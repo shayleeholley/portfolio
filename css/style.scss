@@ -955,6 +955,14 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 // r e s u m e s
 
+.resume-container {
+  background: $white;
+  height: $resume-container-height;
+  margin-bottom: 60px;
+  margin-top: 120px;
+  width: $resume-container-width;
+}
+
 // C O N T A C T
 
 #contact {

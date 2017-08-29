@@ -87,7 +87,7 @@ $portfolio-caption-padding: 20px 0 20px 0;
 // S H A D O W S
 
 $bio-bird-shadow: 1px 1px 3px rgba(150, 150, 150, 0.50);
-$bio-shadow: 1px 1px 3px darkgray;
+$bio-shadow: 0px 0px 1px darkgray;
 $checkbox-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
 $checkbox-text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
 $contact-button-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
@@ -121,8 +121,6 @@ $portfolio-width: 230px;
 $profile-width: 125px;
 
 // U R L S
-
-// - - - R E S U M E S
 
 // - - - S E L E C T O R
 
@@ -179,3 +177,8 @@ $tribute-main-margin-top: 20px;
 $tribute-main-padding: 0 20px 20px 20px;
 $tribute-main-text: 2rem "OSC Light", sans-serif;
 $tribute-title: 4rem "OSC Bold", sans-serif;
+
+// - - - R E S U M E S
+
+$resume-container-height: 1000px;
+$resume-container-width: 200px;

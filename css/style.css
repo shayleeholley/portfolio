@@ -569,7 +569,7 @@ nav span {
   font: 2rem "Poppins Light", sans-serif;
   line-height: 35px;
   padding: 10px 10px 0 10px;
-  text-shadow: 1px 1px 3px darkgray;
+  text-shadow: 0px 0px 1px darkgray;
 }
 
 @media (min-width: 768px) {
@@ -597,7 +597,7 @@ nav span {
   letter-spacing: 1px;
   line-height: 30px;
   padding: 10px 10px 0 10px;
-  text-shadow: 1px 1px 3px darkgray;
+  text-shadow: 0px 0px 1px darkgray;
   text-transform: uppercase;
 }
 
@@ -616,7 +616,7 @@ nav span {
 #about .bio-link a {
   color: #f7efed;
   text-decoration: none;
-  text-shadow: 1px 1px 3px darkgray;
+  text-shadow: 0px 0px 1px darkgray;
 }
 
 #portfolio {
@@ -1093,6 +1093,14 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 .tribute-footer a:hover {
   color: #69656f;
+}
+
+.resume-container {
+  background: #f7efed;
+  height: 1000px;
+  margin-bottom: 60px;
+  margin-top: 120px;
+  width: 200px;
 }
 
 #contact {
