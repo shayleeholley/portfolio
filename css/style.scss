@@ -625,8 +625,8 @@ nav {
 .container.selector-container {
   padding-top: $selector-container-top;
   @include breakpoint(xl) {
-    padding-top: 200px;
-    height: 900px;
+    padding-top: 300px;
+    height: 1000px;
   }
 }
 
