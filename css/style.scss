@@ -622,8 +622,12 @@ nav {
 
 // c o l o r   s e l e c t o r
 
-.selector-container {
+.container.selector-container {
   padding-top: $selector-container-top;
+  @include breakpoint(xl) {
+    padding-top: 170px;
+    height: 870px;
+  }
 }
 
 .rgb {
@@ -633,6 +637,7 @@ nav {
   width: $selector-color-size;
   @include breakpoint(md) {
     margin-bottom: 30px;
+    width: 150px;
   }
   p {
     background: white;
@@ -642,6 +647,12 @@ nav {
     height: $selector-color-size;
     padding-top: $selector-color-padding-top;
     text-transform: lowercase;
+    @include breakpoint(md) {
+      border-radius: 80px;
+      font-size: 2.3rem;
+      padding-top: 65px;
+      height: 150px;
+    }
   }
 }
 
@@ -652,7 +663,6 @@ nav {
     box-shadow: $selector-box-shadow;
     font: $selector-similar-font;
     height: $selector-similar-size;
-    margin-bottom: $selector-similar-margin;
     padding-top: $selector-similar-padding-top;
     text-transform: lowercase;
     width: $selector-similar-size;
@@ -661,12 +671,16 @@ nav {
       margin-right: 130px;
     }
     @include breakpoint(md) {
+      font-size: 1.6rem;
+      height: 100px;
       margin-left: 110px;
       margin-right: 110px;
+      padding-top: 42px;
+      width: 100px;
     }
     @include breakpoint(lg) {
-      margin-left: 150px;
-      margin-right: 150px;
+      margin-left: 135px;
+      margin-right: 135px;
     }
   }
   .pull-center {
@@ -678,6 +692,7 @@ nav {
     width: $selector-similar-size;
     @include breakpoint(md) {
       margin-top: 0;
+      width: 100px;
     }
   }
 }

@@ -434,7 +434,7 @@ nav span {
   }
 }
 
-@media (min-width: 1918px) {
+@media (min-width: 1700px) {
   #intro {
     margin-bottom: 300px;
     padding-top: 200px;
@@ -650,8 +650,15 @@ nav span {
   background: rgba(41, 50, 73, 0.55);
 }
 
-.selector-container {
+.container.selector-container {
   padding-top: 100px;
+}
+
+@media (min-width: 1700px) {
+  .container.selector-container {
+    padding-top: 170px;
+    height: 870px;
+  }
 }
 
 .rgb {
@@ -664,6 +671,7 @@ nav span {
 @media (min-width: 992px) {
   .rgb {
     margin-bottom: 30px;
+    width: 150px;
   }
 }
 
@@ -677,13 +685,21 @@ nav span {
   text-transform: lowercase;
 }
 
+@media (min-width: 992px) {
+  .rgb p {
+    border-radius: 80px;
+    font-size: 2.3rem;
+    padding-top: 65px;
+    height: 150px;
+  }
+}
+
 .similar-rgb p {
   background: white;
   border-radius: 50px;
   box-shadow: 1px 1px 5px #696969;
   font: 1rem "Poppins Light", sans-serif;
   height: 75px;
-  margin-bottom: 50px;
   padding-top: 33.5px;
   text-transform: lowercase;
   width: 75px;
@@ -698,15 +714,19 @@ nav span {
 
 @media (min-width: 992px) {
   .similar-rgb p {
+    font-size: 1.6rem;
+    height: 100px;
     margin-left: 110px;
     margin-right: 110px;
+    padding-top: 42px;
+    width: 100px;
   }
 }
 
 @media (min-width: 1200px) {
   .similar-rgb p {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 135px;
+    margin-right: 135px;
   }
 }
 
@@ -722,6 +742,7 @@ nav span {
 @media (min-width: 992px) {
   .similar-rgb .pull-center {
     margin-top: 0;
+    width: 100px;
   }
 }
 
@@ -828,8 +849,8 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   font: 2rem "Poppins Light", sans-serif;
   letter-spacing: 2px;
   margin: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   outline: 0;
   padding-left: 2px;
   text-transform: uppercase;
@@ -867,7 +888,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   }
 }
 
-@media (min-width: 1918px) {
+@media (min-width: 1700px) {
   .header #header1 {
     font-size: 6rem;
   }
@@ -889,7 +910,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   }
 }
 
-@media (min-width: 1918px) {
+@media (min-width: 1700px) {
   .header #header2 {
     font-size: 4.5rem;
   }
@@ -903,7 +924,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   }
 }
 
-@media (min-width: 1918px) {
+@media (min-width: 1700px) {
   #my-carousel {
     display: block;
     margin: auto;
@@ -939,7 +960,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   }
 }
 
-@media (min-width: 1918px) {
+@media (min-width: 1700px) {
   #my-carousel .carousel-text {
     font-size: 3.5rem;
   }
@@ -969,7 +990,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   }
 }
 
-@media (min-width: 1918px) {
+@media (min-width: 1700px) {
   #main-contain {
     display: block;
     margin: auto;
@@ -990,7 +1011,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   }
 }
 
-@media (min-width: 1918px) {
+@media (min-width: 1700px) {
   #main-contain .main-title {
     font-size: 6.5rem;
   }
@@ -1013,7 +1034,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   }
 }
 
-@media (min-width: 1918px) {
+@media (min-width: 1700px) {
   #main-contain .main-text {
     font-size: 4rem;
   }
@@ -1048,7 +1069,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   }
 }
 
-@media (min-width: 1918px) {
+@media (min-width: 1700px) {
   #main-contain img {
     max-width: 900px;
   }
