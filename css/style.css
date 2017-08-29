@@ -656,8 +656,8 @@ nav span {
 
 @media (min-width: 1700px) {
   .container.selector-container {
-    padding-top: 170px;
-    height: 870px;
+    padding-top: 200px;
+    height: 900px;
   }
 }
 
