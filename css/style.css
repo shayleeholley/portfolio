@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Amastery Extras';
+  font-family: "Amastery Extras";
   src: url("https://www.dl.dropboxusercontent.com/s/0omva1j3c1rk1nm/amastery_extras-webfont.eot");
   src: url("https://www.dl.dropboxusercontent.com/s/0omva1j3c1rk1nm/amastery_extras-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/y1cxo0pg46mjvpg/amastery_extras-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/sh1shz2brgmtsbp/amastery_extras-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/2xjocg3hrsmg4km/amastery_extras-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/56yx08up0eiq1b6/amastery_extras-webfont.svg#amastery_extrasamasteryXs") format("svg");
   font-weight: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Amastery Hand';
+  font-family: "Amastery Hand";
   src: url("https://www.dl.dropboxusercontent.com/s/qcs5m5eye04uqlz/amastery_hand-webfont.eot");
   src: url("https://www.dl.dropboxusercontent.com/s/qcs5m5eye04uqlz/amastery_hand-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/5xbp67ojb66n2ht/amastery_hand-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/r2n2mg1c70x698b/amastery_hand-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/trx1869sxac2qdy/amastery_hand-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/wja6ydnu5okp0om/amastery_hand-webfont.svg#amastery_handamastery_hand") format("svg");
   font-weight: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'Amastery Script';
+  font-family: "Amastery Script";
   src: url("https://www.dl.dropboxusercontent.com/s/lss7nv68lp66ckb/amastery_script-webfont.eot");
   src: url("https://www.dl.dropboxusercontent.com/s/lss7nv68lp66ckb/amastery_script-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/5432mu46ic8mqvk/amastery_script-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/iev6tg1s8ermmg1/amastery_script-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/cex2jjse981mmuq/amastery_script-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/n6bl7wta2xz2hj2/amastery_script-webfont.svg#amastery_scriptamasteryscript") format("svg");
   font-weight: normal;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'OSC Bold';
+  font-family: "OSC Bold";
   src: url("https://www.dl.dropboxusercontent.com/s/ma0xcdy071clpmx/opensans-condbold-webfont.eot");
   src: url("https://www.dl.dropboxusercontent.com/s/ma0xcdy071clpmx/opensans-condbold-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/hy6uk5ngyf7fm1p/opensans-condbold-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/t7bmmrjhti5ke36/opensans-condbold-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/7fn8rb9wskpv6xj/opensans-condbold-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/u802zltf03rpg48/opensans-condbold-webfont.svg#open_sans_condensedbold") format("svg");
   font-weight: normal;
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-  font-family: 'OSC Light';
+  font-family: "OSC Light";
   src: url("https://www.dl.dropboxusercontent.com/s/14dsa0forg8009g/opensans-condlight-webfont.eot");
   src: url("https://www.dl.dropboxusercontent.com/s/14dsa0forg8009g/opensans-condlight-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/3cvfhuy3cuhn882/opensans-condlight-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/iu722ulftxgjbq4/opensans-condlight-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/zutul5gpky5toiy/opensans-condlight-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/fs1zlsm7l14ch59/opensans-condlight-webfont.svg#open_sanscondensed_light") format("svg");
   font-weight: normal;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-  font-family: 'Poppins Light';
+  font-family: "Poppins Light";
   src: url("https://www.dl.dropboxusercontent.com/s/9q0ngiejy8hw3xz/poppins-light-webfont.eot");
   src: url("https://www.dl.dropboxusercontent.com/s/9q0ngiejy8hw3xz/poppins-light-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/dny3xggh7rj07s2/poppins-light-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/vg8rsml3x2z1a9k/poppins-light-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/q3r47ciezxsfxdy/poppins-light-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/zyqjhek70x803bo/poppins-light-webfont.svg#poppinslight") format("svg");
   font-weight: normal;
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-  font-family: 'Poppins Medium';
+  font-family: "Poppins Medium";
   src: url("https://www.dl.dropboxusercontent.com/s/vgs53tsy3fc9o5a/poppins-medium-webfont.eot");
   src: url("https://www.dl.dropboxusercontent.com/s/vgs53tsy3fc9o5a/poppins-medium-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/keboppo1716fao6/poppins-medium-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/75gusqaeveo1ppn/poppins-medium-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/weaulhxu7c3pvth/poppins-medium-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/6g7cj3i1osriu0p/poppins-medium-webfont.svg#poppinsmedium") format("svg");
   font-weight: normal;
@@ -55,7 +55,7 @@
 }
 
 @font-face {
-  font-family: 'Poppins Regular';
+  font-family: "Poppins Regular";
   src: url("https://www.dl.dropboxusercontent.com/s/frt74su02ok9xv7/poppins-regular-webfont.eot");
   src: url("https://www.dl.dropboxusercontent.com/s/frt74su02ok9xv7/poppins-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/1501y1vk7x8kr0a/poppins-regular-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/sumbe6eosesqb5t/poppins-regular-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/q0osvoelzw11466/poppins-regular-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/5busbm12ye55bm8/poppins-regular-webfont.svg#poppinsregular") format("svg");
   font-weight: normal;
@@ -63,7 +63,7 @@
 }
 
 @font-face {
-  font-family: 'Poppins Semibold';
+  font-family: "Poppins Semibold";
   src: url("https://www.dl.dropboxusercontent.com/s/uu2x6xp4e8xebg4/poppins-semibold-webfont.eot");
   src: url("https://www.dl.dropboxusercontent.com/s/uu2x6xp4e8xebg4/poppins-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/pps9oxn8yf0ukau/poppins-semibold-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/57magdrgt84w92j/poppins-semibold-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/n1cfjqg43rt9s1d/poppins-semibold-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/4nkgc0y40fyjlh6/poppins-semibold-webfont.svg#poppinssemibold") format("svg");
   font-weight: normal;
@@ -71,7 +71,7 @@
 }
 
 @font-face {
-  font-family: 'Poppins Bold';
+  font-family: "Poppins Bold";
   src: url("https://www.dl.dropboxusercontent.com/s/j4wkpobl22thywl/poppins-bold-webfont.eot");
   src: url("https://www.dl.dropboxusercontent.com/s/j4wkpobl22thywl/poppins-bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/9b01c82ru3mm0ol/poppins-bold-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/h88srru0ol1oa5o/poppins-bold-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/0609xav3vsju9yx/poppins-bold-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/6kfprhcxmqh5cy4/poppins-bold-webfont.svg#poppinsbold") format("svg");
   font-weight: normal;
@@ -79,7 +79,7 @@
 }
 
 @font-face {
-  font-family: 'Six Caps';
+  font-family: "Six Caps";
   src: url("https://www.dl.dropboxusercontent.com/s/j129sqy57uu83mw/sixcaps-webfont.eot");
   src: url("https://www.dl.dropboxusercontent.com/s/j129sqy57uu83mw/sixcaps-webfont.eot?#iefix") format("embedded-opentype"), url("https://www.dl.dropboxusercontent.com/s/s7avvldmt4cscxe/sixcaps-webfont.woff2") format("woff2"), url("https://www.dl.dropboxusercontent.com/s/25dvsbkfgdcjvlb/sixcaps-webfont.woff") format("woff"), url("https://www.dl.dropboxusercontent.com/s/jq5vatnsxwen026/sixcaps-webfont.ttf") format("truetype"), url("https://www.dl.dropboxusercontent.com/s/vwlft7h2c0dyw0l/sixcaps-webfont.svg#six_capsregular") format("svg");
   font-weight: normal;
@@ -235,10 +235,10 @@ nav span {
   background: #69656f;
   border-radius: 50px;
   box-shadow: 1px 1px 1px gray;
-  content: '';
+  content: "";
   flex: 1;
   height: 2.2px;
-  margin: 0 0 0 .50em;
+  margin: 0 0 0 0.5em;
 }
 
 @media (min-width: 768px) {
@@ -298,10 +298,10 @@ nav span {
   background: #293249;
   border-radius: 50px;
   box-shadow: 1px 1px 1px gray;
-  content: '';
+  content: "";
   flex: 1;
   height: 2.2px;
-  margin: 0 .50em 0 0;
+  margin: 0 0.5em 0 0;
 }
 
 @media (min-width: 768px) {
@@ -326,10 +326,10 @@ nav span {
   background: #293249;
   border-radius: 50px;
   box-shadow: 1px 1px 1px gray;
-  content: '';
+  content: "";
   flex: 1;
   height: 2.2px;
-  margin: 0 0 0 .50em;
+  margin: 0 0 0 0.5em;
 }
 
 @media (min-width: 768px) {
@@ -393,10 +393,10 @@ nav span {
   background: #f7efed;
   border-radius: 50px;
   box-shadow: 1px 1px 1px gray;
-  content: '';
+  content: "";
   flex: 1;
   height: 2.2px;
-  margin: 0 .50em 0 0;
+  margin: 0 0.5em 0 0;
 }
 
 @media (min-width: 768px) {
@@ -746,7 +746,7 @@ nav span {
   }
 }
 
-input[type=range] {
+input[type="range"] {
   -webkit-appearance: none;
   display: block;
   margin-top: 18px;
@@ -754,11 +754,11 @@ input[type=range] {
   width: 100%;
 }
 
-input[type=range]:focus {
+input[type="range"]:focus {
   outline: none;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track {
   animate: 0.2s;
   background: #f7efed;
   box-shadow: 1px 1px 3px gray;
@@ -768,12 +768,12 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 @media (min-width: 1200px) {
-  input[type=range]::-webkit-slider-runnable-track {
+  input[type="range"]::-webkit-slider-runnable-track {
     height: 28px;
   }
 }
 
-input[type=range]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   background: #293249;
   border-radius: 60px;
@@ -785,7 +785,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 @media (min-width: 992px) {
-  input[type=range]::-webkit-slider-thumb {
+  input[type="range"]::-webkit-slider-thumb {
     height: 36px;
     margin-top: -5.5px;
     width: 36px;
@@ -793,12 +793,12 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 @media (min-width: 1200px) {
-  input[type=range]::-webkit-slider-thumb {
+  input[type="range"]::-webkit-slider-thumb {
     margin-top: -4px;
   }
 }
 
-input[type=range]:focus::-webkit-slider-runnable-track {
+input[type="range"]:focus::-webkit-slider-runnable-track {
   background: #ded2cf;
 }
 
@@ -818,7 +818,8 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   display: block;
   line-height: 20px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   padding-top: 5px;
   text-shadow: 0 0 0 #222021;
   text-transform: lowercase;
@@ -833,7 +834,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   display: block;
   line-height: 20px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding-top: 5px;
   text-shadow: 0 0 0 #222021;
   text-transform: lowercase;
@@ -1097,10 +1098,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 .resume-container {
   background: #f7efed;
-  height: 1000px;
+  height: 824px;
   margin-bottom: 60px;
-  margin-top: 120px;
-  width: 200px;
+  margin-top: 60px;
+  width: 595px;
 }
 
 #contact {
