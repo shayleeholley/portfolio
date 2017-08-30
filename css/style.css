@@ -664,7 +664,7 @@ nav span {
 .rgb {
   display: block;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100px;
 }
 
@@ -734,8 +734,8 @@ nav span {
   box-shadow: 1px 1px 5px #696969;
   display: block;
   margin: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   width: 75px;
 }
 
@@ -824,6 +824,12 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   text-shadow: 0 0 0 #222021;
   text-transform: lowercase;
   width: 100px;
+}
+
+@media (min-width: 992px) {
+  #hex-value {
+    margin-top: 0;
+  }
 }
 
 #rgb-value {

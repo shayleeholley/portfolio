@@ -762,6 +762,9 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   text-shadow: $selector-text-shadow;
   text-transform: lowercase;
   width: 100px;
+  @include breakpoint(md) {
+    margin-top: 0;
+  }
 }
 
 #rgb-value {
