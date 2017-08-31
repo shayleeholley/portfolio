@@ -70,9 +70,9 @@
     <!-- I N T R O -->
     <div id="intro" class="container-fluid">
       <img src="http://res.cloudinary.com/shayleeholley/image/upload/v1502745482/IMG_5977lr_4_dd8y7l.jpg" class="img-circle img-responsive profile-img">
-      <p class="text-center" id="name">Shaylee Holley</p>
-      <p class="text-center" id="skills">Bootstrap | CSS | HTML | JavaScript | SASS</p>
-      <p class="text-center" id="title">Front-End Web Developer</p>
+      <p class="text-center" id="intro-name">Shaylee Holley</p>
+      <p class="text-center" id="intro-skills">Bootstrap | CSS | HTML | JavaScript | SASS</p>
+      <p class="text-center" id="intro-title">Front-End Web Developer</p>
     </div>
 
     <!-- A B O U T -->
@@ -112,19 +112,20 @@
           <a href="https://www.pinterest.com/shayleeholley" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i><span></span></a>
         </div>
         <div class="form-group">
-          <input class="form-control" id="name" name="name" placeholder="Enter your name:" type="text">
+          <input class="form-control" id="name" name="name" placeholder="*Enter your name:" type="text">
         </div>
         <div class="form-group">
-          <input type="email" class="form-control" id="email" placeholder="Enter your email:" name="email">
+          <input type="email" class="form-control" id="email" placeholder="*Enter your email:" name="email">
         </div>
         <div class="form-group">
-          <input type="tel" class="form-control" id="phone" placeholder="(Optional) Enter your phone number:" name="phone">
+          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number:" name="phone">
         </div>
         <div class="checkbox" title="Check the box(es) that apply if you would like to be contacted back by phone">
           <label class="checkbox-inline"><input type="checkbox" name="call" id="call" style="width:1.7rem; height:1.7rem"><p class="checkbox-text"> Calls are okay</p></label>
           <label class="checkbox-inline"><input type="checkbox" name="text" id="text" style="width:1.7rem; height:1.7rem"><p class="checkbox-text"> Texts are okay</p></label>
         </div>
-        <textarea class="form-control" rows="15" id="message" placeholder="Enter your message: "></textarea>
+        <textarea class="form-control" rows="5" id="message" placeholder="*Enter your message: "></textarea>
+        <p class="text-center" id="required">* indicates required fields</p>
         <div class="button">
           <button class="btn btn-lg btn-block" onclick="formSend()"><i class="fa fa-paper-plane" aria-hidden="true"></i><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Send</button>
         </div>

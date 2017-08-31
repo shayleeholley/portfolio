@@ -467,7 +467,7 @@ nav span {
   }
 }
 
-#intro #name {
+#intro #intro-name {
   font: normal 4rem "Amastery Script", cursive;
   line-height: 55px;
   margin-top: 10px;
@@ -476,27 +476,27 @@ nav span {
 }
 
 @media (min-width: 768px) {
-  #intro #name {
+  #intro #intro-name {
     font-size: 5rem;
     line-height: 65px;
   }
 }
 
 @media (min-width: 992px) {
-  #intro #name {
+  #intro #intro-name {
     font-size: 5.5rem;
     line-height: 70px;
   }
 }
 
 @media (min-width: 1200px) {
-  #intro #name {
+  #intro #intro-name {
     font-size: 7rem;
     line-height: 90px;
   }
 }
 
-#intro #title {
+#intro #intro-title {
   font: 2rem "Amastery Hand", sans-serif;
   letter-spacing: 5px;
   line-height: 2px;
@@ -505,48 +505,48 @@ nav span {
 }
 
 @media (min-width: 768px) {
-  #intro #title {
+  #intro #intro-title {
     font-size: 3rem;
     line-height: 5px;
   }
 }
 
 @media (min-width: 992px) {
-  #intro #title {
+  #intro #intro-title {
     font-size: 3.5rem;
     line-height: 7px;
   }
 }
 
 @media (min-width: 1200px) {
-  #intro #title {
+  #intro #intro-title {
     font-size: 5rem;
     line-height: 9px;
   }
 }
 
-#intro #skills {
+#intro #intro-skills {
   font: 1.6rem "Poppins Light", sans-serif;
   line-height: 25px;
   text-shadow: 1px 1px 1px lightgray;
 }
 
 @media (min-width: 768px) {
-  #intro #skills {
+  #intro #intro-skills {
     font-size: 2.2rem;
     line-height: 35px;
   }
 }
 
 @media (min-width: 992px) {
-  #intro #skills {
+  #intro #intro-skills {
     font-size: 2.5rem;
     line-height: 45px;
   }
 }
 
 @media (min-width: 1200px) {
-  #intro #skills {
+  #intro #intro-skills {
     font-size: 3.2rem;
     line-height: 60px;
   }
@@ -1268,6 +1268,8 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   background: #f7efed;
   color: #293249;
   font: 300 1.3rem "Poppins Light", sans-serif;
+  line-height: 34px;
+  padding-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -1293,6 +1295,16 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 
 #contact ::placeholder {
   color: #69656f;
+  line-height: 35px;
+}
+
+#contact #required {
+  font: 1.3rem "Poppins Light", sans-serif;
+  padding-top: 10px;
+}
+
+#contact #message {
+  padding-top: 0;
 }
 
 .footer {

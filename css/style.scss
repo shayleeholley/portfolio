@@ -486,7 +486,7 @@ nav {
       width: 250px;
     }
   }
-  #name {
+  #intro-name {
     font: $intro-name;
     line-height: $intro-name-line-height;
     margin-top: $intro-margin;
@@ -505,7 +505,7 @@ nav {
       line-height: 90px;
     }
   }
-  #title {
+  #intro-title {
     font: $intro-title;
     letter-spacing: 5px;
     line-height: $intro-title-line-height;
@@ -524,7 +524,7 @@ nav {
       line-height: 9px;
     }
   }
-  #skills {
+  #intro-skills {
     font: $intro-skills;
     line-height: $intro-skills-line-height;
     text-shadow: $intro-text-shadow;
@@ -1094,6 +1094,8 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
     background: $white;
     color: $form-text;
     font: $form;
+    line-height: 34px;
+    padding-top: 10px;
     @include breakpoint(sm) {
       font-size: 1.5rem;
       padding-top: 8px;
@@ -1111,6 +1113,14 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   }
   ::placeholder {
     color: #69656f;
+    line-height: 35px;
+  }
+  #required {
+    font: 1.3rem "Poppins Light", sans-serif;
+    padding-top: 10px;
+  }
+  #message {
+    padding-top: 0;
   }
 }
 

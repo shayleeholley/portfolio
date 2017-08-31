@@ -1,8 +1,12 @@
 // C H E V R O N   A N I M A T E
 
 $(".navbar-toggle").click(function() {
-  $(this).next("i").slideToggle("500");
-  $(this).find("i").toggleClass("fa-chevron-circle-down fa-chevron-circle-up");
+  $(this)
+    .next("i")
+    .slideToggle("500");
+  $(this)
+    .find("i")
+    .toggleClass("fa-chevron-circle-down fa-chevron-circle-up");
 });
 
 // F A D E - I N
@@ -53,16 +57,14 @@ var formSend = function() {
     textMessage = "do not";
   }
 
+  console.log(name, email, phone, message);
+
   if (name === "") {
-    alert("Please enter your name before submitting this form - thanks!");
+    alert("Please enter your name before submitting this form.");
   } else if (email === "") {
-    alert(
-      "Please enter your email field before submitting this form - thanks!"
-    );
+    alert("Please enter your email field before submitting this form.");
   } else if (message === "") {
-    alert(
-      "Please enter your message field before submitting this form - thanks!"
-    );
+    alert("Please enter your message field before submitting this form.");
   } else {
     emailjs
       .send("gmail", "portfolio", {
