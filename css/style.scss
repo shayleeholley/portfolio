@@ -217,8 +217,6 @@ body {
   z-index: -1;
 }
 
-//unfinished
-
 ::selection {
   background: $black;
   color: $white;
@@ -1076,6 +1074,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
     color: $tribute-link;
     &:hover {
       color: $tribute-link-hover;
+      text-decoration: none;
     }
   }
 }

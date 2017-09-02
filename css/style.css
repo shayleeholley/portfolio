@@ -1253,6 +1253,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 
 .tribute-footer a:hover {
   color: #69656f;
+  text-decoration: none;
 }
 
 .resume-container {
