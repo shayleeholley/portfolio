@@ -200,6 +200,10 @@ nav span {
   color: #f7efed;
 }
 
+span.nav-icon {
+  font: 2rem "Amastery Extras";
+}
+
 .divider-1 {
   align-items: center;
   color: #69656f;
@@ -526,7 +530,7 @@ nav span {
 }
 
 #intro #intro-skills {
-  font: 1.6rem "Poppins Light", sans-serif;
+  font: 1.6rem "Poppins Regular", sans-serif;
   line-height: 25px;
   text-shadow: 1px 1px 1px lightgray;
 }
@@ -557,19 +561,20 @@ nav span {
   max-height: 900px;
 }
 
-#about .bird {
+#about .sparkle {
   color: #f7efed;
-  font: 13rem "Amastery Extras";
+  font: 16rem "Amastery Extras";
   line-height: 95px;
+  padding-bottom: 35px;
   text-shadow: 1px 1px 3px rgba(150, 150, 150, 0.5);
 }
 
 #about .bio {
   color: #293249;
-  font: 2rem "Poppins Light", sans-serif;
+  font: 2rem "Poppins Regular", sans-serif;
   line-height: 35px;
   padding: 10px 10px 0 10px;
-  text-shadow: 0px 0px 1px darkgray;
+  text-shadow: 1px 1px 3px gray;
 }
 
 @media (min-width: 768px) {
@@ -597,7 +602,7 @@ nav span {
   letter-spacing: 1px;
   line-height: 30px;
   padding: 10px 10px 0 10px;
-  text-shadow: 0px 0px 1px darkgray;
+  text-shadow: 1px 1px 3px gray;
   text-transform: uppercase;
 }
 
@@ -616,7 +621,7 @@ nav span {
 #about .bio-link a {
   color: #f7efed;
   text-decoration: none;
-  text-shadow: 0px 0px 1px darkgray;
+  text-shadow: 1px 1px 3px gray;
 }
 
 #portfolio {

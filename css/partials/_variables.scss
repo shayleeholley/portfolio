@@ -35,8 +35,8 @@ $white: #f7efed;
 
 // F O N T S
 
-$about-bio: 2rem "Poppins Light", sans-serif;
-$bio-bird: 13rem "Amastery Extras";
+$about-bio: 2rem "Poppins Regular", sans-serif;
+$bio-sparkle: 16rem "Amastery Extras";
 $bio-link: 2.5rem "Amastery Hand", sans-serif;
 $checkbox: 300 1.03rem "Poppins Light", sans-serif;
 $checkbox-hover: 400;
@@ -48,7 +48,7 @@ $footer: 1.2rem "Poppins Light", sans-serif;
 $footer-logo: 2rem "Amastery Script", sans-serif;
 $form: 300 1.3rem "Poppins Light", sans-serif;
 $intro-name: normal 4rem "Amastery Script", cursive;
-$intro-skills: 1.6rem "Poppins Light", sans-serif;
+$intro-skills: 1.6rem "Poppins Regular", sans-serif;
 $intro-title: 2rem "Amastery Hand", sans-serif;
 $nav: 1.6rem "Poppins Light", sans-serif;
 $nav-logo: 1.6rem "Amastery Script", sans-serif;
@@ -74,6 +74,7 @@ $profile-margin: 50px;
 // P A D D I N G
 
 $about-bio-padding: 10px 10px 0 10px;
+$bio-sparkle-padding: 35px;
 $checkbox-padding: 3px 0 6px 0;
 $checkbox-text-padding: 8px;
 $col-padding: 15px;
@@ -86,8 +87,8 @@ $portfolio-caption-padding: 20px 0 20px 0;
 
 // S H A D O W S
 
-$bio-bird-shadow: 1px 1px 3px rgba(150, 150, 150, 0.5);
-$bio-shadow: 0px 0px 1px darkgray;
+$bio-sparkle-shadow: 1px 1px 3px rgba(150, 150, 150, 0.5);
+$bio-shadow: 1px 1px 3px gray;
 $checkbox-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
 $checkbox-text-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
 $contact-button-shadow: 1px 1px 3px rgba(139, 138, 136, 0.5);
@@ -105,7 +106,6 @@ $about-img-width: 350px;
 $about-height: 900px;
 $about-line-height: 35px;
 $bio-contact-line-height: 30px;
-$bird-line-height: 95px;
 $contact-button-width: 47%;
 $contact-height: 900px;
 $checkbox-width: 600px;
@@ -119,6 +119,7 @@ $mobile-01: 1000px;
 $portfolio-height: 700px;
 $portfolio-width: 230px;
 $profile-width: 125px;
+$sparkle-line-height: 95px;
 
 // U R L S
 

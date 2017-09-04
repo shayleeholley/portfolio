@@ -294,6 +294,10 @@ nav {
   }
 }
 
+span.nav-icon {
+  font: 2rem "Amastery Extras";
+}
+
 // d i v i d e r s
 
 .divider-1 {
@@ -546,11 +550,12 @@ nav {
 #about {
   color: $white;
   max-height: $about-height;
-  .bird {
+  .sparkle {
     color: $white;
-    font: $bio-bird;
-    line-height: $bird-line-height;
-    text-shadow: $bio-bird-shadow;
+    font: $bio-sparkle;
+    line-height: $sparkle-line-height;
+    padding-bottom: $bio-sparkle-padding;
+    text-shadow: $bio-sparkle-shadow;
   }
   .bio {
     color: $bio;
